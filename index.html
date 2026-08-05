@@ -353,7 +353,7 @@
           <span>Liquid Wallet Cash</span>
           <div class="kpi-icon icon-wallet"><i class="fa-solid fa-wallet"></i></div>
         </div>
-        <div class="kpi-value" id="kpi-cash">Rs. 95,000.00</div>
+        <div class="kpi-value" id="kpi-cash">Rs. 100,000.00</div>
         <div class="kpi-subtext">Available unallocated capital</div>
       </div>
 
@@ -362,8 +362,8 @@
           <span>Invested Capital</span>
           <div class="kpi-icon icon-invested"><i class="fa-solid fa-layer-group"></i></div>
         </div>
-        <div class="kpi-value" id="kpi-invested">Rs. 1,000.00</div>
-        <div class="kpi-subtext" id="kpi-open-count">1 Active Holding(s)</div>
+        <div class="kpi-value" id="kpi-invested">Rs. 0.00</div>
+        <div class="kpi-subtext" id="kpi-open-count">0 Active Holding(s)</div>
       </div>
 
       <div class="kpi-card">
@@ -371,7 +371,7 @@
           <span>Portfolio Net Worth</span>
           <div class="kpi-icon icon-worth"><i class="fa-solid fa-vault"></i></div>
         </div>
-        <div class="kpi-value" id="kpi-net-worth">Rs. 96,000.00</div>
+        <div class="kpi-value" id="kpi-net-worth">Rs. 100,000.00</div>
         <div class="kpi-subtext">Liquid cash + Open market value</div>
       </div>
 
@@ -380,7 +380,7 @@
           <span>Cumulative Realized P&L</span>
           <div class="kpi-icon icon-pnl"><i class="fa-solid fa-trophy"></i></div>
         </div>
-        <div class="kpi-value pnl-positive" id="kpi-pnl">Rs. +1,200.00</div>
+        <div class="kpi-value pnl-positive" id="kpi-pnl">Rs. +0.00</div>
         <div class="kpi-subtext" id="kpi-win-rate">Win Rate: 0.0% (0 Closed)</div>
       </div>
     </section>
@@ -425,14 +425,10 @@
               <tbody id="holdings-table-body">
 
           <tr>
-            <td class="symbol-cell">HYUNDAI</td>
-            <td>HYUNDAI Corp</td>
-            <td><span class="tag-horizon tag-intraday">Intraday</span></td>
-            <td>Rs. 2000.00</td>
-            <td>Rs. 2000.00</td>
-            <td>Rs. 105.00</td>
-            <td>Rs. 97.00</td>
-            <td class="pnl-positive">Rs. +0.00</td>
+            <td colspan="8" style="text-align: center; color: var(--text-muted); padding: 2rem;">
+              <i class="fa-solid fa-cash-register" style="font-size: 1.5rem; margin-bottom: 0.5rem; display: block;"></i>
+              No active stock holdings (100% Liquid Cash Position)
+            </td>
           </tr>
         
           </tbody>
@@ -543,7 +539,7 @@
       data: {
         labels: ['Liquid Cash', 'Active Stock Holdings'],
         datasets: [{
-          data: [99.0, 1.0],
+          data: [100.0, 0.0],
           backgroundColor: ['#00f2fe', '#7928ca'],
           borderWidth: 0,
           hoverOffset: 6
