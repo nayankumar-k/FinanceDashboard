@@ -452,7 +452,7 @@
         <div class="live-badge">
           <div class="pulse-dot"></div> LIVE AGENT ACTIVE
         </div>
-        <span style="font-size: 0.82rem; color: var(--text-muted);" id="header-timestamp">IST Sync: 05 Aug 2026, 02:56 PM IST</span>
+        <span style="font-size: 0.82rem; color: var(--text-muted);" id="header-timestamp">IST Sync: 05 Aug 2026, 05:54 PM IST</span>
       </div>
     </header>
 
@@ -471,7 +471,7 @@
           <span>LIQUID WALLET CASH</span>
           <div class="kpi-icon icon-wallet"><i class="fa-solid fa-wallet"></i></div>
         </div>
-        <div class="kpi-value" id="kpi-cash">Rs. 50,000.00</div>
+        <div class="kpi-value" id="kpi-cash">Rs. 54,994.65</div>
         <div class="kpi-subtext">Available Capital</div>
       </div>
 
@@ -480,8 +480,8 @@
           <span>INVESTED CAPITAL</span>
           <div class="kpi-icon icon-invested"><i class="fa-solid fa-chart-pie"></i></div>
         </div>
-        <div class="kpi-value" id="kpi-invested">Rs. 5,000.00</div>
-        <div class="kpi-subtext" id="kpi-open-count">1 Active Holding(s)</div>
+        <div class="kpi-value" id="kpi-invested">Rs. 0.00</div>
+        <div class="kpi-subtext" id="kpi-open-count">0 Active Holding(s)</div>
       </div>
 
       <div class="kpi-card">
@@ -489,7 +489,7 @@
           <span>NET PORTFOLIO WORTH</span>
           <div class="kpi-icon icon-worth"><i class="fa-solid fa-vault"></i></div>
         </div>
-        <div class="kpi-value" id="kpi-net-worth">Rs. 55,050.00</div>
+        <div class="kpi-value" id="kpi-net-worth">Rs. 54,994.65</div>
         <div class="kpi-subtext">Cash + Open Positions</div>
       </div>
 
@@ -498,7 +498,7 @@
           <span>REALIZED P&L</span>
           <div class="kpi-icon icon-pnl"><i class="fa-solid fa-hand-holding-dollar"></i></div>
         </div>
-        <div class="kpi-value pnl-positive" id="kpi-pnl">Rs. +0.00</div>
+        <div class="kpi-value pnl-positive" id="kpi-pnl">Rs. -5.35</div>
         <div class="kpi-subtext">Net Realized Cumulative Return</div>
       </div>
     </section>
@@ -528,14 +528,10 @@
               <tbody id="holdings-table-body">
 
           <tr>
-            <td class="symbol-cell">TESTSTK</td>
-            <td>Test Stock Ltd</td>
-            <td><span class="tag-horizon tag-intraday">Intraday</span></td>
-            <td>Rs. 100.00</td>
-            <td>Rs. 101.00</td>
-            <td>Rs. 108.00</td>
-            <td>Rs. 95.00</td>
-            <td class="pnl-positive">Rs. +50.00</td>
+            <td colspan="8" style="text-align: center; color: var(--text-muted); padding: 2rem;">
+              <i class="fa-solid fa-cash-register" style="font-size: 1.5rem; margin-bottom: 0.5rem; display: block;"></i>
+              No active stock holdings (100% Liquid Cash Position)
+            </td>
           </tr>
         
           </tbody>
@@ -583,16 +579,10 @@
             <tbody id="triggers-table-body">
 
           <tr>
-            <td class="symbol-cell">TESTSTK</td>
-            <td><span class="tag-horizon tag-buy">Buy Setup</span></td>
-            <td><b>7/10</b></td>
-            <td>7/10</td>
-            <td>6/10</td>
-            <td>Positive (7/10)</td>
-            <td>1:2.0</td>
-            <td>Rs. 100.00</td>
-            <td>Rs. 108.00</td>
-            <td>Rs. 95.00</td>
+            <td colspan="10" style="text-align: center; color: var(--text-muted); padding: 2rem;">
+              <i class="fa-solid fa-wand-magic-sparkles" style="font-size: 1.5rem; margin-bottom: 0.5rem; display: block;"></i>
+              Scan run complete — technical trigger setups will populate on morning sessions.
+            </td>
           </tr>
         
           </tbody>
@@ -806,7 +796,7 @@
       data: {
         labels: ['Liquid Cash', 'Active Exposure'],
         datasets: [{
-          data: [90.8, 9.2],
+          data: [100.0, 0.0],
           backgroundColor: ['#00f2fe', '#7928ca'],
           borderColor: '#0f1624',
           borderWidth: 3,
