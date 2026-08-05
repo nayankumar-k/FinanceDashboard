@@ -452,16 +452,16 @@
         <div class="live-badge">
           <div class="pulse-dot"></div> LIVE AGENT ACTIVE
         </div>
-        <span style="font-size: 0.82rem; color: var(--text-muted);" id="header-timestamp">IST Sync: Active</span>
+        <span style="font-size: 0.82rem; color: var(--text-muted);" id="header-timestamp">IST Sync: 05 Aug 2026, 01:49 PM IST</span>
       </div>
     </header>
 
-    <!-- Navigation Tabs -->
     <nav class="nav-tabs">
       <button class="nav-tab active" onclick="switchTab('finance')"><i class="fa-solid fa-wallet"></i> Finance & Portfolio</button>
       <button class="nav-tab" onclick="switchTab('technical')"><i class="fa-solid fa-bolt"></i> Technical & AI Triggers</button>
       <button class="nav-tab" onclick="switchTab('jobs')"><i class="fa-solid fa-gears"></i> Job & Pipeline Details</button>
       <button class="nav-tab" onclick="switchTab('trader')"><i class="fa-solid fa-user-astronaut"></i> Stock Trader Performance</button>
+      <button class="nav-tab" onclick="switchTab('messages')"><i class="fa-solid fa-paper-plane"></i> Message Triggered Details</button>
     </nav>
 
     <!-- KPI Cards Grid (Always Visible) -->
@@ -471,7 +471,7 @@
           <span>LIQUID WALLET CASH</span>
           <div class="kpi-icon icon-wallet"><i class="fa-solid fa-wallet"></i></div>
         </div>
-        <div class="kpi-value" id="kpi-cash">Rs. 100,000.00</div>
+        <div class="kpi-value" id="kpi-cash">Rs. 36.77</div>
         <div class="kpi-subtext">Available Capital</div>
       </div>
 
@@ -480,8 +480,8 @@
           <span>INVESTED CAPITAL</span>
           <div class="kpi-icon icon-invested"><i class="fa-solid fa-chart-pie"></i></div>
         </div>
-        <div class="kpi-value" id="kpi-invested">Rs. 0.00</div>
-        <div class="kpi-subtext" id="kpi-open-count">0 Active Holding(s)</div>
+        <div class="kpi-value" id="kpi-invested">Rs. 99,963.23</div>
+        <div class="kpi-subtext" id="kpi-open-count">5 Active Holding(s)</div>
       </div>
 
       <div class="kpi-card">
@@ -526,13 +526,67 @@
                 </tr>
               </thead>
               <tbody id="holdings-table-body">
-                <tr>
-                  <td colspan="8" style="text-align: center; color: var(--text-muted); padding: 2rem;">
-                    <i class="fa-solid fa-cash-register" style="font-size: 1.5rem; margin-bottom: 0.5rem; display: block;"></i>
-                    No active stock holdings (100% Liquid Cash Position)
-                  </td>
-                </tr>
-              </tbody>
+
+          <tr>
+            <td class="symbol-cell">VAML</td>
+            <td>Vedanta Aluminium Metal Limited</td>
+            <td><span class="tag-horizon tag-swing">Swing</span></td>
+            <td>Rs. 465.75</td>
+            <td>Rs. 465.75</td>
+            <td>Rs. 493.70</td>
+            <td>Rs. 447.12</td>
+            <td class="pnl-positive">Rs. +0.00</td>
+          </tr>
+        
+
+          <tr>
+            <td class="symbol-cell">SKYGOLD</td>
+            <td>SKY GOLD AND DIAMONDS LIMITED</td>
+            <td><span class="tag-horizon tag-swing">Swing</span></td>
+            <td>Rs. 679.65</td>
+            <td>Rs. 679.65</td>
+            <td>Rs. 720.43</td>
+            <td>Rs. 652.46</td>
+            <td class="pnl-positive">Rs. +0.00</td>
+          </tr>
+        
+
+          <tr>
+            <td class="symbol-cell">MCX</td>
+            <td>Multi Commodity Exchange of India Limited</td>
+            <td><span class="tag-horizon tag-swing">Swing</span></td>
+            <td>Rs. 2617.00</td>
+            <td>Rs. 2617.00</td>
+            <td>Rs. 2774.02</td>
+            <td>Rs. 2512.32</td>
+            <td class="pnl-positive">Rs. +0.00</td>
+          </tr>
+        
+
+          <tr>
+            <td class="symbol-cell">MAPMYINDIA</td>
+            <td>C.E. Info Systems Limited</td>
+            <td><span class="tag-horizon tag-swing">Swing</span></td>
+            <td>Rs. 1063.00</td>
+            <td>Rs. 1063.00</td>
+            <td>Rs. 1126.78</td>
+            <td>Rs. 1020.48</td>
+            <td class="pnl-positive">Rs. +0.00</td>
+          </tr>
+        
+
+          <tr>
+            <td class="symbol-cell">OLAELEC</td>
+            <td>Ola Electric Mobility Limited</td>
+            <td><span class="tag-horizon tag-swing">Swing</span></td>
+            <td>Rs. 41.31</td>
+            <td>Rs. 41.31</td>
+            <td>Rs. 43.79</td>
+            <td>Rs. 39.66</td>
+            <td class="pnl-positive">Rs. +0.00</td>
+          </tr>
+        
+          </tbody>
             </table>
           </div>
         </div>
@@ -575,13 +629,77 @@
               </tr>
             </thead>
             <tbody id="triggers-table-body">
-              <tr>
-                <td colspan="10" style="text-align: center; color: var(--text-muted); padding: 2rem;">
-                  <i class="fa-solid fa-wand-magic-sparkles" style="font-size: 1.5rem; margin-bottom: 0.5rem; display: block;"></i>
-                  Scan run complete — technical trigger setups will populate on morning sessions.
-                </td>
-              </tr>
-            </tbody>
+
+          <tr>
+            <td class="symbol-cell">VAML</td>
+            <td><span class="tag-horizon tag-buy">Buy Setup</span></td>
+            <td><b>7/10</b></td>
+            <td>7/10</td>
+            <td>6/10</td>
+            <td>Positive (7/10)</td>
+            <td>1:2.0</td>
+            <td>Rs. 465.75</td>
+            <td>Rs. 493.70</td>
+            <td>Rs. 447.12</td>
+          </tr>
+        
+
+          <tr>
+            <td class="symbol-cell">SKYGOLD</td>
+            <td><span class="tag-horizon tag-buy">Buy Setup</span></td>
+            <td><b>7/10</b></td>
+            <td>7/10</td>
+            <td>6/10</td>
+            <td>Positive (7/10)</td>
+            <td>1:2.0</td>
+            <td>Rs. 679.65</td>
+            <td>Rs. 720.43</td>
+            <td>Rs. 652.46</td>
+          </tr>
+        
+
+          <tr>
+            <td class="symbol-cell">MCX</td>
+            <td><span class="tag-horizon tag-buy">Buy Setup</span></td>
+            <td><b>7/10</b></td>
+            <td>7/10</td>
+            <td>6/10</td>
+            <td>Positive (7/10)</td>
+            <td>1:2.0</td>
+            <td>Rs. 2617.00</td>
+            <td>Rs. 2774.02</td>
+            <td>Rs. 2512.32</td>
+          </tr>
+        
+
+          <tr>
+            <td class="symbol-cell">MAPMYINDIA</td>
+            <td><span class="tag-horizon tag-buy">Buy Setup</span></td>
+            <td><b>7/10</b></td>
+            <td>7/10</td>
+            <td>6/10</td>
+            <td>Positive (7/10)</td>
+            <td>1:2.0</td>
+            <td>Rs. 1063.00</td>
+            <td>Rs. 1126.78</td>
+            <td>Rs. 1020.48</td>
+          </tr>
+        
+
+          <tr>
+            <td class="symbol-cell">OLAELEC</td>
+            <td><span class="tag-horizon tag-buy">Buy Setup</span></td>
+            <td><b>8/10</b></td>
+            <td>7/10</td>
+            <td>6/10</td>
+            <td>Positive (7/10)</td>
+            <td>1:2.0</td>
+            <td>Rs. 41.31</td>
+            <td>Rs. 43.79</td>
+            <td>Rs. 39.66</td>
+          </tr>
+        
+          </tbody>
           </table>
         </div>
       </div>
@@ -734,6 +852,39 @@
 
     </div>
 
+    <!-- SECTION 5: Message Triggered Details -->
+    <div id="tab-messages" class="tab-content">
+      <div class="section-card">
+        <div class="section-header">
+          <h2><i class="fa-solid fa-paper-plane"></i> Telegram Digest Dispatch & Signal Trigger Audit</h2>
+          <span style="font-size: 0.8rem; color: var(--text-muted);">Real-Time Intelligence Alert Logs</span>
+        </div>
+        <div class="table-responsive">
+          <table>
+            <thead>
+              <tr>
+                <th>Date & Time</th>
+                <th>Session</th>
+                <th>Channel / Target</th>
+                <th>Min Score Threshold</th>
+                <th>Setups Triggered</th>
+                <th>Dispatch Status</th>
+                <th>Message Preview</th>
+              </tr>
+            </thead>
+            <tbody id="messages-table-body">
+              <tr>
+                <td colspan="7" style="text-align: center; color: var(--text-muted); padding: 2rem;">
+                  <i class="fa-solid fa-paper-plane" style="font-size: 1.5rem; margin-bottom: 0.5rem; display: block;"></i>
+                  No messages logged yet for the current session.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
     <footer>
       AINewsAnalyst — Automated Quantitative Stock News & Intelligence Engine | 
       Public Dashboard Hosted on <a href="https://github.com/nayankumar-k/FinanceDashboard" target="_blank">FinanceDashboard</a>
@@ -757,7 +908,7 @@
       data: {
         labels: ['Liquid Cash', 'Active Exposure'],
         datasets: [{
-          data: [100.0, 0.0],
+          data: [0.0, 100.0],
           backgroundColor: ['#00f2fe', '#7928ca'],
           borderColor: '#0f1624',
           borderWidth: 3,
