@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AINewsAnalyst — Executive Visual Finance Dashboard</title>
+  <title>FinanceDashboard — Executive AI Portfolio & Market Intelligence</title>
 
   <!-- Google Fonts: Outfit & Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,20 +18,20 @@
 
   <style>
     :root {
-      --bg-dark: #0b0f19;
-      --bg-card: rgba(18, 24, 38, 0.75);
-      --bg-card-hover: rgba(28, 36, 56, 0.85);
-      --border-glow: rgba(0, 242, 254, 0.2);
+      --bg-dark: #070a12;
+      --bg-card: rgba(15, 22, 36, 0.75);
+      --bg-card-hover: rgba(24, 34, 54, 0.85);
+      --border-glow: rgba(0, 242, 254, 0.25);
       --border-light: rgba(255, 255, 255, 0.08);
       
       --cyan-glow: #00f2fe;
-      --blue-glow: #4facfe;
+      --blue-glow: #38ef7d;
       --green-glow: #00e676;
       --purple-glow: #7928ca;
       --gold-glow: #ffb703;
       --danger-glow: #ff5252;
       
-      --text-main: #f1f5f9;
+      --text-main: #f8fafc;
       --text-muted: #94a3b8;
       --text-dim: #64748b;
     }
@@ -46,16 +46,16 @@
       font-family: 'Inter', sans-serif;
       background-color: var(--bg-dark);
       background-image: 
-        radial-gradient(circle at 15% 15%, rgba(0, 242, 254, 0.06) 0%, transparent 40%),
-        radial-gradient(circle at 85% 85%, rgba(121, 40, 202, 0.06) 0%, transparent 40%);
+        radial-gradient(circle at 10% 10%, rgba(0, 242, 254, 0.05) 0%, transparent 45%),
+        radial-gradient(circle at 90% 90%, rgba(121, 40, 202, 0.05) 0%, transparent 45%);
       color: var(--text-main);
       min-height: 100vh;
-      padding: 2rem;
+      padding: 1.5rem;
     }
 
     /* Container Layout */
     .dashboard-container {
-      max-width: 1400px;
+      max-width: 1440px;
       margin: 0 auto;
       display: flex;
       flex-direction: column;
@@ -73,9 +73,11 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
       position: relative;
       overflow: hidden;
+      flex-wrap: wrap;
+      gap: 1rem;
     }
 
     .header-banner::before {
@@ -85,7 +87,7 @@
       left: 0;
       width: 100%;
       height: 3px;
-      background: linear-gradient(90deg, var(--cyan-glow), var(--blue-glow), var(--purple-glow));
+      background: linear-gradient(90deg, var(--cyan-glow), #38ef7d, var(--purple-glow));
     }
 
     .header-title-group h1 {
@@ -106,6 +108,13 @@
       margin-top: 0.35rem;
     }
 
+    .header-controls {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
     .live-badge {
       display: inline-flex;
       align-items: center;
@@ -113,7 +122,7 @@
       background: rgba(0, 230, 118, 0.12);
       color: var(--green-glow);
       border: 1px solid rgba(0, 230, 118, 0.3);
-      padding: 0.45rem 1rem;
+      padding: 0.5rem 1.1rem;
       border-radius: 30px;
       font-size: 0.85rem;
       font-weight: 600;
@@ -134,6 +143,62 @@
       100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(0, 230, 118, 0); }
     }
 
+    /* Section Navigation Tabs */
+    .nav-tabs {
+      display: flex;
+      gap: 0.75rem;
+      background: rgba(15, 22, 36, 0.5);
+      border: 1px solid var(--border-light);
+      padding: 0.4rem;
+      border-radius: 16px;
+      overflow-x: auto;
+    }
+
+    .nav-tab {
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      padding: 0.65rem 1.25rem;
+      font-family: 'Outfit', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 600;
+      border-radius: 12px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: all 0.25s ease;
+      white-space: nowrap;
+    }
+
+    .nav-tab:hover {
+      color: var(--text-main);
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    .nav-tab.active {
+      color: #0b0f19;
+      background: linear-gradient(135deg, var(--cyan-glow), #38ef7d);
+      box-shadow: 0 4px 15px rgba(0, 242, 254, 0.3);
+    }
+
+    /* Tab Content Section */
+    .tab-content {
+      display: none;
+      flex-direction: column;
+      gap: 1.5rem;
+      animation: fadeIn 0.35s ease;
+    }
+
+    .tab-content.active {
+      display: flex;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
     /* KPI Cards Grid */
     .kpi-grid {
       display: grid;
@@ -146,7 +211,7 @@
       backdrop-filter: blur(12px);
       border: 1px solid var(--border-light);
       border-radius: 18px;
-      padding: 1.5rem;
+      padding: 1.4rem 1.5rem;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -180,10 +245,10 @@
     }
 
     .icon-wallet { background: rgba(0, 242, 254, 0.12); color: var(--cyan-glow); }
-    .icon-invested { background: rgba(79, 172, 254, 0.12); color: var(--blue-glow); }
+    .icon-invested { background: rgba(56, 239, 125, 0.12); color: #38ef7d; }
     .icon-worth { background: rgba(121, 40, 202, 0.15); color: #b76e79; }
     .icon-pnl { background: rgba(0, 230, 118, 0.12); color: var(--green-glow); }
-    .icon-win { background: rgba(255, 183, 3, 0.12); color: var(--gold-glow); }
+    .icon-job { background: rgba(255, 183, 3, 0.12); color: var(--gold-glow); }
 
     .kpi-value {
       font-family: 'Outfit', sans-serif;
@@ -198,79 +263,61 @@
       color: var(--text-dim);
     }
 
-    /* Main Section Grid */
-    .content-grid {
+    /* Grid Sections */
+    .grid-2col {
       display: grid;
       grid-template-columns: 2fr 1fr;
       gap: 1.5rem;
     }
 
     @media (max-width: 1024px) {
-      .content-grid { grid-template-columns: 1fr; }
+      .grid-2col {
+        grid-template-columns: 1fr;
+      }
     }
 
-    /* Glass Panels */
-    .glass-panel {
+    .grid-3col {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1.25rem;
+    }
+
+    /* Cards */
+    .section-card {
       background: var(--bg-card);
-      backdrop-filter: blur(16px);
+      backdrop-filter: blur(12px);
       border: 1px solid var(--border-light);
       border-radius: 20px;
       padding: 1.75rem;
       display: flex;
       flex-direction: column;
       gap: 1.25rem;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
     }
 
-    .panel-header {
+    .section-header {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      border-bottom: 1px solid var(--border-light);
+      padding-bottom: 0.9rem;
     }
 
-    .panel-title {
+    .section-header h2 {
       font-family: 'Outfit', sans-serif;
       font-size: 1.2rem;
       font-weight: 700;
       display: flex;
       align-items: center;
       gap: 0.6rem;
-    }
-
-    /* System Status Badges Box */
-    .system-status-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 1rem;
-    }
-
-    .status-item {
-      background: rgba(255, 255, 255, 0.03);
-      border: 1px solid var(--border-light);
-      padding: 1rem;
-      border-radius: 14px;
-      display: flex;
-      align-items: center;
-      gap: 0.85rem;
-    }
-
-    .status-icon {
-      font-size: 1.2rem;
-    }
-
-    .status-details h4 {
-      font-size: 0.82rem;
-      color: var(--text-muted);
-      font-weight: 500;
-    }
-
-    .status-details p {
-      font-size: 0.95rem;
-      font-weight: 700;
       color: var(--text-main);
-      margin-top: 0.15rem;
     }
 
-    /* Holdings Table */
+    .section-header h2 i {
+      color: var(--cyan-glow);
+    }
+
+    /* Tables */
     .table-responsive {
       overflow-x: auto;
     }
@@ -278,16 +325,20 @@
     table {
       width: 100%;
       border-collapse: collapse;
+      text-align: left;
       font-size: 0.88rem;
     }
 
     th {
-      text-align: left;
-      padding: 0.85rem 1rem;
+      background: rgba(255, 255, 255, 0.03);
       color: var(--text-muted);
       font-weight: 600;
+      padding: 0.85rem 1rem;
       border-bottom: 1px solid var(--border-light);
-      background: rgba(255, 255, 255, 0.02);
+      font-family: 'Outfit', sans-serif;
+      text-transform: uppercase;
+      font-size: 0.75rem;
+      letter-spacing: 0.5px;
     }
 
     td {
@@ -297,7 +348,7 @@
     }
 
     tr:hover td {
-      background: rgba(255, 255, 255, 0.03);
+      background: rgba(255, 255, 255, 0.02);
     }
 
     .symbol-cell {
@@ -307,60 +358,127 @@
     }
 
     .tag-horizon {
-      display: inline-block;
-      padding: 0.25rem 0.65rem;
+      padding: 0.3rem 0.75rem;
       border-radius: 20px;
       font-size: 0.75rem;
-      font-weight: 600;
-      text-transform: capitalize;
+      font-weight: 700;
+      display: inline-block;
+      text-transform: uppercase;
     }
 
-    .tag-swing { background: rgba(79, 172, 254, 0.15); color: var(--blue-glow); }
-    .tag-intraday { background: rgba(0, 242, 254, 0.15); color: var(--cyan-glow); }
-    .tag-weekly { background: rgba(255, 183, 3, 0.15); color: var(--gold-glow); }
+    .tag-intraday { background: rgba(0, 242, 254, 0.15); color: var(--cyan-glow); border: 1px solid rgba(0, 242, 254, 0.3); }
+    .tag-swing { background: rgba(56, 239, 125, 0.15); color: #38ef7d; border: 1px solid rgba(56, 239, 125, 0.3); }
+    .tag-weekly { background: rgba(121, 40, 202, 0.2); color: #c084fc; border: 1px solid rgba(121, 40, 202, 0.4); }
+    .tag-hold { background: rgba(148, 163, 184, 0.15); color: var(--text-muted); border: 1px solid var(--border-light); }
 
-    .pnl-positive { color: var(--green-glow); font-weight: 700; }
-    .pnl-negative { color: var(--danger-glow); font-weight: 700; }
+    .tag-buy { background: rgba(0, 230, 118, 0.15); color: var(--green-glow); border: 1px solid rgba(0, 230, 118, 0.3); }
+    .tag-sell { background: rgba(255, 82, 82, 0.15); color: var(--danger-glow); border: 1px solid rgba(255, 82, 82, 0.3); }
 
-    /* Chart Containers */
-    .chart-container {
+    .pnl-positive { color: var(--green-glow); font-weight: 600; }
+    .pnl-negative { color: var(--danger-glow); font-weight: 600; }
+
+    /* Job Telemetry List */
+    .telemetry-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+    }
+
+    .telemetry-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(255, 255, 255, 0.02);
+      padding: 0.9rem 1.1rem;
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.04);
+    }
+
+    .telemetry-label {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+      font-size: 0.88rem;
+      color: var(--text-muted);
+    }
+
+    .telemetry-label i {
+      color: var(--cyan-glow);
+    }
+
+    .telemetry-value {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: var(--text-main);
+    }
+
+    /* Chart Container */
+    .chart-box {
       position: relative;
-      height: 280px;
-      width: 100%;
+      height: 220px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      color: var(--text-dim);
+      font-size: 0.82rem;
+      padding: 1.25rem 0;
+      border-top: 1px solid var(--border-light);
+      margin-top: 1rem;
+    }
+
+    footer a {
+      color: var(--cyan-glow);
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
 
   <div class="dashboard-container">
-
+    
     <!-- Executive Header Banner -->
     <header class="header-banner">
       <div class="header-title-group">
-        <h1><i class="fa-solid fa-chart-line"></i> AINewsAnalyst — Executive Finance Dashboard</h1>
-        <p>Institutional Market Intelligence & Quantitative Portfolio Tracker</p>
+        <h1><i class="fa-solid fa-chart-line"></i> AINewsAnalyst & Executive Portfolio</h1>
+        <p>Real-Time Quantitative Intelligence, Technical Triggers & Operational Telemetry</p>
       </div>
-      <div class="live-badge">
-        <div class="pulse-dot"></div>
-        <span>AI Engine & Google Sheets Synced</span>
+      <div class="header-controls">
+        <div class="live-badge">
+          <div class="pulse-dot"></div> LIVE AGENT ACTIVE
+        </div>
+        <span style="font-size: 0.82rem; color: var(--text-muted);" id="header-timestamp">IST Sync: Active</span>
       </div>
     </header>
 
-    <!-- Top KPI Cards -->
+    <!-- Navigation Tabs -->
+    <nav class="nav-tabs">
+      <button class="nav-tab active" onclick="switchTab('finance')"><i class="fa-solid fa-wallet"></i> Finance & Portfolio</button>
+      <button class="nav-tab" onclick="switchTab('technical')"><i class="fa-solid fa-bolt"></i> Technical & AI Triggers</button>
+      <button class="nav-tab" onclick="switchTab('jobs')"><i class="fa-solid fa-gears"></i> Job & Pipeline Details</button>
+      <button class="nav-tab" onclick="switchTab('trader')"><i class="fa-solid fa-user-astronaut"></i> Stock Trader Performance</button>
+    </nav>
+
+    <!-- KPI Cards Grid (Always Visible) -->
     <section class="kpi-grid">
       <div class="kpi-card">
         <div class="kpi-header">
-          <span>Liquid Wallet Cash</span>
+          <span>LIQUID WALLET CASH</span>
           <div class="kpi-icon icon-wallet"><i class="fa-solid fa-wallet"></i></div>
         </div>
         <div class="kpi-value" id="kpi-cash">Rs. 100,000.00</div>
-        <div class="kpi-subtext">Available unallocated capital</div>
+        <div class="kpi-subtext">Available Capital</div>
       </div>
 
       <div class="kpi-card">
         <div class="kpi-header">
-          <span>Invested Capital</span>
-          <div class="kpi-icon icon-invested"><i class="fa-solid fa-layer-group"></i></div>
+          <span>INVESTED CAPITAL</span>
+          <div class="kpi-icon icon-invested"><i class="fa-solid fa-chart-pie"></i></div>
         </div>
         <div class="kpi-value" id="kpi-invested">Rs. 0.00</div>
         <div class="kpi-subtext" id="kpi-open-count">0 Active Holding(s)</div>
@@ -368,45 +486,30 @@
 
       <div class="kpi-card">
         <div class="kpi-header">
-          <span>Portfolio Net Worth</span>
+          <span>NET PORTFOLIO WORTH</span>
           <div class="kpi-icon icon-worth"><i class="fa-solid fa-vault"></i></div>
         </div>
         <div class="kpi-value" id="kpi-net-worth">Rs. 100,000.00</div>
-        <div class="kpi-subtext">Liquid cash + Open market value</div>
+        <div class="kpi-subtext">Cash + Open Positions</div>
       </div>
 
       <div class="kpi-card">
         <div class="kpi-header">
-          <span>Cumulative Realized P&L</span>
-          <div class="kpi-icon icon-pnl"><i class="fa-solid fa-trophy"></i></div>
+          <span>REALIZED P&L</span>
+          <div class="kpi-icon icon-pnl"><i class="fa-solid fa-hand-holding-dollar"></i></div>
         </div>
         <div class="kpi-value pnl-positive" id="kpi-pnl">Rs. +0.00</div>
-        <div class="kpi-subtext" id="kpi-win-rate">Win Rate: 0.0% (0 Closed)</div>
+        <div class="kpi-subtext">Net Realized Cumulative Return</div>
       </div>
     </section>
 
-    <!-- Main Content Grid -->
-    <section class="content-grid">
-      
-      <!-- Left Column: Equity Curve & Active Holdings -->
-      <div style="display: flex; flex-direction: column; gap: 1.5rem;">
-        
-        <!-- Equity Curve Chart Panel -->
-        <div class="glass-panel">
-          <div class="panel-header">
-            <div class="panel-title"><i class="fa-solid fa-chart-area" style="color: var(--cyan-glow);"></i> Cumulative Portfolio Equity Curve</div>
-            <span style="font-size: 0.8rem; color: var(--text-muted);">Real-time Growth Trajectory</span>
-          </div>
-          <div class="chart-container">
-            <canvas id="equityChart"></canvas>
-          </div>
-        </div>
-
-        <!-- Active Holdings Table Panel -->
-        <div class="glass-panel">
-          <div class="panel-header">
-            <div class="panel-title"><i class="fa-solid fa-cubes" style="color: var(--blue-glow);"></i> Active Stock Holdings Breakdown</div>
-            <span class="live-badge" style="padding: 0.25rem 0.75rem; font-size: 0.75rem;">Live Market Quotes</span>
+    <!-- SECTION 1: Finance Details -->
+    <div id="tab-finance" class="tab-content active">
+      <div class="grid-2col">
+        <div class="section-card">
+          <div class="section-header">
+            <h2><i class="fa-solid fa-boxes-stacked"></i> Active Portfolio Holdings</h2>
+            <span style="font-size: 0.8rem; color: var(--text-muted);">Real-Time Position Tracker</span>
           </div>
           <div class="table-responsive">
             <table>
@@ -414,7 +517,7 @@
                 <tr>
                   <th>Symbol</th>
                   <th>Company</th>
-                  <th>Strategy</th>
+                  <th>Horizon</th>
                   <th>Entry Price</th>
                   <th>Current Price</th>
                   <th>Target</th>
@@ -423,125 +526,241 @@
                 </tr>
               </thead>
               <tbody id="holdings-table-body">
-
-          <tr>
-            <td colspan="8" style="text-align: center; color: var(--text-muted); padding: 2rem;">
-              <i class="fa-solid fa-cash-register" style="font-size: 1.5rem; margin-bottom: 0.5rem; display: block;"></i>
-              No active stock holdings (100% Liquid Cash Position)
-            </td>
-          </tr>
-        
-          </tbody>
+                <tr>
+                  <td colspan="8" style="text-align: center; color: var(--text-muted); padding: 2rem;">
+                    <i class="fa-solid fa-cash-register" style="font-size: 1.5rem; margin-bottom: 0.5rem; display: block;"></i>
+                    No active stock holdings (100% Liquid Cash Position)
+                  </td>
+                </tr>
+              </tbody>
             </table>
           </div>
         </div>
 
-      </div>
-
-      <!-- Right Column: System Status & Donut Allocation -->
-      <div style="display: flex; flex-direction: column; gap: 1.5rem;">
-        
-        <!-- System Health Telemetry Box -->
-        <div class="glass-panel">
-          <div class="panel-header">
-            <div class="panel-title"><i class="fa-solid fa-microchip" style="color: var(--green-glow);"></i> Operational Telemetry</div>
+        <div class="section-card">
+          <div class="section-header">
+            <h2><i class="fa-solid fa-chart-pie"></i> Capital Allocation</h2>
           </div>
-          <div class="system-status-grid">
-            <div class="status-item">
-              <i class="fa-solid fa-brain status-icon" style="color: var(--cyan-glow);"></i>
-              <div class="status-details">
-                <h4>AI Gemini Engine</h4>
-                <p>gemini-2.0-flash</p>
-              </div>
-            </div>
-            <div class="status-item">
-              <i class="fa-solid fa-key status-icon" style="color: var(--gold-glow);"></i>
-              <div class="status-details">
-                <h4>API Key Pool</h4>
-                <p>3 Keys Active</p>
-              </div>
-            </div>
-            <div class="status-item">
-              <i class="fa-solid fa-rss status-icon" style="color: var(--blue-glow);"></i>
-              <div class="status-details">
-                <h4>RSS Feeds Network</h4>
-                <p>9/9 Operational</p>
-              </div>
-            </div>
-            <div class="status-item">
-              <i class="fa-solid fa-database status-icon" style="color: var(--green-glow);"></i>
-              <div class="status-details">
-                <h4>Google Sheets Sync</h4>
-                <p>5 Tabs Synced</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Donut Allocation Chart Panel -->
-        <div class="glass-panel">
-          <div class="panel-header">
-            <div class="panel-title"><i class="fa-solid fa-chart-pie" style="color: var(--gold-glow);"></i> Asset Allocation</div>
-          </div>
-          <div class="chart-container" style="height: 220px;">
+          <div class="chart-box">
             <canvas id="allocationChart"></canvas>
           </div>
+          <div style="font-size: 0.8rem; color: var(--text-dim); text-align: center;">
+            Asset ratio: Liquid Cash vs Open Market Exposure
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 2: Technical & Trigger Details -->
+    <div id="tab-technical" class="tab-content">
+      <div class="section-card">
+        <div class="section-header">
+          <h2><i class="fa-solid fa-microchip"></i> Actionable AI Technical Triggers & Indicators</h2>
+          <span style="font-size: 0.8rem; color: var(--text-muted);">Multi-Dimensional Scoring & Setup Parameters</span>
+        </div>
+        <div class="table-responsive">
+          <table>
+            <thead>
+              <tr>
+                <th>Symbol</th>
+                <th>Setup Signal</th>
+                <th>Confidence</th>
+                <th>Tech Score</th>
+                <th>Fund Score</th>
+                <th>Catalyst Impact</th>
+                <th>Risk / Reward</th>
+                <th>Entry Level</th>
+                <th>Target Level</th>
+                <th>Stop Loss</th>
+              </tr>
+            </thead>
+            <tbody id="triggers-table-body">
+              <tr>
+                <td colspan="10" style="text-align: center; color: var(--text-muted); padding: 2rem;">
+                  <i class="fa-solid fa-wand-magic-sparkles" style="font-size: 1.5rem; margin-bottom: 0.5rem; display: block;"></i>
+                  Scan run complete — technical trigger setups will populate on morning sessions.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 3: Job & Ingestion Pipeline Details -->
+    <div id="tab-jobs" class="tab-content">
+      <div class="grid-3col">
+        
+        <div class="section-card">
+          <div class="section-header">
+            <h2><i class="fa-solid fa-clock-rotate-left"></i> Session Execution Schedule</h2>
+          </div>
+          <div class="telemetry-list">
+            <div class="telemetry-item">
+              <div class="telemetry-label"><i class="fa-solid fa-sun"></i> Morning Pre-Market Digest</div>
+              <div class="telemetry-value">8:45 AM IST (3:15 UTC)</div>
+            </div>
+            <div class="telemetry-item">
+              <div class="telemetry-label"><i class="fa-solid fa-building-columns"></i> Market Close Settlement</div>
+              <div class="telemetry-value">4:00 PM IST (10:30 UTC)</div>
+            </div>
+            <div class="telemetry-item">
+              <div class="telemetry-label"><i class="fa-solid fa-moon"></i> Night Market Synthesis</div>
+              <div class="telemetry-value">10:00 PM IST (16:30 UTC)</div>
+            </div>
+            <div class="telemetry-item">
+              <div class="telemetry-label"><i class="fa-solid fa-calendar-check"></i> Weekend Consolidated Report</div>
+              <div class="telemetry-value">10:00 AM IST Sat (4:30 UTC)</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-card">
+          <div class="section-header">
+            <h2><i class="fa-solid fa-server"></i> Ingestion Engine Telemetry</h2>
+          </div>
+          <div class="telemetry-list">
+            <div class="telemetry-item">
+              <div class="telemetry-label"><i class="fa-solid fa-rss"></i> RSS Feeds Scanned</div>
+              <div class="telemetry-value">10 Live Feeds</div>
+            </div>
+            <div class="telemetry-item">
+              <div class="telemetry-label"><i class="fa-solid fa-key"></i> Gemini Key Pool Rotation</div>
+              <div class="telemetry-value">3 Active Keys</div>
+            </div>
+            <div class="telemetry-item">
+              <div class="telemetry-label"><i class="fa-solid fa-filter"></i> Liquidity Gatekeeper</div>
+              <div class="telemetry-value">Min Vol &gt; 20k | TO &gt; 20L</div>
+            </div>
+            <div class="telemetry-item">
+              <div class="telemetry-label"><i class="fa-solid fa-database"></i> Google Sheets DB Sync</div>
+              <div class="telemetry-value" style="color: var(--green-glow);">Synced</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-card">
+          <div class="section-header">
+            <h2><i class="fa-solid fa-shield-halved"></i> Survival Risk Protocol</h2>
+          </div>
+          <div class="telemetry-list">
+            <div class="telemetry-item">
+              <div class="telemetry-label"><i class="fa-solid fa-layer-group"></i> Max Portfolio Positions</div>
+              <div class="telemetry-value">5 Stocks Max</div>
+            </div>
+            <div class="telemetry-item">
+              <div class="telemetry-label"><i class="fa-solid fa-stop-watch"></i> Max Intraday Open</div>
+              <div class="telemetry-value">3 Positions</div>
+            </div>
+            <div class="telemetry-item">
+              <div class="telemetry-label"><i class="fa-solid fa-percent"></i> Tax Reserve Deduction</div>
+              <div class="telemetry-value">15% Net Profits</div>
+            </div>
+            <div class="telemetry-item">
+              <div class="telemetry-label"><i class="fa-solid fa-heart-pulse"></i> Agent Survival Status</div>
+              <div class="telemetry-value" style="color: var(--green-glow);">ALIVE</div>
+            </div>
+          </div>
         </div>
 
       </div>
+    </div>
 
-    </section>
+    <!-- SECTION 4: Stock Trader Details (Month-wise & Day-wise) -->
+    <div id="tab-trader" class="tab-content">
+      
+      <div class="section-card">
+        <div class="section-header">
+          <h2><i class="fa-solid fa-calendar-days"></i> Monthly Performance Summary (Month-Wise)</h2>
+          <span style="font-size: 0.8rem; color: var(--text-muted);">Historical Monthly Aggregates</span>
+        </div>
+        <div class="table-responsive">
+          <table>
+            <thead>
+              <tr>
+                <th>Month</th>
+                <th>Total Trades</th>
+                <th>Win Rate %</th>
+                <th>Gross P&L</th>
+                <th>Regulatory Charges</th>
+                <th>Net Realized P&L</th>
+              </tr>
+            </thead>
+            <tbody id="monthly-analytics-table-body">
+              <tr>
+                <td>2026-08 (Current)</td>
+                <td>0</td>
+                <td>0.0%</td>
+                <td>Rs. 0.00</td>
+                <td>Rs. 0.00</td>
+                <td class="pnl-positive">Rs. 0.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="section-card">
+        <div class="section-header">
+          <h2><i class="fa-solid fa-list-check"></i> Day-Wise Trade Log & Execution History</h2>
+          <span style="font-size: 0.8rem; color: var(--text-muted);">Daily Closed Positions Log</span>
+        </div>
+        <div class="table-responsive">
+          <table>
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Symbol</th>
+                <th>Strategy</th>
+                <th>Entry Price</th>
+                <th>Exit Price</th>
+                <th>Gross P&L</th>
+                <th>Charges</th>
+                <th>Net P&L</th>
+                <th>Outcome</th>
+              </tr>
+            </thead>
+            <tbody id="daily-logs-table-body">
+              <tr>
+                <td colspan="9" style="text-align: center; color: var(--text-muted); padding: 2rem;">
+                  <i class="fa-solid fa-clock-rotate-left" style="font-size: 1.5rem; margin-bottom: 0.5rem; display: block;"></i>
+                  No closed trades recorded yet for the current month.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+
+    <footer>
+      AINewsAnalyst — Automated Quantitative Stock News & Intelligence Engine | 
+      Public Dashboard Hosted on <a href="https://github.com/nayankumar-k/FinanceDashboard" target="_blank">FinanceDashboard</a>
+    </footer>
 
   </div>
 
   <script>
-    // Initialize Animated Equity Curve Chart
-    const ctxEquity = document.getElementById('equityChart').getContext('2d');
-    const gradientEquity = ctxEquity.createLinearGradient(0, 0, 0, 300);
-    gradientEquity.addColorStop(0, 'rgba(0, 242, 254, 0.35)');
-    gradientEquity.addColorStop(1, 'rgba(0, 242, 254, 0.0)');
+    function switchTab(tabId) {
+      document.querySelectorAll('.nav-tab').forEach(tab => tab.classList.remove('active'));
+      document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+      
+      event.currentTarget.classList.add('active');
+      document.getElementById('tab-' + tabId).classList.add('active');
+    }
 
-    new Chart(ctxEquity, {
-      type: 'line',
-      data: {
-        labels: ['Start', 'Day 1', 'Day 2', 'Day 3', 'Day 4', 'Day 5', 'Today'],
-        datasets: [{
-          label: 'Cumulative Net Worth (Rs.)',
-          data: [100000, 100000, 100000, 100000, 100000, 100000, 100000],
-          borderColor: '#00f2fe',
-          borderWidth: 3,
-          backgroundColor: gradientEquity,
-          fill: true,
-          tension: 0.4,
-          pointBackgroundColor: '#00f2fe',
-          pointBorderColor: '#ffffff',
-          pointRadius: 4,
-          pointHoverRadius: 7
-        }]
-      },
-      options: {
-        responsive: true,
-        maintainAspectRatio: false,
-        plugins: {
-          legend: { display: false }
-        },
-        scales: {
-          x: { grid: { color: 'rgba(255, 255, 255, 0.05)' }, ticks: { color: '#94a3b8' } },
-          y: { grid: { color: 'rgba(255, 255, 255, 0.05)' }, ticks: { color: '#94a3b8' } }
-        }
-      }
-    });
-
-    // Initialize Asset Allocation Donut Chart
-    const ctxAlloc = document.getElementById('allocationChart').getContext('2d');
-    new Chart(ctxAlloc, {
+    // Initialize Chart.js Doughnut Chart
+    const ctx = document.getElementById('allocationChart').getContext('2d');
+    const allocationChart = new Chart(ctx, {
       type: 'doughnut',
       data: {
-        labels: ['Liquid Cash', 'Active Stock Holdings'],
+        labels: ['Liquid Cash', 'Active Exposure'],
         datasets: [{
           data: [100.0, 0.0],
           backgroundColor: ['#00f2fe', '#7928ca'],
-          borderWidth: 0,
+          borderColor: '#0f1624',
+          borderWidth: 3,
           hoverOffset: 6
         }]
       },
@@ -549,7 +768,13 @@
         responsive: true,
         maintainAspectRatio: false,
         plugins: {
-          legend: { position: 'bottom', labels: { color: '#94a3b8', font: { family: 'Inter' } } }
+          legend: {
+            position: 'bottom',
+            labels: {
+              color: '#94a3b8',
+              font: { family: 'Outfit', size: 12, weight: '500' }
+            }
+          }
         },
         cutout: '72%'
       }
