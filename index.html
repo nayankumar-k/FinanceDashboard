@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AINewsAnalyst — Executive Visual Finance Dashboard</title>
+
+  <!-- Google Fonts: Outfit & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Chart.js for smooth visual analytics -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    :root {
+      --bg-dark: #0b0f19;
+      --bg-card: rgba(18, 24, 38, 0.75);
+      --bg-card-hover: rgba(28, 36, 56, 0.85);
+      --border-glow: rgba(0, 242, 254, 0.2);
+      --border-light: rgba(255, 255, 255, 0.08);
+      
+      --cyan-glow: #00f2fe;
+      --blue-glow: #4facfe;
+      --green-glow: #00e676;
+      --purple-glow: #7928ca;
+      --gold-glow: #ffb703;
+      --danger-glow: #ff5252;
+      
+      --text-main: #f1f5f9;
+      --text-muted: #94a3b8;
+      --text-dim: #64748b;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg-dark);
+      background-image: 
+        radial-gradient(circle at 15% 15%, rgba(0, 242, 254, 0.06) 0%, transparent 40%),
+        radial-gradient(circle at 85% 85%, rgba(121, 40, 202, 0.06) 0%, transparent 40%);
+      color: var(--text-main);
+      min-height: 100vh;
+      padding: 2rem;
+    }
+
+    /* Container Layout */
+    .dashboard-container {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1.75rem;
+    }
+
+    /* Executive Header Banner */
+    .header-banner {
+      background: var(--bg-card);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid var(--border-light);
+      border-radius: 20px;
+      padding: 1.75rem 2.25rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .header-banner::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: linear-gradient(90deg, var(--cyan-glow), var(--blue-glow), var(--purple-glow));
+    }
+
+    .header-title-group h1 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.85rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, #ffffff 30%, var(--cyan-glow));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .header-title-group p {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      margin-top: 0.35rem;
+    }
+
+    .live-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(0, 230, 118, 0.12);
+      color: var(--green-glow);
+      border: 1px solid rgba(0, 230, 118, 0.3);
+      padding: 0.45rem 1rem;
+      border-radius: 30px;
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+
+    .pulse-dot {
+      width: 8px;
+      height: 8px;
+      background-color: var(--green-glow);
+      border-radius: 50%;
+      box-shadow: 0 0 10px var(--green-glow);
+      animation: pulse 1.75s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(0, 230, 118, 0.7); }
+      70% { transform: scale(1); box-shadow: 0 0 0 8px rgba(0, 230, 118, 0); }
+      100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(0, 230, 118, 0); }
+    }
+
+    /* KPI Cards Grid */
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.25rem;
+    }
+
+    .kpi-card {
+      background: var(--bg-card);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--border-light);
+      border-radius: 18px;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: all 0.25s ease;
+      position: relative;
+    }
+
+    .kpi-card:hover {
+      transform: translateY(-3px);
+      border-color: var(--border-glow);
+      box-shadow: 0 12px 28px rgba(0, 242, 254, 0.08);
+    }
+
+    .kpi-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      font-weight: 500;
+    }
+
+    .kpi-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+    }
+
+    .icon-wallet { background: rgba(0, 242, 254, 0.12); color: var(--cyan-glow); }
+    .icon-invested { background: rgba(79, 172, 254, 0.12); color: var(--blue-glow); }
+    .icon-worth { background: rgba(121, 40, 202, 0.15); color: #b76e79; }
+    .icon-pnl { background: rgba(0, 230, 118, 0.12); color: var(--green-glow); }
+    .icon-win { background: rgba(255, 183, 3, 0.12); color: var(--gold-glow); }
+
+    .kpi-value {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.75rem;
+      font-weight: 700;
+      margin: 0.75rem 0 0.25rem 0;
+      color: var(--text-main);
+    }
+
+    .kpi-subtext {
+      font-size: 0.78rem;
+      color: var(--text-dim);
+    }
+
+    /* Main Section Grid */
+    .content-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 1.5rem;
+    }
+
+    @media (max-width: 1024px) {
+      .content-grid { grid-template-columns: 1fr; }
+    }
+
+    /* Glass Panels */
+    .glass-panel {
+      background: var(--bg-card);
+      backdrop-filter: blur(16px);
+      border: 1px solid var(--border-light);
+      border-radius: 20px;
+      padding: 1.75rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    .panel-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .panel-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.2rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    /* System Status Badges Box */
+    .system-status-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+
+    .status-item {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--border-light);
+      padding: 1rem;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+    }
+
+    .status-icon {
+      font-size: 1.2rem;
+    }
+
+    .status-details h4 {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    .status-details p {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-top: 0.15rem;
+    }
+
+    /* Holdings Table */
+    .table-responsive {
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.88rem;
+    }
+
+    th {
+      text-align: left;
+      padding: 0.85rem 1rem;
+      color: var(--text-muted);
+      font-weight: 600;
+      border-bottom: 1px solid var(--border-light);
+      background: rgba(255, 255, 255, 0.02);
+    }
+
+    td {
+      padding: 1rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+      color: var(--text-main);
+    }
+
+    tr:hover td {
+      background: rgba(255, 255, 255, 0.03);
+    }
+
+    .symbol-cell {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 700;
+      color: var(--cyan-glow);
+    }
+
+    .tag-horizon {
+      display: inline-block;
+      padding: 0.25rem 0.65rem;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: capitalize;
+    }
+
+    .tag-swing { background: rgba(79, 172, 254, 0.15); color: var(--blue-glow); }
+    .tag-intraday { background: rgba(0, 242, 254, 0.15); color: var(--cyan-glow); }
+    .tag-weekly { background: rgba(255, 183, 3, 0.15); color: var(--gold-glow); }
+
+    .pnl-positive { color: var(--green-glow); font-weight: 700; }
+    .pnl-negative { color: var(--danger-glow); font-weight: 700; }
+
+    /* Chart Containers */
+    .chart-container {
+      position: relative;
+      height: 280px;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="dashboard-container">
+
+    <!-- Executive Header Banner -->
+    <header class="header-banner">
+      <div class="header-title-group">
+        <h1><i class="fa-solid fa-chart-line"></i> AINewsAnalyst — Executive Finance Dashboard</h1>
+        <p>Institutional Market Intelligence & Quantitative Portfolio Tracker</p>
+      </div>
+      <div class="live-badge">
+        <div class="pulse-dot"></div>
+        <span>AI Engine & Google Sheets Synced</span>
+      </div>
+    </header>
+
+    <!-- Top KPI Cards -->
+    <section class="kpi-grid">
+      <div class="kpi-card">
+        <div class="kpi-header">
+          <span>Liquid Wallet Cash</span>
+          <div class="kpi-icon icon-wallet"><i class="fa-solid fa-wallet"></i></div>
+        </div>
+        <div class="kpi-value" id="kpi-cash">Rs. 2,845.85</div>
+        <div class="kpi-subtext">Available unallocated capital</div>
+      </div>
+
+      <div class="kpi-card">
+        <div class="kpi-header">
+          <span>Invested Capital</span>
+          <div class="kpi-icon icon-invested"><i class="fa-solid fa-layer-group"></i></div>
+        </div>
+        <div class="kpi-value" id="kpi-invested">Rs. 97,154.15</div>
+        <div class="kpi-subtext" id="kpi-open-count">4 Active Holding(s)</div>
+      </div>
+
+      <div class="kpi-card">
+        <div class="kpi-header">
+          <span>Portfolio Net Worth</span>
+          <div class="kpi-icon icon-worth"><i class="fa-solid fa-vault"></i></div>
+        </div>
+        <div class="kpi-value" id="kpi-net-worth">Rs. 100,000.00</div>
+        <div class="kpi-subtext">Liquid cash + Open market value</div>
+      </div>
+
+      <div class="kpi-card">
+        <div class="kpi-header">
+          <span>Cumulative Realized P&L</span>
+          <div class="kpi-icon icon-pnl"><i class="fa-solid fa-trophy"></i></div>
+        </div>
+        <div class="kpi-value pnl-positive" id="kpi-pnl">Rs. +0.00</div>
+        <div class="kpi-subtext" id="kpi-win-rate">Win Rate: 0.0% (0 Closed)</div>
+      </div>
+    </section>
+
+    <!-- Main Content Grid -->
+    <section class="content-grid">
+      
+      <!-- Left Column: Equity Curve & Active Holdings -->
+      <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+        
+        <!-- Equity Curve Chart Panel -->
+        <div class="glass-panel">
+          <div class="panel-header">
+            <div class="panel-title"><i class="fa-solid fa-chart-area" style="color: var(--cyan-glow);"></i> Cumulative Portfolio Equity Curve</div>
+            <span style="font-size: 0.8rem; color: var(--text-muted);">Real-time Growth Trajectory</span>
+          </div>
+          <div class="chart-container">
+            <canvas id="equityChart"></canvas>
+          </div>
+        </div>
+
+        <!-- Active Holdings Table Panel -->
+        <div class="glass-panel">
+          <div class="panel-header">
+            <div class="panel-title"><i class="fa-solid fa-cubes" style="color: var(--blue-glow);"></i> Active Stock Holdings Breakdown</div>
+            <span class="live-badge" style="padding: 0.25rem 0.75rem; font-size: 0.75rem;">Live Market Quotes</span>
+          </div>
+          <div class="table-responsive">
+            <table>
+              <thead>
+                <tr>
+                  <th>Symbol</th>
+                  <th>Company</th>
+                  <th>Strategy</th>
+                  <th>Entry Price</th>
+                  <th>Current Price</th>
+                  <th>Target</th>
+                  <th>Stop Loss</th>
+                  <th>Unrealized P&L</th>
+                </tr>
+              </thead>
+              <tbody id="holdings-table-body">
+
+          <tr>
+            <td class="symbol-cell">VAML</td>
+            <td>Vedanta Aluminium Metal Limited</td>
+            <td><span class="tag-horizon tag-swing">Swing</span></td>
+            <td>Rs. 465.75</td>
+            <td>Rs. 465.75</td>
+            <td>Rs. 493.70</td>
+            <td>Rs. 447.12</td>
+            <td class="pnl-positive">Rs. +0.00</td>
+          </tr>
+        
+
+          <tr>
+            <td class="symbol-cell">SKYGOLD</td>
+            <td>SKY GOLD AND DIAMONDS LIMITED</td>
+            <td><span class="tag-horizon tag-swing">Swing</span></td>
+            <td>Rs. 679.65</td>
+            <td>Rs. 679.65</td>
+            <td>Rs. 720.43</td>
+            <td>Rs. 652.46</td>
+            <td class="pnl-positive">Rs. +0.00</td>
+          </tr>
+        
+
+          <tr>
+            <td class="symbol-cell">MCX</td>
+            <td>Multi Commodity Exchange of India Limited</td>
+            <td><span class="tag-horizon tag-swing">Swing</span></td>
+            <td>Rs. 2617.00</td>
+            <td>Rs. 2617.00</td>
+            <td>Rs. 2774.02</td>
+            <td>Rs. 2512.32</td>
+            <td class="pnl-positive">Rs. +0.00</td>
+          </tr>
+        
+
+          <tr>
+            <td class="symbol-cell">MAPMYINDIA</td>
+            <td>C.E. Info Systems Limited</td>
+            <td><span class="tag-horizon tag-swing">Swing</span></td>
+            <td>Rs. 1063.00</td>
+            <td>Rs. 1063.00</td>
+            <td>Rs. 1126.78</td>
+            <td>Rs. 1020.48</td>
+            <td class="pnl-positive">Rs. +0.00</td>
+          </tr>
+        
+          </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right Column: System Status & Donut Allocation -->
+      <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+        
+        <!-- System Health Telemetry Box -->
+        <div class="glass-panel">
+          <div class="panel-header">
+            <div class="panel-title"><i class="fa-solid fa-microchip" style="color: var(--green-glow);"></i> Operational Telemetry</div>
+          </div>
+          <div class="system-status-grid">
+            <div class="status-item">
+              <i class="fa-solid fa-brain status-icon" style="color: var(--cyan-glow);"></i>
+              <div class="status-details">
+                <h4>AI Gemini Engine</h4>
+                <p>gemini-2.0-flash</p>
+              </div>
+            </div>
+            <div class="status-item">
+              <i class="fa-solid fa-key status-icon" style="color: var(--gold-glow);"></i>
+              <div class="status-details">
+                <h4>API Key Pool</h4>
+                <p>3 Keys Active</p>
+              </div>
+            </div>
+            <div class="status-item">
+              <i class="fa-solid fa-rss status-icon" style="color: var(--blue-glow);"></i>
+              <div class="status-details">
+                <h4>RSS Feeds Network</h4>
+                <p>9/9 Operational</p>
+              </div>
+            </div>
+            <div class="status-item">
+              <i class="fa-solid fa-database status-icon" style="color: var(--green-glow);"></i>
+              <div class="status-details">
+                <h4>Google Sheets Sync</h4>
+                <p>5 Tabs Synced</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Donut Allocation Chart Panel -->
+        <div class="glass-panel">
+          <div class="panel-header">
+            <div class="panel-title"><i class="fa-solid fa-chart-pie" style="color: var(--gold-glow);"></i> Asset Allocation</div>
+          </div>
+          <div class="chart-container" style="height: 220px;">
+            <canvas id="allocationChart"></canvas>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+  </div>
+
+  <script>
+    // Initialize Animated Equity Curve Chart
+    const ctxEquity = document.getElementById('equityChart').getContext('2d');
+    const gradientEquity = ctxEquity.createLinearGradient(0, 0, 0, 300);
+    gradientEquity.addColorStop(0, 'rgba(0, 242, 254, 0.35)');
+    gradientEquity.addColorStop(1, 'rgba(0, 242, 254, 0.0)');
+
+    new Chart(ctxEquity, {
+      type: 'line',
+      data: {
+        labels: ['Start', 'Day 1', 'Day 2', 'Day 3', 'Day 4', 'Day 5', 'Today'],
+        datasets: [{
+          label: 'Cumulative Net Worth (Rs.)',
+          data: [100000, 100000, 100000, 100000, 100000, 100000, 100000],
+          borderColor: '#00f2fe',
+          borderWidth: 3,
+          backgroundColor: gradientEquity,
+          fill: true,
+          tension: 0.4,
+          pointBackgroundColor: '#00f2fe',
+          pointBorderColor: '#ffffff',
+          pointRadius: 4,
+          pointHoverRadius: 7
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { display: false }
+        },
+        scales: {
+          x: { grid: { color: 'rgba(255, 255, 255, 0.05)' }, ticks: { color: '#94a3b8' } },
+          y: { grid: { color: 'rgba(255, 255, 255, 0.05)' }, ticks: { color: '#94a3b8' } }
+        }
+      }
+    });
+
+    // Initialize Asset Allocation Donut Chart
+    const ctxAlloc = document.getElementById('allocationChart').getContext('2d');
+    new Chart(ctxAlloc, {
+      type: 'doughnut',
+      data: {
+        labels: ['Liquid Cash', 'Active Stock Holdings'],
+        datasets: [{
+          data: [2.8, 97.2],
+          backgroundColor: ['#00f2fe', '#7928ca'],
+          borderWidth: 0,
+          hoverOffset: 6
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { position: 'bottom', labels: { color: '#94a3b8', font: { family: 'Inter' } } }
+        },
+        cutout: '72%'
+      }
+    });
+  </script>
+</body>
+</html>
