@@ -1,0 +1,23 @@
+{
+  "updated_at": "06 Aug 2026, 12:38 PM IST",
+  "status": "LIVE AGENT ACTIVE",
+  "is_alive": true,
+  "summary": {
+    "wallet_balance": 100000.0,
+    "allocated_cash": 0.0,
+    "unrealized_pnl": 0.0,
+    "net_worth": 100000.0,
+    "cumulative_pnl": 0.0,
+    "active_positions_count": 0,
+    "cash_pct": 100.0,
+    "holdings_pct": 0.0
+  },
+  "today_calls": [],
+  "telemetry": {
+    "rss_feeds": "10 Live Feeds",
+    "gemini_keys": "3 Active Keys",
+    "liquidity_filtered": 0,
+    "sheets_status": "Synced"
+  },
+  "alerts_log": []
+}
