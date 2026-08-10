@@ -1,12 +1,12 @@
 {
-  "updated_at": "07 Aug 2026, 03:15 PM IST",
+  "updated_at": "10 Aug 2026, 08:48 AM IST",
   "status": "LIVE AGENT ACTIVE",
   "is_alive": true,
   "summary": {
     "wallet_balance": 899.46,
     "allocated_cash": 73074.41,
-    "unrealized_pnl": -136.74184814452997,
-    "net_worth": 73837.12815185548,
+    "unrealized_pnl": 0.0,
+    "net_worth": 73973.87000000001,
     "cumulative_pnl": -1026.13,
     "active_positions_count": 5,
     "cash_pct": 1.2,
@@ -20,12 +20,12 @@
       "trade_recommendation": "Buy",
       "horizon": "swing",
       "entry_price": 205.51,
-      "current_price": 210.07000732421875,
+      "current_price": 205.51,
       "target_price": 222.0,
       "stop_loss": 201.05,
       "quantity": 71,
       "allocated_cash": 14591.21,
-      "unrealized_pnl": 323.7605200195319,
+      "unrealized_pnl": 0.0,
       "confidence_score": "8",
       "tech_score": "7",
       "fund_score": "6",
@@ -46,12 +46,12 @@
       "trade_recommendation": "Buy",
       "horizon": "swing",
       "entry_price": 262.2,
-      "current_price": 257.79998779296875,
+      "current_price": 262.2,
       "target_price": 278.89,
       "stop_loss": 252.58,
       "quantity": 56,
       "allocated_cash": 14683.2,
-      "unrealized_pnl": -246.40068359374936,
+      "unrealized_pnl": 0.0,
       "confidence_score": "8",
       "tech_score": "7",
       "fund_score": "6",
@@ -72,12 +72,12 @@
       "trade_recommendation": "Buy",
       "horizon": "swing",
       "entry_price": 446.0,
-      "current_price": 438.79998779296875,
+      "current_price": 446.0,
       "target_price": 470.64,
       "stop_loss": 426.24,
       "quantity": 33,
       "allocated_cash": 14718.0,
-      "unrealized_pnl": -237.60040283203125,
+      "unrealized_pnl": 0.0,
       "confidence_score": "8",
       "tech_score": "7",
       "fund_score": "6",
@@ -98,12 +98,12 @@
       "trade_recommendation": "Buy",
       "horizon": "swing",
       "entry_price": 560.0,
-      "current_price": 550.0999755859375,
+      "current_price": 560.0,
       "target_price": 574.94,
       "stop_loss": 520.7,
       "quantity": 26,
       "allocated_cash": 14560.0,
-      "unrealized_pnl": -257.400634765625,
+      "unrealized_pnl": 0.0,
       "confidence_score": "8",
       "tech_score": "7",
       "fund_score": "6",
@@ -124,12 +124,12 @@
       "trade_recommendation": "Buy",
       "horizon": "swing",
       "entry_price": 274.0,
-      "current_price": 279.29998779296875,
+      "current_price": 274.0,
       "target_price": 298.81,
       "stop_loss": 270.62,
       "quantity": 53,
       "allocated_cash": 14522.0,
-      "unrealized_pnl": 280.89935302734375,
+      "unrealized_pnl": 0.0,
       "confidence_score": "8",
       "tech_score": "7",
       "fund_score": "6",
@@ -150,5 +150,36 @@
     "liquidity_filtered": 0,
     "sheets_status": "Synced"
   },
-  "alerts_log": []
+  "alerts_log": [
+    {
+      "timestamp": "10 Aug 2026, 08:48 AM IST",
+      "part": 1,
+      "message": "\ud83c\uddee\ud83c\uddf3 Daily Indian Market News Digest & Super AI Analyst\nGenerated: 10 Aug 2026, 08:47 AM IST\nConfidence Threshold: >= 7/10\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\n1. Siemens Energy India Limited (ENRIN)\n\ud83d\udcf0 News: Nifty at 25,100 next? Anand James explains the level bulls must first conquer\n\ud83d\udccc Catalyst Impact: Negative \u2014 Quantitative analysis for Siemens Energy India Limited: catalyst impact is negative.\n\u2b50 Scores: Overall: 7/10 | Tech: 8/10 | Fund: 7/10 | Catalyst: 5/10\n\ud83d\udee1\ufe0f Risk Profile: Risk Rating: High | R:R Ratio: 1:1.5\n\ud83d\udcc8 Fundamentals: Fundamental valuation score: 7/10.\n\ud83d\udcca Technicals: 14-day technical score: 8/10.\n\ud83e\udd1d Consensus: Quantitative score: 7/10.\n\ud83d\udcc8 Pattern: Bearish News Reversal\n\u23f1\ufe0f Strategy: \ud83d\udd04 Intraday | Hold Days: 1\n\ud83d\udca1 Trade Setup (Sell):\n   \u2022 Entry Price: 3648.80\n   \u2022 Target Price: N/A\n   \u2022 Stop Loss: N/A\n\ud83c\udfaf Super Analyst Rationale: Quantitative rating score 7/10. Horizon: intraday.\n\ud83d\udd17 Read Full Article\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\n2. Mangalam Drugs And Organics Limited (MANGALAM)\n\ud83d\udcf0 News: Dhoot Transmission IPO opens today; GMP signals 30% listing gains \u2014 Should you subscribe?\n\ud83d\udccc Catalyst Impact: Positive \u2014 Quantitative analysis for Mangalam Drugs And Organics Limited: catalyst impact is positive.\n\u2b50 Scores: Overall: 7/10 | Tech: 7/10 | Fund: 6/10 | Catalyst: 8/10\n\ud83d\udee1\ufe0f Risk Profile: Risk Rating: Medium | R:R Ratio: 1:2.0\n\ud83d\udcc8 Fundamentals: Fundamental valuation score: 6/10.\n\ud83d\udcca Technicals: 14-day technical score: 7/10.\n\ud83e\udd1d Consensus: Quantitative score: 7/10.\n\ud83d\udcc8 Pattern: Bullish News &amp; Momentum\n\u23f1\ufe0f Strategy: \ud83d\udcca Swing (2-3d) | Hold Days: 2\n\ud83d\udca1 Trade Setup (Buy):\n   \u2022 Entry Price: 27.19\n   \u2022 Target Price: 28.82\n   \u2022 Stop Loss: 26.10\n   \u2022 Exit Strategy: 28.82\n\ud83c\udfaf Super Analyst Rationale: Quantitative rating score 7/10. Horizon: swing.\n\ud83d\udd17 Read Full Article\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501"
+    },
+    {
+      "timestamp": "10 Aug 2026, 08:48 AM IST",
+      "part": 2,
+      "message": "\ud83c\uddee\ud83c\uddf3 Daily Indian Market News Digest & AI Analysis (Contd.)\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\n3. Oil India Limited (OIL)\n\ud83d\udcf0 Synthesized Intelligence (7 Sources): Oil Price Today (August 10): Crude oil rises to $85 amid Hormuz worries as attacks continue. What are experts saying? | Global Market Today: Asia stocks edge higher, oil up amid Gulf confusion | Will Nifty, Sensex extend losses on Monday? Middle East tensions, Q1 results and 3 other factors to steer D-St this week\n\ud83d\udccc Catalyst Impact: Positive \u2014 Quantitative analysis for Oil India Limited: catalyst impact is positive.\n\u2b50 Scores: Overall: 7/10 | Tech: 5/10 | Fund: 7/10 | Catalyst: 9/10\n\ud83d\udee1\ufe0f Risk Profile: Risk Rating: Medium | R:R Ratio: 1:2.0\n\ud83d\udcc8 Fundamentals: Fundamental valuation score: 7/10.\n\ud83d\udcca Technicals: 14-day technical score: 5/10.\n\ud83e\udd1d Consensus: Quantitative score: 7/10.\n\ud83d\udcc8 Pattern: Bullish News &amp; Momentum\n\u23f1\ufe0f Strategy: \ud83d\udcca Swing (2-3d) | Hold Days: 2\n\ud83d\udca1 Trade Setup (Buy):\n   \u2022 Entry Price: 442.80\n   \u2022 Target Price: 469.37\n   \u2022 Stop Loss: 425.09\n   \u2022 Exit Strategy: 469.37\n\ud83c\udfaf Super Analyst Rationale: Quantitative rating score 7/10. Horizon: swing.\n\ud83d\udd17 Sources: Source 1 | Source 2 | Source 3 | Source 4 | Source 5 | Source 6 | Source 7\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501"
+    },
+    {
+      "timestamp": "10 Aug 2026, 08:48 AM IST",
+      "part": 3,
+      "message": "\ud83c\uddee\ud83c\uddf3 Daily Indian Market News Digest & AI Analysis (Contd.)\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\n4. Updater Services Limited (UDS)\n\ud83d\udcf0 Synthesized Intelligence (3 Sources): Sensex Today | Stock Market LIVE Updates: GIFT Nifty signals a muted start; Asian shares trade higher | World News Today Live Updates on August 10, 2026 : Canada wildfire: 80-year-old woman killed in British Columbia\u2019s Summerland as raging inferno forces mass evacuation | US-Iran war LIVE updates: Houthi attacks in Yemen&#x27;s Mocha kill 7, injure 30 including military personnel\n\ud83d\udccc Catalyst Impact: Neutral \u2014 Quantitative analysis for Updater Services Limited: catalyst impact is neutral.\n\u2b50 Scores: Overall: 7/10 | Tech: 8/10 | Fund: 7/10 | Catalyst: 5/10\n\ud83d\udee1\ufe0f Risk Profile: Risk Rating: Low | R:R Ratio: N/A\n\ud83d\udcc8 Fundamentals: Fundamental valuation score: 7/10.\n\ud83d\udcca Technicals: 14-day technical score: 8/10.\n\ud83e\udd1d Consensus: Quantitative score: 7/10.\n\ud83d\udcc8 Pattern: Consolidation / Mixed\n\ud83c\udfaf Super Analyst Rationale: Quantitative rating score 7/10. Horizon: hold.\n\ud83d\udd17 Sources: Source 1 | Source 2 | Source 3\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\n5. Vital Chemtech Limited (VITAL)\n\ud83d\udcf0 News: Oil rises on uncertainty over reopening of Hormuz\n\ud83d\udccc Catalyst Impact: Neutral \u2014 Quantitative analysis for Vital Chemtech Limited: catalyst impact is neutral.\n\u2b50 Scores: Overall: 7/10 | Tech: 8/10 | Fund: 7/10 | Catalyst: 5/10\n\ud83d\udee1\ufe0f Risk Profile: Risk Rating: Low | R:R Ratio: N/A\n\ud83d\udcc8 Fundamentals: Fundamental valuation score: 7/10.\n\ud83d\udcca Technicals: 14-day technical score: 8/10.\n\ud83e\udd1d Consensus: Quantitative score: 7/10.\n\ud83d\udcc8 Pattern: Consolidation / Mixed\n\ud83c\udfaf Super Analyst Rationale: Quantitative rating score 7/10. Horizon: hold.\n\ud83d\udd17 Read Full Article\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\n6. Suryoday Small Finance Bank Limited (SURYODAY)\n\ud83d\udcf0 News: As banks shrink microfinance books, bigger MFIs prepare to grab the gap\n\ud83d\udccc Catalyst Impact: Positive \u2014 Quantitative analysis for Suryoday Small Finance Bank Limited: catalyst impact is positive.\n\u2b50 Scores: Overall: 7/10 | Tech: 6/10 | Fund: 7/10 | Catalyst: 9/10\n\ud83d\udee1\ufe0f Risk Profile: Risk Rating: Medium | R:R Ratio: 1:2.0\n\ud83d\udcc8 Fundamentals: Fundamental valuation score: 7/10.\n\ud83d\udcca Technicals: 14-day technical score: 6/10.\n\ud83e\udd1d Consensus: Quantitative score: 7/10.\n\ud83d\udcc8 Pattern: Bullish News &amp; Momentum\n\u23f1\ufe0f Strategy: \ud83d\udcca Swing (2-3d) | Hold Days: 2\n\ud83d\udca1 Trade Setup (Buy):\n   \u2022 Entry Price: 162.02\n   \u2022 Target Price: 171.74\n   \u2022 Stop Loss: 155.54\n   \u2022 Exit Strategy: 171.74\n\ud83c\udfaf Super Analyst Rationale: Quantitative rating score 7/10. Horizon: swing.\n\ud83d\udd17 Read Full Article\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501"
+    },
+    {
+      "timestamp": "10 Aug 2026, 08:48 AM IST",
+      "part": 4,
+      "message": "\ud83c\uddee\ud83c\uddf3 Daily Indian Market News Digest & AI Analysis (Contd.)\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\n7. State Bank of India (SBIN)\n\ud83d\udcf0 Synthesized Intelligence (4 Sources): Stocks in news: Titan, SBI, Ola Electric, Astra Microwave and Hindalco | Ahead of Market: 10 things that will decide D-Street action on Monday | Stocks to watch: Vodafone Idea, SBI, Titan among shares in focus today; check list here\n\ud83d\udccc Catalyst Impact: Positive \u2014 Quantitative analysis for State Bank of India: catalyst impact is positive.\n\u2b50 Scores: Overall: 8/10 | Tech: 8/10 | Fund: 7/10 | Catalyst: 9/10\n\ud83d\udee1\ufe0f Risk Profile: Risk Rating: Medium | R:R Ratio: 1:2.0\n\ud83d\udcc8 Fundamentals: Fundamental valuation score: 7/10.\n\ud83d\udcca Technicals: 14-day technical score: 8/10.\n\ud83e\udd1d Consensus: Quantitative score: 8/10.\n\ud83d\udcc8 Pattern: Bullish News &amp; Momentum\n\u23f1\ufe0f Strategy: \ud83d\udcca Swing (2-3d) | Hold Days: 2\n\ud83d\udca1 Trade Setup (Buy):\n   \u2022 Entry Price: 1097.20\n   \u2022 Target Price: 1163.03\n   \u2022 Stop Loss: 1053.31\n   \u2022 Exit Strategy: 1163.03\n\ud83c\udfaf Super Analyst Rationale: Quantitative rating score 8/10. Horizon: swing.\n\ud83d\udd17 Sources: Source 1 | Source 2 | Source 3 | Source 4\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\n8. Mahindra &amp; Mahindra Limited (M&amp;M)\n\ud83d\udcf0 News: Nifty above 24,500, but volatility clouds path to 25,000: Analysts\n\ud83d\udccc Catalyst Impact: Positive \u2014 Quantitative analysis for Mahindra &amp; Mahindra Limited: catalyst impact is positive.\n\u2b50 Scores: Overall: 7/10 | Tech: 6/10 | Fund: 7/10 | Catalyst: 9/10\n\ud83d\udee1\ufe0f Risk Profile: Risk Rating: Medium | R:R Ratio: 1:2.0\n\ud83d\udcc8 Fundamentals: Fundamental valuation score: 7/10.\n\ud83d\udcca Technicals: 14-day technical score: 6/10.\n\ud83e\udd1d Consensus: Quantitative score: 7/10.\n\ud83d\udcc8 Pattern: Bullish News &amp; Momentum\n\u23f1\ufe0f Strategy: \ud83d\udcca Swing (2-3d) | Hold Days: 2\n\ud83d\udca1 Trade Setup (Buy):\n   \u2022 Entry Price: 3502.00\n   \u2022 Target Price: 3712.12\n   \u2022 Stop Loss: 3361.92\n   \u2022 Exit Strategy: 3712.12\n\ud83c\udfaf Super Analyst Rationale: Quantitative rating score 7/10. Horizon: swing.\n\ud83d\udd17 Read Full Article\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501"
+    },
+    {
+      "timestamp": "10 Aug 2026, 08:48 AM IST",
+      "part": 5,
+      "message": "\ud83c\uddee\ud83c\uddf3 Daily Indian Market News Digest & AI Analysis (Contd.)\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\n9. The Federal Bank  Limited (FEDERALBNK)\n\ud83d\udcf0 Synthesized Intelligence (2 Sources): Is &#x27;Trumpflation&#x27; real? Why Wall Street fears this could be a reason for stock market crash | Centre extends ED Director Rahul Navin&#x27;s tenure by one year till August 2027\n\ud83d\udccc Catalyst Impact: Positive \u2014 Quantitative analysis for The Federal Bank  Limited: catalyst impact is positive.\n\u2b50 Scores: Overall: 8/10 | Tech: 7/10 | Fund: 7/10 | Catalyst: 9/10\n\ud83d\udee1\ufe0f Risk Profile: Risk Rating: Medium | R:R Ratio: 1:2.0\n\ud83d\udcc8 Fundamentals: Fundamental valuation score: 7/10.\n\ud83d\udcca Technicals: 14-day technical score: 7/10.\n\ud83e\udd1d Consensus: Quantitative score: 8/10.\n\ud83d\udcc8 Pattern: Bullish News &amp; Momentum\n\u23f1\ufe0f Strategy: \ud83d\udcca Swing (2-3d) | Hold Days: 2\n\ud83d\udca1 Trade Setup (Buy):\n   \u2022 Entry Price: 356.25\n   \u2022 Target Price: 377.62\n   \u2022 Stop Loss: 342.00\n   \u2022 Exit Strategy: 377.62\n\ud83c\udfaf Super Analyst Rationale: Quantitative rating score 8/10. Horizon: swing.\n\ud83d\udd17 Sources: Source 1 | Source 2\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\n10. All Time Plastics Limited (ALLTIME)\n\ud83d\udcf0 News: Europe&#x27;s hot stock markets catch global investors&#x27; eye\n\ud83d\udccc Catalyst Impact: Positive \u2014 Quantitative analysis for All Time Plastics Limited: catalyst impact is positive.\n\u2b50 Scores: Overall: 7/10 | Tech: 5/10 | Fund: 6/10 | Catalyst: 9/10\n\ud83d\udee1\ufe0f Risk Profile: Risk Rating: Medium | R:R Ratio: 1:2.0\n\ud83d\udcc8 Fundamentals: Fundamental valuation score: 6/10.\n\ud83d\udcca Technicals: 14-day technical score: 5/10.\n\ud83e\udd1d Consensus: Quantitative score: 7/10.\n\ud83d\udcc8 Pattern: Bullish News &amp; Momentum\n\u23f1\ufe0f Strategy: \ud83d\udcca Swing (2-3d) | Hold Days: 2\n\ud83d\udca1 Trade Setup (Buy):\n   \u2022 Entry Price: 219.59\n   \u2022 Target Price: 232.77\n   \u2022 Stop Loss: 210.81\n   \u2022 Exit Strategy: 232.77\n\ud83c\udfaf Super Analyst Rationale: Quantitative rating score 7/10. Horizon: swing.\n\ud83d\udd17 Read Full Article\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\n11. Gujarat Narmada Valley Fertilizers and Chemicals Limited (GNFC)\n\ud83d\udcf0 News: FPIs turn buyers in IT stocks for first time in 2026, invest Rs 3,358 crore in July\n\ud83d\udccc Catalyst Impact: Mixed \u2014 Quantitative analysis for Gujarat Narmada Valley Fertilizers and Chemicals Limited: catalyst impact is mixed.\n\u2b50 Scores: Overall: 7/10 | Tech: 8/10 | Fund: 7/10 | Catalyst: 6/10\n\ud83d\udee1\ufe0f Risk Profile: Risk Rating: Low | R:R Ratio: N/A\n\ud83d\udcc8 Fundamentals: Fundamental valuation score: 7/10.\n\ud83d\udcca Technicals: 14-day technical score: 8/10.\n\ud83e\udd1d Consensus: Quantitative score: 7/10.\n\ud83d\udcc8 Pattern: Consolidation / Mixed\n\ud83c\udfaf Super Analyst Rationale: Quantitative rating score 7/10. Horizon: hold.\n\ud83d\udd17 Read Full Article\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501"
+    },
+    {
+      "timestamp": "10 Aug 2026, 08:48 AM IST",
+      "part": 6,
+      "message": "\ud83c\uddee\ud83c\uddf3 Daily Indian Market News Digest & AI Analysis (Contd.)\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\n12. Jindal Saw Limited (JINDALSAW)\n\ud83d\udcf0 News: Market Trading Guide: Jindal Saw among 2 stock recommendations for Monday\n\ud83d\udccc Catalyst Impact: Neutral \u2014 Quantitative analysis for Jindal Saw Limited: catalyst impact is neutral.\n\u2b50 Scores: Overall: 7/10 | Tech: 8/10 | Fund: 7/10 | Catalyst: 5/10\n\ud83d\udee1\ufe0f Risk Profile: Risk Rating: Low | R:R Ratio: N/A\n\ud83d\udcc8 Fundamentals: Fundamental valuation score: 7/10.\n\ud83d\udcca Technicals: 14-day technical score: 8/10.\n\ud83e\udd1d Consensus: Quantitative score: 7/10.\n\ud83d\udcc8 Pattern: Consolidation / Mixed\n\ud83c\udfaf Super Analyst Rationale: Quantitative rating score 7/10. Horizon: hold.\n\ud83d\udd17 Read Full Article\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501"
+    }
+  ]
 }
