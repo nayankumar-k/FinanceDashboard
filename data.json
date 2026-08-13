@@ -1,16 +1,16 @@
 {
-  "updated_at": "12 Aug 2026, 03:16 PM IST",
+  "updated_at": "13 Aug 2026, 08:47 AM IST",
   "status": "LIVE AGENT ACTIVE",
   "is_alive": true,
   "summary": {
-    "wallet_balance": 42595.78,
-    "allocated_cash": 31851.2,
-    "unrealized_pnl": 175.14951782226524,
-    "net_worth": 74622.12951782226,
+    "wallet_balance": 258.08,
+    "allocated_cash": 74188.90008850097,
+    "unrealized_pnl": 0.0,
+    "net_worth": 74446.98008850098,
     "cumulative_pnl": -553.02,
-    "active_positions_count": 2,
-    "cash_pct": 57.1,
-    "holdings_pct": 42.9
+    "active_positions_count": 5,
+    "cash_pct": 0.3,
+    "holdings_pct": 99.7
   },
   "today_calls": [
     {
@@ -20,12 +20,12 @@
       "trade_recommendation": "Buy",
       "horizon": "swing",
       "entry_price": 464.3,
-      "current_price": 471.8999938964844,
+      "current_price": 464.3,
       "target_price": 498.57,
       "stop_loss": 451.54,
       "quantity": 34,
       "allocated_cash": 15786.2,
-      "unrealized_pnl": 258.39979248046836,
+      "unrealized_pnl": 0.0,
       "confidence_score": "8",
       "tech_score": "7",
       "fund_score": "6",
@@ -46,12 +46,12 @@
       "trade_recommendation": "Buy",
       "horizon": "swing",
       "entry_price": 357.0,
-      "current_price": 355.1499938964844,
+      "current_price": 357.0,
       "target_price": 379.85,
       "stop_loss": 344.02,
       "quantity": 45,
       "allocated_cash": 16065.0,
-      "unrealized_pnl": -83.25027465820312,
+      "unrealized_pnl": 0.0,
       "confidence_score": "8",
       "tech_score": "7",
       "fund_score": "6",
@@ -64,6 +64,84 @@
       "source_headline": "NSE Market Intelligence Dossier",
       "news_sentiment": "Positive",
       "catalyst_reason": "Institutional Catalyst & Technical Setup"
+    },
+    {
+      "symbol": "GROWW",
+      "company_name": "Billionbrains Garage Ventures Limited",
+      "action": "Buy Setup",
+      "trade_recommendation": "Buy",
+      "horizon": "swing",
+      "entry_price": 193.6999969482422,
+      "current_price": 193.6999969482422,
+      "target_price": 209.12,
+      "stop_loss": 189.39,
+      "quantity": 73,
+      "allocated_cash": 14140.09977722168,
+      "unrealized_pnl": 0.0,
+      "confidence_score": 8,
+      "tech_score": "7",
+      "fund_score": "6",
+      "catalyst_score": "8",
+      "risk_reward": "1:2.0",
+      "pattern_type": "Bullish News & Momentum",
+      "hold_days": 2,
+      "days_held": 0,
+      "expected_exit_date": "2026-08-17",
+      "source_headline": "NSE Market Intelligence Dossier",
+      "news_sentiment": "Positive",
+      "catalyst_reason": "Institutional Catalyst & Technical Setup"
+    },
+    {
+      "symbol": "IOC",
+      "company_name": "Indian Oil Corporation Limited",
+      "action": "Buy Setup",
+      "trade_recommendation": "Buy",
+      "horizon": "swing",
+      "entry_price": 140.6300048828125,
+      "current_price": 140.6300048828125,
+      "target_price": 149.04,
+      "stop_loss": 134.98,
+      "quantity": 100,
+      "allocated_cash": 14063.00048828125,
+      "unrealized_pnl": 0.0,
+      "confidence_score": 7,
+      "tech_score": "7",
+      "fund_score": "6",
+      "catalyst_score": "8",
+      "risk_reward": "1:2.0",
+      "pattern_type": "Bullish News & Momentum",
+      "hold_days": 2,
+      "days_held": 0,
+      "expected_exit_date": "2026-08-17",
+      "source_headline": "NSE Market Intelligence Dossier",
+      "news_sentiment": "Positive",
+      "catalyst_reason": "Institutional Catalyst & Technical Setup"
+    },
+    {
+      "symbol": "ADVANCE",
+      "company_name": "Advance Agrolife Limited",
+      "action": "Buy Setup",
+      "trade_recommendation": "Buy",
+      "horizon": "swing",
+      "entry_price": 121.8499984741211,
+      "current_price": 121.8499984741211,
+      "target_price": 129.54,
+      "stop_loss": 117.32,
+      "quantity": 116,
+      "allocated_cash": 14134.599822998047,
+      "unrealized_pnl": 0.0,
+      "confidence_score": 7,
+      "tech_score": "7",
+      "fund_score": "6",
+      "catalyst_score": "8",
+      "risk_reward": "1:2.0",
+      "pattern_type": "Bullish News & Momentum",
+      "hold_days": 2,
+      "days_held": 0,
+      "expected_exit_date": "2026-08-17",
+      "source_headline": "NSE Market Intelligence Dossier",
+      "news_sentiment": "Positive",
+      "catalyst_reason": "Institutional Catalyst & Technical Setup"
     }
   ],
   "telemetry": {
@@ -72,5 +150,36 @@
     "liquidity_filtered": 0,
     "sheets_status": "Synced"
   },
-  "alerts_log": []
+  "alerts_log": [
+    {
+      "timestamp": "13 Aug 2026, 08:47 AM IST",
+      "part": 1,
+      "message": "\ud83c\uddee\ud83c\uddf3 Daily Indian Market News Digest & Super AI Analyst\nGenerated: 13 Aug 2026, 08:47 AM IST\nConfidence Threshold: >= 7/10\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\n1. Anand Rathi Share and Stock Brokers Limited (ARSSBL)\n\ud83d\udcf0 Synthesized Intelligence (2 Sources): Milky Mist Dairy Food Day 3: GMP signals to 15% listing upside \u2014 Should you subscribe? | Nifty Outlook: Feroze Azeez Sees Upside Towards 26,350 Amid Strong Domestic Flows, MF Inflows\n\ud83d\udccc Catalyst Impact: Positive \u2014 Quantitative analysis for Anand Rathi Share and Stock Brokers Limited: catalyst impact is positive.\n\u2b50 Scores: Overall: 7/10 | Tech: 5/10 | Fund: 7/10 | Catalyst: 9/10\n\ud83d\udee1\ufe0f Risk Profile: Risk Rating: Medium | R:R Ratio: 1:2.0\n\ud83d\udcc8 Fundamentals: Fundamental valuation score: 7/10.\n\ud83d\udcca Technicals: 14-day technical score: 5/10.\n\ud83e\udd1d Consensus: Quantitative score: 7/10.\n\ud83d\udcc8 Pattern: Bullish News &amp; Momentum\n\u23f1\ufe0f Strategy: \ud83d\udcca Swing (2-3d) | Hold Days: 2\n\ud83d\udca1 Trade Setup (Buy):\n   \u2022 Entry Price: 495.80\n   \u2022 Target Price: 525.55\n   \u2022 Stop Loss: 475.97\n   \u2022 Exit Strategy: 525.55\n\ud83c\udfaf Super Analyst Rationale: Quantitative rating score 7/10. Horizon: swing.\n\ud83d\udd17 Sources: Source 1 | Source 2\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501"
+    },
+    {
+      "timestamp": "13 Aug 2026, 08:47 AM IST",
+      "part": 2,
+      "message": "\ud83c\uddee\ud83c\uddf3 Daily Indian Market News Digest & AI Analysis (Contd.)\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\n2. Oil India Limited (OIL)\n\ud83d\udcf0 Synthesized Intelligence (12 Sources): Oil Price Today (August 13): Crude oil dips below $90 despite Strait of Hormuz deadlock. Here\u2019s why | Oil drops on lower demand forecasts despite deadlock in US-Iran talks | India bonds flat, major move likely only after US inflation data\n\ud83d\udccc Catalyst Impact: Neutral \u2014 Quantitative analysis for Oil India Limited: catalyst impact is neutral.\n\u2b50 Scores: Overall: 7/10 | Tech: 8/10 | Fund: 7/10 | Catalyst: 5/10\n\ud83d\udee1\ufe0f Risk Profile: Risk Rating: Low | R:R Ratio: N/A\n\ud83d\udcc8 Fundamentals: Fundamental valuation score: 7/10.\n\ud83d\udcca Technicals: 14-day technical score: 8/10.\n\ud83e\udd1d Consensus: Quantitative score: 7/10.\n\ud83d\udcc8 Pattern: Consolidation / Mixed\n\ud83c\udfaf Super Analyst Rationale: Quantitative rating score 7/10. Horizon: hold.\n\ud83d\udd17 Sources: Source 1 | Source 2 | Source 3 | Source 4 | Source 5 | Source 6 | Source 7 | Source 8 | Source 9 | Source 10 | Source 11 | Source 12\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501"
+    },
+    {
+      "timestamp": "13 Aug 2026, 08:47 AM IST",
+      "part": 3,
+      "message": "\ud83c\uddee\ud83c\uddf3 Daily Indian Market News Digest & AI Analysis (Contd.)\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\n3. Indian Oil Corporation Limited (IOC)\n\ud83d\udcf0 News: Dividend alert! Last day to buy HAL, HPCL, IOC among 40 stocks for dividends. How many do you own?\n\ud83d\udccc Catalyst Impact: Positive \u2014 Quantitative analysis for Indian Oil Corporation Limited: catalyst impact is positive.\n\u2b50 Scores: Overall: 7/10 | Tech: 6/10 | Fund: 7/10 | Catalyst: 9/10\n\ud83d\udee1\ufe0f Risk Profile: Risk Rating: Medium | R:R Ratio: 1:2.0\n\ud83d\udcc8 Fundamentals: Fundamental valuation score: 7/10.\n\ud83d\udcca Technicals: 14-day technical score: 6/10.\n\ud83e\udd1d Consensus: Quantitative score: 7/10.\n\ud83d\udcc8 Pattern: Bullish News &amp; Momentum\n\u23f1\ufe0f Strategy: \ud83d\udcca Swing (2-3d) | Hold Days: 2\n\ud83d\udca1 Trade Setup (Buy):\n   \u2022 Entry Price: 140.60\n   \u2022 Target Price: 149.04\n   \u2022 Stop Loss: 134.98\n   \u2022 Exit Strategy: 149.04\n\ud83c\udfaf Super Analyst Rationale: Quantitative rating score 7/10. Horizon: swing.\n\ud83d\udd17 Read Full Article\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\n4. Advance Agrolife Limited (ADVANCE)\n\ud83d\udcf0 Synthesized Intelligence (2 Sources): Korean stocks rise 22% in 10 days as chip rally regains steam | Stock Market LIVE: GIFT Nifty signals negative open; Asia mkts rise; Brent crude snaps six-day rally\n\ud83d\udccc Catalyst Impact: Positive \u2014 Quantitative analysis for Advance Agrolife Limited: catalyst impact is positive.\n\u2b50 Scores: Overall: 7/10 | Tech: 6/10 | Fund: 7/10 | Catalyst: 9/10\n\ud83d\udee1\ufe0f Risk Profile: Risk Rating: Medium | R:R Ratio: 1:2.0\n\ud83d\udcc8 Fundamentals: Fundamental valuation score: 7/10.\n\ud83d\udcca Technicals: 14-day technical score: 6/10.\n\ud83e\udd1d Consensus: Quantitative score: 7/10.\n\ud83d\udcc8 Pattern: Bullish News &amp; Momentum\n\u23f1\ufe0f Strategy: \ud83d\udcca Swing (2-3d) | Hold Days: 2\n\ud83d\udca1 Trade Setup (Buy):\n   \u2022 Entry Price: 122.21\n   \u2022 Target Price: 129.54\n   \u2022 Stop Loss: 117.32\n   \u2022 Exit Strategy: 129.54\n\ud83c\udfaf Super Analyst Rationale: Quantitative rating score 7/10. Horizon: swing.\n\ud83d\udd17 Sources: Source 1 | Source 2\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\n5. Updater Services Limited (UDS)\n\ud83d\udcf0 Synthesized Intelligence (2 Sources): Sensex Today | Stock Market LIVE Updates: GIFT Nifty signals a muted start; Asian shares trade higher | World News Today Live Updates on August 13, 2026 : Trump says Iran has \u2018No Money\u2019, blasts Tehran over \u2018300% INFLATION\u2019 as he touts \u2018WALL OF STEEL\u2019 naval blockade in Strait\n\ud83d\udccc Catalyst Impact: Neutral \u2014 Quantitative analysis for Updater Services Limited: catalyst impact is neutral.\n\u2b50 Scores: Overall: 7/10 | Tech: 8/10 | Fund: 7/10 | Catalyst: 5/10\n\ud83d\udee1\ufe0f Risk Profile: Risk Rating: Low | R:R Ratio: N/A\n\ud83d\udcc8 Fundamentals: Fundamental valuation score: 7/10.\n\ud83d\udcca Technicals: 14-day technical score: 8/10.\n\ud83e\udd1d Consensus: Quantitative score: 7/10.\n\ud83d\udcc8 Pattern: Consolidation / Mixed\n\ud83c\udfaf Super Analyst Rationale: Quantitative rating score 7/10. Horizon: hold.\n\ud83d\udd17 Sources: Source 1 | Source 2\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501"
+    },
+    {
+      "timestamp": "13 Aug 2026, 08:47 AM IST",
+      "part": 4,
+      "message": "\ud83c\uddee\ud83c\uddf3 Daily Indian Market News Digest & AI Analysis (Contd.)\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\n6. Billionbrains Garage Ventures Limited (GROWW)\n\ud83d\udcf0 Synthesized Intelligence (2 Sources): Groww leads India&#x27;s top brokerages in July with over 70,000 new active accounts | Groww shares climb 2% after July client additions; market share rises to 28.88%\n\ud83d\udccc Catalyst Impact: Positive \u2014 Quantitative analysis for Billionbrains Garage Ventures Limited: catalyst impact is positive.\n\u2b50 Scores: Overall: 8/10 | Tech: 7/10 | Fund: 7/10 | Catalyst: 9/10\n\ud83d\udee1\ufe0f Risk Profile: Risk Rating: Medium | R:R Ratio: 1:2.0\n\ud83d\udcc8 Fundamentals: Fundamental valuation score: 7/10.\n\ud83d\udcca Technicals: 14-day technical score: 7/10.\n\ud83e\udd1d Consensus: Quantitative score: 8/10.\n\ud83d\udcc8 Pattern: Bullish News &amp; Momentum\n\u23f1\ufe0f Strategy: \ud83d\udcca Swing (2-3d) | Hold Days: 2\n\ud83d\udca1 Trade Setup (Buy):\n   \u2022 Entry Price: 197.28\n   \u2022 Target Price: 209.12\n   \u2022 Stop Loss: 189.39\n   \u2022 Exit Strategy: 209.12\n\ud83c\udfaf Super Analyst Rationale: Quantitative rating score 8/10. Horizon: swing.\n\ud83d\udd17 Sources: Source 1 | Source 2\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\n7. Dollar Industries Limited (DOLLAR)\n\ud83d\udcf0 Synthesized Intelligence (3 Sources): Yotta plans IPO of up to Rs 8,000 cr to fund AI infra push | US stocks: Londian Wason valued at $2 billion, biggest Chinese debut in New York in over a year | Yen Trades Near 160 Level, Keeping Traders on Intervention Watch\n\ud83d\udccc Catalyst Impact: Positive \u2014 Quantitative analysis for Dollar Industries Limited: catalyst impact is positive.\n\u2b50 Scores: Overall: 7/10 | Tech: 6/10 | Fund: 7/10 | Catalyst: 8/10\n\ud83d\udee1\ufe0f Risk Profile: Risk Rating: Medium | R:R Ratio: 1:2.0\n\ud83d\udcc8 Fundamentals: Fundamental valuation score: 7/10.\n\ud83d\udcca Technicals: 14-day technical score: 6/10.\n\ud83e\udd1d Consensus: Quantitative score: 7/10.\n\ud83d\udcc8 Pattern: Bullish News &amp; Momentum\n\u23f1\ufe0f Strategy: \ud83d\udcca Swing (2-3d) | Hold Days: 2\n\ud83d\udca1 Trade Setup (Buy):\n   \u2022 Entry Price: 288.65\n   \u2022 Target Price: 305.97\n   \u2022 Stop Loss: 277.10\n   \u2022 Exit Strategy: 305.97\n\ud83c\udfaf Super Analyst Rationale: Quantitative rating score 7/10. Horizon: swing.\n\ud83d\udd17 Sources: Source 1 | Source 2 | Source 3\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501"
+    },
+    {
+      "timestamp": "13 Aug 2026, 08:47 AM IST",
+      "part": 5,
+      "message": "\ud83c\uddee\ud83c\uddf3 Daily Indian Market News Digest & AI Analysis (Contd.)\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\n8. The Federal Bank  Limited (FEDERALBNK)\n\ud83d\udcf0 Synthesized Intelligence (4 Sources): Gold advances as mild US inflation data puts Fed rate hike in doubt | Federal Bank, IDFC First Bank surge in credit card growth, challenging HDFC Bank | US stocks: S&amp;P 500 ends higher as CoreWeave results fuel AI optimism\n\ud83d\udccc Catalyst Impact: Positive \u2014 Quantitative analysis for The Federal Bank  Limited: catalyst impact is positive.\n\u2b50 Scores: Overall: 8/10 | Tech: 7/10 | Fund: 7/10 | Catalyst: 9/10\n\ud83d\udee1\ufe0f Risk Profile: Risk Rating: Medium | R:R Ratio: 1:2.0\n\ud83d\udcc8 Fundamentals: Fundamental valuation score: 7/10.\n\ud83d\udcca Technicals: 14-day technical score: 7/10.\n\ud83e\udd1d Consensus: Quantitative score: 8/10.\n\ud83d\udcc8 Pattern: Bullish News &amp; Momentum\n\u23f1\ufe0f Strategy: \ud83d\udcca Swing (2-3d) | Hold Days: 2\n\ud83d\udca1 Trade Setup (Buy):\n   \u2022 Entry Price: 356.85\n   \u2022 Target Price: 378.26\n   \u2022 Stop Loss: 342.58\n   \u2022 Exit Strategy: 378.26\n\ud83c\udfaf Super Analyst Rationale: Quantitative rating score 8/10. Horizon: swing.\n\ud83d\udd17 Sources: Source 1 | Source 2 | Source 3 | Source 4\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\n9. The United Nilgiri Tea Estates Company Limited (UNITEDTEA)\n\ud83d\udcf0 News: Global Market Today: Asian stocks rise as rate hike bets ease, oil dips\n\ud83d\udccc Catalyst Impact: Positive \u2014 Quantitative analysis for The United Nilgiri Tea Estates Company Limited: catalyst impact is positive.\n\u2b50 Scores: Overall: 7/10 | Tech: 7/10 | Fund: 7/10 | Catalyst: 8/10\n\ud83d\udee1\ufe0f Risk Profile: Risk Rating: Medium | R:R Ratio: 1:2.0\n\ud83d\udcc8 Fundamentals: Fundamental valuation score: 7/10.\n\ud83d\udcca Technicals: 14-day technical score: 7/10.\n\ud83e\udd1d Consensus: Quantitative score: 7/10.\n\ud83d\udcc8 Pattern: Bullish News &amp; Momentum\n\u23f1\ufe0f Strategy: \ud83d\udcca Swing (2-3d) | Hold Days: 2\n\ud83d\udca1 Trade Setup (Buy):\n   \u2022 Entry Price: 464.80\n   \u2022 Target Price: 492.69\n   \u2022 Stop Loss: 446.21\n   \u2022 Exit Strategy: 492.69\n\ud83c\udfaf Super Analyst Rationale: Quantitative rating score 7/10. Horizon: swing.\n\ud83d\udd17 Read Full Article\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501"
+    },
+    {
+      "timestamp": "13 Aug 2026, 08:47 AM IST",
+      "part": 6,
+      "message": "\ud83c\uddee\ud83c\uddf3 Daily Indian Market News Digest & AI Analysis (Contd.)\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\n10. Vedanta Aluminium Metal Limited (VAML)\n\ud83d\udcf0 News: Vedanta, Vedanta Aluminium post strong Q1 gains as metal prices lift earnings\n\ud83d\udccc Catalyst Impact: Positive \u2014 Quantitative analysis for Vedanta Aluminium Metal Limited: catalyst impact is positive.\n\u2b50 Scores: Overall: 7/10 | Tech: 6/10 | Fund: 7/10 | Catalyst: 9/10\n\ud83d\udee1\ufe0f Risk Profile: Risk Rating: Medium | R:R Ratio: 1:2.0\n\ud83d\udcc8 Fundamentals: Fundamental valuation score: 7/10.\n\ud83d\udcca Technicals: 14-day technical score: 6/10.\n\ud83e\udd1d Consensus: Quantitative score: 7/10.\n\ud83d\udcc8 Pattern: Bullish News &amp; Momentum\n\u23f1\ufe0f Strategy: \ud83d\udcca Swing (2-3d) | Hold Days: 2\n\ud83d\udca1 Trade Setup (Buy):\n   \u2022 Entry Price: 461.45\n   \u2022 Target Price: 489.14\n   \u2022 Stop Loss: 442.99\n   \u2022 Exit Strategy: 489.14\n\ud83c\udfaf Super Analyst Rationale: Quantitative rating score 7/10. Horizon: swing.\n\ud83d\udd17 Read Full Article\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\n11. UltraTech Cement Limited (ULTRACEMCO)\n\ud83d\udcf0 Synthesized Intelligence (2 Sources): Stocks in news: UltraTech Cement, Tata Motors PV, Axis Bank, Apollo Hospitals and Ircon | Pilani Investment to sell 1.7 million UltraTech Cement shares for \u20b91,908 crore\n\ud83d\udccc Catalyst Impact: Positive \u2014 Quantitative analysis for UltraTech Cement Limited: catalyst impact is positive.\n\u2b50 Scores: Overall: 7/10 | Tech: 6/10 | Fund: 7/10 | Catalyst: 9/10\n\ud83d\udee1\ufe0f Risk Profile: Risk Rating: Medium | R:R Ratio: 1:2.0\n\ud83d\udcc8 Fundamentals: Fundamental valuation score: 7/10.\n\ud83d\udcca Technicals: 14-day technical score: 6/10.\n\ud83e\udd1d Consensus: Quantitative score: 7/10.\n\ud83d\udcc8 Pattern: Bullish News &amp; Momentum\n\u23f1\ufe0f Strategy: \ud83d\udcca Swing (2-3d) | Hold Days: 2\n\ud83d\udca1 Trade Setup (Buy):\n   \u2022 Entry Price: 11780.00\n   \u2022 Target Price: 12486.80\n   \u2022 Stop Loss: 11308.80\n   \u2022 Exit Strategy: 12486.80\n\ud83c\udfaf Super Analyst Rationale: Quantitative rating score 7/10. Horizon: swing.\n\ud83d\udd17 Sources: Source 1 | Source 2\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501"
+    }
+  ]
 }
