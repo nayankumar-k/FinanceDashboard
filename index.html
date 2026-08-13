@@ -64,7 +64,7 @@
       margin: 0 auto;
       display: flex;
       flex-direction: column;
-      gap: 1.1rem;
+      gap: 1rem;
     }
 
     /* ─── Gen-Z Hero Header ─── */
@@ -114,6 +114,12 @@
       margin-top: 0.15rem;
     }
 
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
     .live-status-pill {
       display: inline-flex;
       align-items: center;
@@ -143,10 +149,97 @@
       100% { transform: scale(0.95); }
     }
 
+    .icon-btn {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid var(--border-light);
+      color: var(--text-main);
+      width: 38px;
+      height: 38px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: all 0.25s ease;
+    }
+
+    .icon-btn:hover {
+      background: rgba(0, 242, 254, 0.15);
+      border-color: var(--cyan-glow);
+      color: var(--cyan-glow);
+      transform: rotate(30deg);
+    }
+
     .timestamp {
       font-size: 0.72rem;
       color: var(--text-dim);
       font-family: 'Outfit', sans-serif;
+    }
+
+    /* ─── Top-Level KPI Summary Bar (Stationary Above Tabs) ─── */
+    .kpi-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.75rem;
+    }
+
+    .kpi-card {
+      background: var(--bg-card);
+      backdrop-filter: blur(16px);
+      border: 1px solid var(--border-light);
+      border-radius: 18px;
+      padding: 0.95rem 1.1rem;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.25s ease;
+    }
+
+    .kpi-card:hover {
+      transform: translateY(-2px);
+      border-color: var(--border-glow);
+      box-shadow: 0 10px 30px rgba(0, 242, 254, 0.1);
+    }
+
+    .kpi-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .kpi-label {
+      font-size: 0.68rem;
+      color: var(--text-muted);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+    }
+
+    .kpi-icon-badge {
+      width: 30px;
+      height: 30px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.85rem;
+    }
+
+    .bg-cash { background: rgba(0, 242, 254, 0.12); color: var(--cyan-glow); }
+    .bg-inv { background: rgba(0, 230, 118, 0.12); color: var(--emerald-glow); }
+    .bg-worth { background: rgba(121, 40, 202, 0.18); color: #c084fc; }
+    .bg-pnl { background: rgba(255, 0, 127, 0.15); color: var(--pink-glow); }
+
+    .kpi-amount {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.3rem;
+      font-weight: 800;
+      margin: 0.35rem 0 0.1rem 0;
+    }
+
+    .kpi-sub {
+      font-size: 0.68rem;
+      color: var(--text-dim);
     }
 
     /* ─── Gen-Z Sticky Segmented Navigation ─── */
@@ -208,83 +301,18 @@
 
     .tab-track {
       display: flex;
-      width: 400%; /* 4 tabs = 400% */
+      width: 300%; /* 3 tabs = 300% */
       transition: transform 0.32s cubic-bezier(0.25, 1, 0.5, 1);
       will-change: transform;
     }
 
     .tab-view {
-      width: 25%; /* 100% / 4 tabs */
+      width: 33.333%; /* 100% / 3 tabs */
       flex-shrink: 0;
       display: flex;
       flex-direction: column;
-      gap: 1.1rem;
+      gap: 1rem;
       padding: 0.1rem;
-    }
-
-    /* ─── KPI Summary Grid (Inside Overview Tab) ─── */
-    .kpi-container {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 0.75rem;
-    }
-
-    .kpi-card {
-      background: var(--bg-card);
-      backdrop-filter: blur(16px);
-      border: 1px solid var(--border-light);
-      border-radius: 18px;
-      padding: 1rem;
-      position: relative;
-      overflow: hidden;
-      transition: all 0.25s ease;
-    }
-
-    .kpi-card:hover {
-      transform: translateY(-2px);
-      border-color: var(--border-glow);
-      box-shadow: 0 10px 30px rgba(0, 242, 254, 0.1);
-    }
-
-    .kpi-head {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .kpi-label {
-      font-size: 0.68rem;
-      color: var(--text-muted);
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.4px;
-    }
-
-    .kpi-icon-badge {
-      width: 32px;
-      height: 32px;
-      border-radius: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 0.9rem;
-    }
-
-    .bg-cash { background: rgba(0, 242, 254, 0.12); color: var(--cyan-glow); }
-    .bg-inv { background: rgba(0, 230, 118, 0.12); color: var(--emerald-glow); }
-    .bg-worth { background: rgba(121, 40, 202, 0.18); color: #c084fc; }
-    .bg-pnl { background: rgba(255, 0, 127, 0.15); color: var(--pink-glow); }
-
-    .kpi-amount {
-      font-family: 'Outfit', sans-serif;
-      font-size: 1.3rem;
-      font-weight: 800;
-      margin: 0.35rem 0 0.1rem 0;
-    }
-
-    .kpi-sub {
-      font-size: 0.68rem;
-      color: var(--text-dim);
     }
 
     /* ─── Actionable Signal Cards ─── */
@@ -446,26 +474,54 @@
 
     .catalyst-strip i { color: #c084fc; flex-shrink: 0; }
 
-    /* ─── iOS Widget Card ─── */
-    .widget-preview-card {
-      background: linear-gradient(135deg, rgba(14, 23, 42, 0.9), rgba(6, 9, 19, 0.95));
+    /* ─── Settings / iOS Widget Modal Overlay ─── */
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background: rgba(5, 8, 17, 0.85);
+      backdrop-filter: blur(20px);
+      z-index: 1000;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+      animation: fadeIn 0.25s ease;
+    }
+
+    .modal-overlay.active { display: flex; }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .modal-card {
+      background: linear-gradient(135deg, rgba(14, 23, 42, 0.95), rgba(6, 9, 19, 0.98));
       border: 1px solid var(--cyan-glow);
       border-radius: 24px;
-      padding: 1.25rem;
+      padding: 1.35rem;
+      max-width: 480px;
+      width: 100%;
       display: flex;
       flex-direction: column;
-      gap: 0.85rem;
-      box-shadow: 0 12px 40px rgba(0, 242, 254, 0.15);
+      gap: 1rem;
+      box-shadow: 0 16px 50px rgba(0, 242, 254, 0.2);
       position: relative;
     }
 
-    .widget-preview-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-size: 0.75rem;
-      font-weight: 700;
+    .modal-close-btn {
+      position: absolute;
+      top: 1rem; right: 1rem;
+      background: rgba(255, 255, 255, 0.08);
+      border: none;
       color: var(--text-muted);
+      width: 32px; height: 32px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.9rem;
     }
 
     .widget-mockup {
@@ -531,7 +587,6 @@
       width: 100%;
     }
 
-    /* Swipe hint indicator */
     .swipe-hint {
       text-align: center;
       font-size: 0.7rem;
@@ -540,7 +595,6 @@
       align-items: center;
       justify-content: center;
       gap: 0.4rem;
-      margin-top: 0.2rem;
     }
 
     footer {
@@ -561,7 +615,7 @@
 
   <div class="app-container">
 
-    <!-- HERO HEADER -->
+    <!-- HERO HEADER WITH SETTINGS ICON ⚙️ -->
     <header class="hero-header">
       <div class="header-row">
         <div>
@@ -571,83 +625,87 @@
           </div>
           <div class="brand-sub">Gen-Z Automated Quantitative Signal & Portfolio Digest</div>
         </div>
-        <div style="display:flex; flex-direction:column; align-items:flex-end; gap:0.25rem;">
-          <div class="live-status-pill">
-            <div class="pulse-dot"></div>
-            <span id="status-text">LIVE AGENT ACTIVE</span>
+        
+        <div class="header-actions">
+          <div style="display:flex; flex-direction:column; align-items:flex-end; gap:0.25rem;">
+            <div class="live-status-pill">
+              <div class="pulse-dot"></div>
+              <span id="status-text">LIVE AGENT ACTIVE</span>
+            </div>
+            <span class="timestamp" id="updated-at">IST Sync: Fetching...</span>
           </div>
-          <span class="timestamp" id="updated-at">IST Sync: Fetching...</span>
+          
+          <!-- Settings Icon Button ⚙️ -->
+          <button class="icon-btn" onclick="toggleSettingsModal()" title="iOS Widget & Integration Settings">
+            <i class="fa-solid fa-gear"></i>
+          </button>
         </div>
       </div>
     </header>
 
-    <!-- STICKY SEGMENTED TAB NAVIGATION -->
+    <!-- TOP-LEVEL KPI SUMMARY GRID (STATIONARY ABOVE TABS AS REQUESTED) -->
+    <section class="kpi-container">
+      <div class="kpi-card">
+        <div class="kpi-head">
+          <span class="kpi-label">Wallet Cash</span>
+          <div class="kpi-icon-badge bg-cash"><i class="fa-solid fa-wallet"></i></div>
+        </div>
+        <div class="kpi-amount" id="kpi-wallet">Rs. 0.00</div>
+        <div class="kpi-sub">Liquid Capital</div>
+      </div>
+
+      <div class="kpi-card">
+        <div class="kpi-head">
+          <span class="kpi-label">Active Exposure</span>
+          <div class="kpi-icon-badge bg-inv"><i class="fa-solid fa-chart-line"></i></div>
+        </div>
+        <div class="kpi-amount" id="kpi-invested">Rs. 0.00</div>
+        <div class="kpi-sub" id="kpi-positions-cnt">0 Active Signal(s)</div>
+      </div>
+
+      <div class="kpi-card">
+        <div class="kpi-head">
+          <span class="kpi-label">Net Worth</span>
+          <div class="kpi-icon-badge bg-worth"><i class="fa-solid fa-vault"></i></div>
+        </div>
+        <div class="kpi-amount" id="kpi-networth">Rs. 0.00</div>
+        <div class="kpi-sub">Cash + Holdings Value</div>
+      </div>
+
+      <div class="kpi-card">
+        <div class="kpi-head">
+          <span class="kpi-label">Realized Return</span>
+          <div class="kpi-icon-badge bg-pnl"><i class="fa-solid fa-fire"></i></div>
+        </div>
+        <div class="kpi-amount text-green" id="kpi-pnl">Rs. +0.00</div>
+        <div class="kpi-sub">Cumulative Net P&L</div>
+      </div>
+    </section>
+
+    <!-- STICKY SEGMENTED TAB NAVIGATION (3 CLEAN TABS) -->
     <nav class="tab-bar">
       <button class="tab-btn active" onclick="goToTab(0)">
-        <i class="fa-solid fa-fire"></i> Signals
+        <i class="fa-solid fa-fire"></i> Today's Signals
       </button>
       <button class="tab-btn" onclick="goToTab(1)">
-        <i class="fa-solid fa-mobile-screen"></i> iOS Widget
+        <i class="fa-solid fa-chart-pie"></i> Capital Allocation
       </button>
       <button class="tab-btn" onclick="goToTab(2)">
-        <i class="fa-solid fa-chart-pie"></i> Capital Ratio
-      </button>
-      <button class="tab-btn" onclick="goToTab(3)">
-        <i class="fa-solid fa-paper-plane"></i> Alerts
+        <i class="fa-solid fa-paper-plane"></i> Telegram Alerts
       </button>
     </nav>
 
     <div class="swipe-hint">
       <i class="fa-solid fa-arrows-left-right"></i>
-      <span>Swipe left or right anywhere to switch tabs seamlessly</span>
+      <span>Swipe left or right anywhere to switch tabs</span>
     </div>
 
     <!-- SWIPEABLE CAROUSEL CONTAINER -->
     <div class="swipe-container" id="swipeContainer">
       <div class="tab-track" id="tabTrack">
 
-        <!-- TAB 0: Signals & KPI Overview (Entire Page Switches!) -->
+        <!-- TAB 0: Actionable Market Signals -->
         <div class="tab-view">
-          <!-- KPI SUMMARY GRID -->
-          <section class="kpi-container">
-            <div class="kpi-card">
-              <div class="kpi-head">
-                <span class="kpi-label">Wallet Cash</span>
-                <div class="kpi-icon-badge bg-cash"><i class="fa-solid fa-wallet"></i></div>
-              </div>
-              <div class="kpi-amount" id="kpi-wallet">Rs. 0.00</div>
-              <div class="kpi-sub">Liquid Capital</div>
-            </div>
-
-            <div class="kpi-card">
-              <div class="kpi-head">
-                <span class="kpi-label">Active Exposure</span>
-                <div class="kpi-icon-badge bg-inv"><i class="fa-solid fa-chart-line"></i></div>
-              </div>
-              <div class="kpi-amount" id="kpi-invested">Rs. 0.00</div>
-              <div class="kpi-sub" id="kpi-positions-cnt">0 Active Signal(s)</div>
-            </div>
-
-            <div class="kpi-card">
-              <div class="kpi-head">
-                <span class="kpi-label">Net Worth</span>
-                <div class="kpi-icon-badge bg-worth"><i class="fa-solid fa-vault"></i></div>
-              </div>
-              <div class="kpi-amount" id="kpi-networth">Rs. 0.00</div>
-              <div class="kpi-sub">Cash + Holdings Value</div>
-            </div>
-
-            <div class="kpi-card">
-              <div class="kpi-head">
-                <span class="kpi-label">Realized Return</span>
-                <div class="kpi-icon-badge bg-pnl"><i class="fa-solid fa-fire"></i></div>
-              </div>
-              <div class="kpi-amount text-green" id="kpi-pnl">Rs. +0.00</div>
-              <div class="kpi-sub">Cumulative Net P&L</div>
-            </div>
-          </section>
-
-          <!-- TODAY'S CALL SIGNALS -->
           <div class="card-section">
             <div class="card-header">
               <h2><i class="fa-solid fa-compass"></i> Actionable AI Signals</h2>
@@ -662,50 +720,7 @@
           </div>
         </div>
 
-        <!-- TAB 1: iOS Widget Integration & Mockup -->
-        <div class="tab-view">
-          <div class="widget-preview-card">
-            <div class="widget-preview-header">
-              <span><i class="fa-brands fa-apple"></i> iPhone 17 Live Widget Mockup</span>
-              <span>Scriptable JSON API</span>
-            </div>
-            
-            <!-- Live iPhone Widget Mockup -->
-            <div class="widget-mockup" id="widget-mockup-box">
-              <div class="widget-row">
-                <span style="font-family:'Outfit',sans-serif; font-weight:900; color:var(--cyan-glow); font-size:1.1rem;" id="w-symbol">NETWEB</span>
-                <span class="tag-pill tag-buy" id="w-action">BUY • INTRADAY</span>
-              </div>
-              <div class="widget-row" style="margin-top:0.2rem;">
-                <div>
-                  <div style="font-size:0.6rem; color:var(--text-dim);">ENTRY PRICE</div>
-                  <div style="font-family:'Outfit',sans-serif; font-weight:800; font-size:0.95rem;" id="w-entry">Rs. 2,800.00</div>
-                </div>
-                <div style="text-align:right;">
-                  <div style="font-size:0.6rem; color:var(--text-dim);">TARGET LEVEL</div>
-                  <div style="font-family:'Outfit',sans-serif; font-weight:800; font-size:0.95rem; color:var(--emerald-glow);" id="w-target">Rs. 2,968.00</div>
-                </div>
-              </div>
-              <div style="background:rgba(255,255,255,0.06); padding:0.45rem 0.6rem; border-radius:10px; font-size:0.7rem; color:var(--text-muted); font-style:italic;" id="w-catalyst">
-                Netweb surges on ₹500Cr AI server expansion order win
-              </div>
-              <div class="widget-row" style="border-top:1px solid rgba(255,255,255,0.1); padding-top:0.4rem; font-size:0.65rem; color:var(--text-dim);">
-                <span id="w-wallet">Cash: Rs. 1,00,000</span>
-                <span id="w-status" style="color:var(--emerald-glow);">● LIVE AGENT</span>
-              </div>
-            </div>
-
-            <div style="text-align:center; font-size:0.78rem; color:var(--text-muted); margin-top:0.4rem;">
-              Connect your iPhone Scriptable App directly to <code style="color:var(--cyan-glow);">widget.json</code> to track live calls on your Home & Lock Screen.
-            </div>
-
-            <button class="btn-copy-code" onclick="copyScriptableCode()">
-              <i class="fa-regular fa-copy"></i> Copy Scriptable iOS Widget Code
-            </button>
-          </div>
-        </div>
-
-        <!-- TAB 2: Capital Ratio & Chart -->
+        <!-- TAB 1: Capital Allocation & Chart -->
         <div class="tab-view">
           <div class="card-section">
             <div class="card-header">
@@ -721,7 +736,7 @@
           </div>
         </div>
 
-        <!-- TAB 3: Telegram Alerts Stream -->
+        <!-- TAB 2: Telegram Notification Feed -->
         <div class="tab-view">
           <div class="card-section">
             <div class="card-header">
@@ -745,10 +760,60 @@
 
   </div>
 
+  <!-- SETTINGS MODAL OVERLAY (iOS Widget & Scriptable Code Generator) -->
+  <div class="modal-overlay" id="settingsModal">
+    <div class="modal-card">
+      <button class="modal-close-btn" onclick="toggleSettingsModal()"><i class="fa-solid fa-xmark"></i></button>
+      
+      <div style="font-family:'Outfit',sans-serif; font-size:1.15rem; font-weight:800; display:flex; align-items:center; gap:0.5rem; color:var(--cyan-glow);">
+        <i class="fa-solid fa-gear"></i>
+        <span>iOS Widget Settings & Integration</span>
+      </div>
+
+      <!-- Live iPhone Widget Mockup -->
+      <div class="widget-mockup" id="widget-mockup-box">
+        <div class="widget-row">
+          <span style="font-family:'Outfit',sans-serif; font-weight:900; color:var(--cyan-glow); font-size:1.1rem;" id="w-symbol">NETWEB</span>
+          <span class="tag-pill tag-buy" id="w-action">BUY • INTRADAY</span>
+        </div>
+        <div class="widget-row" style="margin-top:0.2rem;">
+          <div>
+            <div style="font-size:0.6rem; color:var(--text-dim);">ENTRY PRICE</div>
+            <div style="font-family:'Outfit',sans-serif; font-weight:800; font-size:0.95rem;" id="w-entry">Rs. 2,800.00</div>
+          </div>
+          <div style="text-align:right;">
+            <div style="font-size:0.6rem; color:var(--text-dim);">TARGET LEVEL</div>
+            <div style="font-family:'Outfit',sans-serif; font-weight:800; font-size:0.95rem; color:var(--emerald-glow);" id="w-target">Rs. 2,968.00</div>
+          </div>
+        </div>
+        <div style="background:rgba(255,255,255,0.06); padding:0.45rem 0.6rem; border-radius:10px; font-size:0.7rem; color:var(--text-muted); font-style:italic;" id="w-catalyst">
+          Netweb surges on ₹500Cr AI server expansion order win
+        </div>
+        <div class="widget-row" style="border-top:1px solid rgba(255,255,255,0.1); padding-top:0.4rem; font-size:0.65rem; color:var(--text-dim);">
+          <span id="w-wallet">Cash: Rs. 1,00,000</span>
+          <span id="w-status" style="color:var(--emerald-glow);">● LIVE AGENT</span>
+        </div>
+      </div>
+
+      <div style="text-align:center; font-size:0.78rem; color:var(--text-muted);">
+        Connect your iPhone Scriptable App directly to <code style="color:var(--cyan-glow);">widget.json</code> to track live calls on your Home & Lock Screen.
+      </div>
+
+      <button class="btn-copy-code" onclick="copyScriptableCode()">
+        <i class="fa-regular fa-copy"></i> Copy Scriptable iOS Widget Code
+      </button>
+    </div>
+  </div>
+
   <script>
     let currentTabIndex = 0;
-    const totalTabs = 4;
+    const totalTabs = 3;
     let chartInstance = null;
+
+    function toggleSettingsModal() {
+      const modal = document.getElementById('settingsModal');
+      modal.classList.toggle('active');
+    }
 
     // Smooth tab navigation with slide offset
     function goToTab(index) {
@@ -757,7 +822,7 @@
       currentTabIndex = index;
 
       const track = document.getElementById('tabTrack');
-      track.style.transform = `translateX(-${index * 25}%)`;
+      track.style.transform = `translateX(-${index * 33.333}%)`;
 
       const buttons = document.querySelectorAll('.tab-btn');
       buttons.forEach((btn, idx) => {
@@ -792,13 +857,10 @@
       const diffX = touchEndX - touchStartX;
       const diffY = touchEndY - touchStartY;
 
-      // Ensure horizontal swipe is dominant and exceeds minimum threshold (40px)
       if (Math.abs(diffX) > 40 && Math.abs(diffX) > Math.abs(diffY) * 1.3) {
         if (diffX < 0) {
-          // Swiped left -> next tab
           goToTab(currentTabIndex + 1);
         } else {
-          // Swiped right -> prev tab
           goToTab(currentTabIndex - 1);
         }
       }
@@ -891,7 +953,7 @@
         }).join('');
       }
 
-      // Update iOS Widget Mockup
+      // Update iOS Widget Mockup inside Settings Modal
       if (calls.length > 0) {
         const top = calls[0];
         document.getElementById('w-symbol').innerText = top.symbol;
@@ -902,7 +964,7 @@
       }
       document.getElementById('w-wallet').innerText = 'Cash: Rs. ' + (summary.wallet_balance || 0).toLocaleString('en-IN', {maximumFractionDigits:0});
 
-      // Render Alerts Log
+      // Render Telegram Alert Feed Log
       const alertsContainer = document.getElementById('alerts-container');
       if (alerts.length === 0) {
         alertsContainer.innerHTML = `
@@ -913,9 +975,9 @@
         `;
       } else {
         alertsContainer.innerHTML = alerts.map(a => `
-          <div class="call-card" style="padding:0.8rem 1rem;">
-            <div class="timestamp"><i class="fa-solid fa-clock"></i> ${a.timestamp || ''} | Part ${a.part || 1}</div>
-            <div style="font-size:0.8rem; color:var(--text-muted); line-height:1.45; font-family:monospace; margin-top:0.25rem;">${a.message || ''}</div>
+          <div class="call-card" style="padding:0.85rem 1rem;">
+            <div class="timestamp"><i class="fa-solid fa-paper-plane" style="color:var(--cyan-glow);"></i> Telegram Alert | ${a.timestamp || ''}</div>
+            <div style="font-size:0.82rem; color:var(--text-main); line-height:1.45; font-family:'Inter',sans-serif; margin-top:0.35rem; white-space:pre-wrap;">${a.message || ''}</div>
           </div>
         `).join('');
       }
