@@ -681,6 +681,38 @@
     .analysis-cell .lbl { color: var(--text-dim); text-transform: uppercase; font-size: 0.65rem; }
     .analysis-cell .val { font-family: var(--font-mono); font-weight: 600; color: #ffffff; }
 
+    .news-links-footer {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+      margin-top: 0.65rem;
+      padding-top: 0.65rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .news-link-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      background: rgba(56, 189, 248, 0.06);
+      border: 1px solid rgba(56, 189, 248, 0.25);
+      color: var(--neon-cyan);
+      font-size: 0.72rem;
+      font-weight: 600;
+      padding: 0.35rem 0.65rem;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      cursor: pointer;
+    }
+
+    .news-link-btn:hover {
+      background: rgba(56, 189, 248, 0.16);
+      border-color: var(--neon-cyan);
+      box-shadow: 0 0 10px rgba(56, 189, 248, 0.2);
+      color: #ffffff;
+    }
+
     /* ─── 8. TABLES ─── */
     .table-card {
       background: var(--bg-surface);
@@ -1306,6 +1338,44 @@
         const isBullish = String(n.impact || 'Bullish').toLowerCase() === 'bullish';
         const tierClass = String(n.catalyst_tier || 'Tier-1').toLowerCase().includes('1') ? 'tier-1' : 'tier-2';
 
+        // Collect and sanitize unique article links
+        const rawLinks = [];
+        if (n.link) rawLinks.push(n.link);
+        if (Array.isArray(n.links)) rawLinks.push(...n.links);
+
+        const uniqueLinks = [...new Set(
+          rawLinks
+            .filter(link => typeof link === 'string' && link.trim() !== '')
+            .map(link => {
+              let trimmed = link.trim();
+              if (!/^https?:\/\//i.test(trimmed)) {
+                trimmed = 'https://' + trimmed;
+              }
+              return trimmed;
+            })
+        )];
+
+        let linksHtml = '';
+        if (uniqueLinks.length > 0) {
+          linksHtml = `
+            <div class="news-links-footer">
+              ${uniqueLinks.map((link, idx) => {
+                let domain = 'Source';
+                try {
+                  const parsed = new URL(link);
+                  domain = parsed.hostname.replace(/^www\./, '');
+                } catch (e) {}
+                const label = uniqueLinks.length === 1 ? `Read Article (${domain})` : `Source ${idx + 1}: ${domain}`;
+                return `
+                  <a href="${link}" target="_blank" rel="noopener noreferrer" class="news-link-btn">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i> ${label}
+                  </a>
+                `;
+              }).join('')}
+            </div>
+          `;
+        }
+
         html += `
           <div class="news-card">
             <div class="news-card-top">
@@ -1338,6 +1408,7 @@
                 <span class="val" style="text-transform: uppercase;">${n.trade_horizon || 'Swing'}</span>
               </div>
             </div>
+            ${linksHtml}
           </div>
         `;
       });
