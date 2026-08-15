@@ -1,5 +1,5 @@
 {
-  "updated_at": "16 Aug 2026, 01:10 AM IST",
+  "updated_at": "16 Aug 2026, 01:21 AM IST",
   "status": "LIVE AGENT ACTIVE",
   "is_alive": true,
   "market_regime": {
@@ -204,45 +204,16 @@
     }
   ],
   "summary": {
-    "wallet_balance": 25000.0,
-    "allocated_cash": 25000.0,
+    "wallet_balance": 105603.21,
+    "allocated_cash": 0.0,
     "unrealized_pnl": 0.0,
-    "net_worth": 50000.0,
-    "cumulative_pnl": 0.0,
-    "active_positions_count": 1,
-    "cash_pct": 50.0,
-    "holdings_pct": 50.0
+    "net_worth": 105603.21,
+    "cumulative_pnl": 5603.21,
+    "active_positions_count": 0,
+    "cash_pct": 100.0,
+    "holdings_pct": 0.0
   },
-  "today_calls": [
-    {
-      "symbol": "RELIANCE",
-      "company_name": "RELIANCE Corp",
-      "action": "Buy Setup",
-      "trade_recommendation": "Buy",
-      "horizon": "intraday",
-      "entry_price": 2500.0,
-      "current_price": 2500.0,
-      "target_price": 105.0,
-      "stop_loss": 97.0,
-      "quantity": 10,
-      "allocated_cash": 25000.0,
-      "unrealized_pnl": 0.0,
-      "pnl_pct": 0.0,
-      "catalyst_tier": "Tier-1",
-      "confidence_score": "8",
-      "tech_score": "7",
-      "fund_score": "6",
-      "catalyst_score": "8",
-      "risk_reward": "1:2.0",
-      "pattern_type": "breakout",
-      "hold_days": 1,
-      "days_held": 0,
-      "expected_exit_date": "2026-08-03",
-      "source_headline": "NSE Market Intelligence Dossier",
-      "news_sentiment": "Positive",
-      "catalyst_reason": "Institutional Catalyst & Technical Setup"
-    }
-  ],
+  "today_calls": [],
   "telemetry": {
     "rss_feeds": "0 Operational",
     "gemini_keys": "1 Active Keys",
@@ -587,85 +558,9 @@
       "horizon": "swing",
       "pattern_type": "N/A",
       "hold_days": 1
-    },
-    {
-      "date": "",
-      "symbol": "TESTSTK",
-      "company_name": "Test Stock Ltd",
-      "quantity": 50,
-      "entry_price": 100.0,
-      "exit_price": 100.0,
-      "net_pnl": -5.35,
-      "pnl_pct": -0.11,
-      "outcome": "Square-off (No data)",
-      "horizon": "intraday",
-      "pattern_type": "N/A",
-      "hold_days": 2
-    },
-    {
-      "date": "",
-      "symbol": "RELIANCE",
-      "company_name": "Reliance Industries",
-      "quantity": 10,
-      "entry_price": 2500.0,
-      "exit_price": 2400.0,
-      "net_pnl": -1026.13,
-      "pnl_pct": -4.1,
-      "outcome": "Stop Loss Hit \ud83d\uded1 at 09:15 AM",
-      "horizon": "intraday",
-      "pattern_type": "N/A",
-      "hold_days": 1
     }
   ],
   "daily_pnl": [
-    {
-      "date": "2026-08-13",
-      "wallet_balance": 55037.92,
-      "total_invested": 0.0,
-      "unrealized_pnl": 0.0,
-      "total_positions": 0,
-      "cumulative_pnl": 37.92
-    },
-    {
-      "date": "2026-08-13",
-      "wallet_balance": 50000.0,
-      "total_invested": 25000.0,
-      "unrealized_pnl": 0.0,
-      "total_positions": 1,
-      "cumulative_pnl": 0.0
-    },
-    {
-      "date": "2026-08-13",
-      "wallet_balance": 55037.92,
-      "total_invested": 0.0,
-      "unrealized_pnl": 0.0,
-      "total_positions": 0,
-      "cumulative_pnl": 37.92
-    },
-    {
-      "date": "2026-08-13",
-      "wallet_balance": 2000.0,
-      "total_invested": 98000.0,
-      "unrealized_pnl": 0.0,
-      "total_positions": 1,
-      "cumulative_pnl": 0.0
-    },
-    {
-      "date": "2026-08-13",
-      "wallet_balance": 50000.0,
-      "total_invested": 25000.0,
-      "unrealized_pnl": 0.0,
-      "total_positions": 1,
-      "cumulative_pnl": 0.0
-    },
-    {
-      "date": "2026-08-13",
-      "wallet_balance": 2000.0,
-      "total_invested": 98000.0,
-      "unrealized_pnl": 0.0,
-      "total_positions": 1,
-      "cumulative_pnl": 0.0
-    },
     {
       "date": "2026-08-14",
       "wallet_balance": 600.95,
@@ -857,6 +752,54 @@
       "unrealized_pnl": 0.0,
       "total_positions": 1,
       "cumulative_pnl": 0.0
+    },
+    {
+      "date": "2026-08-16",
+      "wallet_balance": 50000.0,
+      "total_invested": 25000.0,
+      "unrealized_pnl": 0.0,
+      "total_positions": 1,
+      "cumulative_pnl": 0.0
+    },
+    {
+      "date": "2026-08-16",
+      "wallet_balance": 35600.0,
+      "total_invested": 64400.0,
+      "unrealized_pnl": 0.0,
+      "total_positions": 1,
+      "cumulative_pnl": 0.0
+    },
+    {
+      "date": "2026-08-16",
+      "wallet_balance": 40000.0,
+      "total_invested": 60000.0,
+      "unrealized_pnl": 0.0,
+      "total_positions": 1,
+      "cumulative_pnl": 0.0
+    },
+    {
+      "date": "2026-08-16",
+      "wallet_balance": 50000.0,
+      "total_invested": 25000.0,
+      "unrealized_pnl": 0.0,
+      "total_positions": 1,
+      "cumulative_pnl": 0.0
+    },
+    {
+      "date": "2026-08-16",
+      "wallet_balance": 35600.0,
+      "total_invested": 64400.0,
+      "unrealized_pnl": 0.0,
+      "total_positions": 1,
+      "cumulative_pnl": 0.0
+    },
+    {
+      "date": "2026-08-16",
+      "wallet_balance": 40000.0,
+      "total_invested": 60000.0,
+      "unrealized_pnl": 0.0,
+      "total_positions": 1,
+      "cumulative_pnl": 0.0
     }
   ],
   "monthly_summary": {
@@ -874,25 +817,25 @@
     }
   },
   "portfolio_analytics": {
-    "total_trades": 26,
-    "win_rate": 57.7,
+    "total_trades": 24,
+    "win_rate": 62.5,
     "avg_win_pnl": 569.08,
-    "avg_loss_pnl": -266.63,
-    "profit_factor": 2.91,
+    "avg_loss_pnl": -211.28,
+    "profit_factor": 4.49,
     "max_drawdown": 5039.5,
-    "sharpe_estimate": 3.67,
+    "sharpe_estimate": 3.33,
     "gross_profit": 8536.19,
-    "gross_loss": 2932.98,
-    "net_pnl_total": 5603.21,
+    "gross_loss": 1901.5,
+    "net_pnl_total": 6634.69,
     "best_trade": {
       "symbol": "NETWEB",
       "date": "2026-08-13",
       "net_pnl": 5795.52
     },
     "worst_trade": {
-      "symbol": "RELIANCE",
-      "date": "",
-      "net_pnl": -1026.13
+      "symbol": "JIOFIN",
+      "date": "2026-08-07",
+      "net_pnl": -501.74
     }
   },
   "system_monitor": {
@@ -904,13 +847,13 @@
     "last_sent_at": ""
   },
   "ai_accuracy": {
-    "total_predictions": 23,
+    "total_predictions": 22,
     "correct": 12,
     "neutral": 0,
-    "incorrect": 11,
-    "accuracy_pct": 52.2,
+    "incorrect": 10,
+    "accuracy_pct": 54.5,
     "by_horizon": {
-      "intraday": 71.4,
+      "intraday": 83.3,
       "swing": 43.8
     }
   },
