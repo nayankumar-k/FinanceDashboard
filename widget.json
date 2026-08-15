@@ -1,10 +1,19 @@
 {
-  "net_worth": "Rs. 105,603.21",
-  "wallet_cash": "Rs. 105,603.21",
-  "invested": "Rs. 0.00",
-  "pnl": "Rs. +5,603.21",
-  "active_positions": 0,
+  "net_worth": "Rs. 50,000.00",
+  "wallet_cash": "Rs. 25,000.00",
+  "invested": "Rs. 25,000.00",
+  "pnl": "Rs. +0.00",
+  "active_positions": 1,
   "status": "LIVE AGENT ACTIVE",
-  "updated_at": "16 Aug 2026, 12:55 AM IST",
-  "top_call": {}
+  "updated_at": "16 Aug 2026, 01:10 AM IST",
+  "top_call": {
+    "symbol": "RELIANCE",
+    "action": "Buy",
+    "horizon": "INTRADAY",
+    "entry": "Rs. 2,500.00",
+    "target": "Rs. 105.00",
+    "stop_loss": "Rs. 97.00",
+    "confidence": "8/10",
+    "catalyst": "Institutional Catalyst & Technical Setup"
+  }
 }

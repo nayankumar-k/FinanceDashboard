@@ -1,5 +1,5 @@
 {
-  "updated_at": "16 Aug 2026, 12:55 AM IST",
+  "updated_at": "16 Aug 2026, 01:10 AM IST",
   "status": "LIVE AGENT ACTIVE",
   "is_alive": true,
   "market_regime": {
@@ -11,17 +11,238 @@
     "banknifty_change_pct": "N/A",
     "regime_summary": "Bullish Market Regime (Nifty at 24,366.0, -0.12%, above 20-day SMA 24,323.3)."
   },
+  "sector_heatmap": [
+    {
+      "code": "BANK",
+      "name": "Banking & Financials",
+      "price": 57491.1,
+      "change_pct": -0.25,
+      "sma20": 57475.22,
+      "stage": "WEAKENING",
+      "trend": "Pullback / Consolidation",
+      "lead_stocks": [
+        "HDFCBANK",
+        "ICICIBANK",
+        "SBIN"
+      ]
+    },
+    {
+      "code": "IT",
+      "name": "Information Technology",
+      "price": 31357.75,
+      "change_pct": -0.31,
+      "sma20": 30585.54,
+      "stage": "WEAKENING",
+      "trend": "Pullback / Consolidation",
+      "lead_stocks": [
+        "TCS",
+        "INFY",
+        "HCLTECH",
+        "WIPRO"
+      ]
+    },
+    {
+      "code": "AUTO",
+      "name": "Automotive & EV",
+      "price": 27099.75,
+      "change_pct": 1.24,
+      "sma20": 26764.98,
+      "stage": "LEADING",
+      "trend": "Strong Uptrend",
+      "lead_stocks": [
+        "TATAMOTORS",
+        "MARUTI",
+        "M&M"
+      ]
+    },
+    {
+      "code": "PHARMA",
+      "name": "Pharma & Healthcare",
+      "price": 26445.55,
+      "change_pct": -0.9,
+      "sma20": 26315.2,
+      "stage": "WEAKENING",
+      "trend": "Pullback / Consolidation",
+      "lead_stocks": [
+        "SUNPHARMA",
+        "DRREDDY",
+        "CIPLA"
+      ]
+    },
+    {
+      "code": "ENERGY",
+      "name": "Energy, Oil & Power",
+      "price": 39277.0,
+      "change_pct": -0.17,
+      "sma20": 39301.8,
+      "stage": "LAGGING",
+      "trend": "Downtrend",
+      "lead_stocks": [
+        "RELIANCE",
+        "ONGC",
+        "NTPC"
+      ]
+    },
+    {
+      "code": "METAL",
+      "name": "Metals & Mining",
+      "price": 12436.95,
+      "change_pct": -0.47,
+      "sma20": 12536.86,
+      "stage": "LAGGING",
+      "trend": "Downtrend",
+      "lead_stocks": [
+        "TATASTEEL",
+        "JSWSTEEL",
+        "HINDALCO"
+      ]
+    },
+    {
+      "code": "FMCG",
+      "name": "FMCG & Consumption",
+      "price": 48748.7,
+      "change_pct": 0.7,
+      "sma20": 48492.04,
+      "stage": "LEADING",
+      "trend": "Strong Uptrend",
+      "lead_stocks": [
+        "ITC",
+        "HINDUNILVR",
+        "NESTLEIND"
+      ]
+    },
+    {
+      "code": "REALTY",
+      "name": "Realty & Infrastructure",
+      "price": 918.7,
+      "change_pct": 1.38,
+      "sma20": 914.66,
+      "stage": "LEADING",
+      "trend": "Strong Uptrend",
+      "lead_stocks": [
+        "DLF",
+        "GODREJPROP",
+        "LT"
+      ]
+    }
+  ],
+  "news_intelligence": [
+    {
+      "symbol": "NETWEB",
+      "company": "Netweb Technologies India Limited",
+      "title": "Netweb Technologies reports explosive 140% YoY Profit Growth, bags massive AI HPC Server cluster order",
+      "summary": "Netweb posted blowout quarterly results with high-performance computing demand surging. Order book crosses record Rs. 4,000 Cr.",
+      "link": "https://www.moneycontrol.com",
+      "catalyst_tier": "Tier-1 (Blowout Earnings & Order Win)",
+      "impact": "Bullish",
+      "news_sentiment_score": "9",
+      "overall_confidence_score": "9",
+      "technical_score": "9",
+      "fundamental_score": "8",
+      "catalyst_score": "9",
+      "risk_reward_ratio": "1:2.8",
+      "pattern_type": "CM-VCP Breakout at 52W High",
+      "trade_horizon": "swing",
+      "trade_recommendation": "BUY Setup",
+      "target_price": "2850.0",
+      "stop_loss": "2480.0",
+      "technical_analysis": "Stage 2 markup above 20 & 50 SMAs with volume expansion > 3.2x 20d average.",
+      "fundamental_analysis": "ROE 28.4%, Profit growth 142% YoY with zero debt.",
+      "news_vs_technical_summary": "",
+      "rating_rationale": "Institutional Tier-1 catalyst with blowout AI computing order book and textbook VCP contraction breakout.",
+      "published": "14 Aug 2026, 08:30 AM IST"
+    },
+    {
+      "symbol": "GLOBAL",
+      "company": "Global Education Limited",
+      "title": "Global Education secures Rs. 350 Cr digital skilling mandate from state government",
+      "summary": "Strategic expansion into government educational technology tenders boosts FY27 earnings visibility by 45%.",
+      "link": "https://economictimes.indiatimes.com",
+      "catalyst_tier": "Tier-1 (Mega Mandate Win)",
+      "impact": "Bullish",
+      "news_sentiment_score": "8",
+      "overall_confidence_score": "8",
+      "technical_score": "8",
+      "fundamental_score": "7",
+      "catalyst_score": "9",
+      "risk_reward_ratio": "1:2.5",
+      "pattern_type": "Base Breakout",
+      "trade_horizon": "swing",
+      "trade_recommendation": "BUY Setup",
+      "target_price": "112.0",
+      "stop_loss": "76.5",
+      "technical_analysis": "Consolidated for 8 weeks before high-volume breakout.",
+      "fundamental_analysis": "Consistent margin expansion and robust cash flow.",
+      "news_vs_technical_summary": "",
+      "rating_rationale": "High-margin contract addition providing multi-quarter earnings predictability.",
+      "published": "13 Aug 2026, 09:00 AM IST"
+    },
+    {
+      "symbol": "CUMMINSIND",
+      "company": "Cummins India Limited",
+      "title": "Cummins India launches CPCB-IV+ compliant backup generator range for hyperscale datacenters",
+      "summary": "Cummins gains first-mover regulatory advantage as data center capacity doubles in Mumbai and Chennai hubs.",
+      "link": "https://www.business-standard.com",
+      "catalyst_tier": "Tier-2 (Capex & Tech Launch)",
+      "impact": "Bullish",
+      "news_sentiment_score": "8",
+      "overall_confidence_score": "8",
+      "technical_score": "8",
+      "fundamental_score": "8",
+      "catalyst_score": "8",
+      "risk_reward_ratio": "1:2.1",
+      "pattern_type": "Stage 2 Momentum",
+      "trade_horizon": "swing",
+      "trade_recommendation": "BUY Setup",
+      "target_price": "5700.0",
+      "stop_loss": "5250.0",
+      "technical_analysis": "Rebounded off 50-day EMA support with positive MACD histogram.",
+      "fundamental_analysis": "Market leader with 65% market share in industrial diesel engines.",
+      "news_vs_technical_summary": "",
+      "rating_rationale": "Beneficiary of rapid Indian AI data center electrification capex.",
+      "published": "12 Aug 2026, 08:45 AM IST"
+    }
+  ],
   "summary": {
-    "wallet_balance": 105603.21,
-    "allocated_cash": 0.0,
+    "wallet_balance": 25000.0,
+    "allocated_cash": 25000.0,
     "unrealized_pnl": 0.0,
-    "net_worth": 105603.21,
-    "cumulative_pnl": 5603.21,
-    "active_positions_count": 0,
-    "cash_pct": 100.0,
-    "holdings_pct": 0.0
+    "net_worth": 50000.0,
+    "cumulative_pnl": 0.0,
+    "active_positions_count": 1,
+    "cash_pct": 50.0,
+    "holdings_pct": 50.0
   },
-  "today_calls": [],
+  "today_calls": [
+    {
+      "symbol": "RELIANCE",
+      "company_name": "RELIANCE Corp",
+      "action": "Buy Setup",
+      "trade_recommendation": "Buy",
+      "horizon": "intraday",
+      "entry_price": 2500.0,
+      "current_price": 2500.0,
+      "target_price": 105.0,
+      "stop_loss": 97.0,
+      "quantity": 10,
+      "allocated_cash": 25000.0,
+      "unrealized_pnl": 0.0,
+      "pnl_pct": 0.0,
+      "catalyst_tier": "Tier-1",
+      "confidence_score": "8",
+      "tech_score": "7",
+      "fund_score": "6",
+      "catalyst_score": "8",
+      "risk_reward": "1:2.0",
+      "pattern_type": "breakout",
+      "hold_days": 1,
+      "days_held": 0,
+      "expected_exit_date": "2026-08-03",
+      "source_headline": "NSE Market Intelligence Dossier",
+      "news_sentiment": "Positive",
+      "catalyst_reason": "Institutional Catalyst & Technical Setup"
+    }
+  ],
   "telemetry": {
     "rss_feeds": "0 Operational",
     "gemini_keys": "1 Active Keys",
@@ -407,54 +628,6 @@
     },
     {
       "date": "2026-08-13",
-      "wallet_balance": 55037.92,
-      "total_invested": 0.0,
-      "unrealized_pnl": 0.0,
-      "total_positions": 0,
-      "cumulative_pnl": 37.92
-    },
-    {
-      "date": "2026-08-13",
-      "wallet_balance": 2000.0,
-      "total_invested": 98000.0,
-      "unrealized_pnl": 0.0,
-      "total_positions": 1,
-      "cumulative_pnl": 0.0
-    },
-    {
-      "date": "2026-08-13",
-      "wallet_balance": 50000.0,
-      "total_invested": 25000.0,
-      "unrealized_pnl": 0.0,
-      "total_positions": 1,
-      "cumulative_pnl": 0.0
-    },
-    {
-      "date": "2026-08-13",
-      "wallet_balance": 55037.92,
-      "total_invested": 0.0,
-      "unrealized_pnl": 0.0,
-      "total_positions": 0,
-      "cumulative_pnl": 37.92
-    },
-    {
-      "date": "2026-08-13",
-      "wallet_balance": 2000.0,
-      "total_invested": 98000.0,
-      "unrealized_pnl": 0.0,
-      "total_positions": 1,
-      "cumulative_pnl": 0.0
-    },
-    {
-      "date": "2026-08-13",
-      "wallet_balance": 55037.92,
-      "total_invested": 0.0,
-      "unrealized_pnl": 0.0,
-      "total_positions": 0,
-      "cumulative_pnl": 37.92
-    },
-    {
-      "date": "2026-08-13",
       "wallet_balance": 50000.0,
       "total_invested": 25000.0,
       "unrealized_pnl": 0.0,
@@ -636,6 +809,54 @@
       "unrealized_pnl": 0.0,
       "total_positions": 1,
       "cumulative_pnl": 0.0
+    },
+    {
+      "date": "2026-08-16",
+      "wallet_balance": 50000.0,
+      "total_invested": 25000.0,
+      "unrealized_pnl": 0.0,
+      "total_positions": 1,
+      "cumulative_pnl": 0.0
+    },
+    {
+      "date": "2026-08-16",
+      "wallet_balance": 35600.0,
+      "total_invested": 64400.0,
+      "unrealized_pnl": 0.0,
+      "total_positions": 1,
+      "cumulative_pnl": 0.0
+    },
+    {
+      "date": "2026-08-16",
+      "wallet_balance": 40000.0,
+      "total_invested": 60000.0,
+      "unrealized_pnl": 0.0,
+      "total_positions": 1,
+      "cumulative_pnl": 0.0
+    },
+    {
+      "date": "2026-08-16",
+      "wallet_balance": 50000.0,
+      "total_invested": 25000.0,
+      "unrealized_pnl": 0.0,
+      "total_positions": 1,
+      "cumulative_pnl": 0.0
+    },
+    {
+      "date": "2026-08-16",
+      "wallet_balance": 35600.0,
+      "total_invested": 64400.0,
+      "unrealized_pnl": 0.0,
+      "total_positions": 1,
+      "cumulative_pnl": 0.0
+    },
+    {
+      "date": "2026-08-16",
+      "wallet_balance": 40000.0,
+      "total_invested": 60000.0,
+      "unrealized_pnl": 0.0,
+      "total_positions": 1,
+      "cumulative_pnl": 0.0
     }
   ],
   "monthly_summary": {
@@ -659,7 +880,7 @@
     "avg_loss_pnl": -266.63,
     "profit_factor": 2.91,
     "max_drawdown": 5039.5,
-    "sharpe_estimate": 4.46,
+    "sharpe_estimate": 3.67,
     "gross_profit": 8536.19,
     "gross_loss": 2932.98,
     "net_pnl_total": 5603.21,
