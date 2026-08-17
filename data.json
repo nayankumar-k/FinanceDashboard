@@ -1,25 +1,25 @@
 {
-  "updated_at": "16 Aug 2026, 02:29 AM IST",
+  "updated_at": "17 Aug 2026, 10:01 PM IST",
   "status": "LIVE AGENT ACTIVE",
   "is_alive": true,
   "market_regime": {
-    "status": "BULLISH",
-    "nifty_price": 24366.0,
-    "nifty_change_pct": "-0.12%",
-    "nifty_trend": "Uptrend (Above 20 SMA)",
+    "status": "NEUTRAL",
+    "nifty_price": 24287.65,
+    "nifty_change_pct": "-0.32%",
+    "nifty_trend": "Consolidation",
     "banknifty_price": "N/A",
     "banknifty_change_pct": "N/A",
-    "regime_summary": "Bullish Market Regime (Nifty at 24,366.0, -0.12%, above 20-day SMA 24,323.3)."
+    "regime_summary": "Consolidating/Neutral Market (Nifty at 24,287.7)."
   },
   "sector_heatmap": [
     {
       "code": "BANK",
       "name": "Banking & Financials",
-      "price": 57491.1,
-      "change_pct": -0.25,
-      "sma20": 57475.22,
-      "stage": "WEAKENING",
-      "trend": "Pullback / Consolidation",
+      "price": 57497.8,
+      "change_pct": 0.01,
+      "sma20": 57452.86,
+      "stage": "LEADING",
+      "trend": "Strong Uptrend",
       "lead_stocks": [
         "HDFCBANK",
         "ICICIBANK",
@@ -29,9 +29,9 @@
     {
       "code": "IT",
       "name": "Information Technology",
-      "price": 31357.75,
-      "change_pct": -0.31,
-      "sma20": 30585.54,
+      "price": 30807.8,
+      "change_pct": -1.75,
+      "sma20": 30667.83,
       "stage": "WEAKENING",
       "trend": "Pullback / Consolidation",
       "lead_stocks": [
@@ -44,9 +44,9 @@
     {
       "code": "AUTO",
       "name": "Automotive & EV",
-      "price": 27099.75,
-      "change_pct": 1.24,
-      "sma20": 26764.98,
+      "price": 29178.1,
+      "change_pct": 7.67,
+      "sma20": 28138.92,
       "stage": "LEADING",
       "trend": "Strong Uptrend",
       "lead_stocks": [
@@ -58,9 +58,9 @@
     {
       "code": "PHARMA",
       "name": "Pharma & Healthcare",
-      "price": 26445.55,
-      "change_pct": -0.9,
-      "sma20": 26259.93,
+      "price": 26341.55,
+      "change_pct": -0.39,
+      "sma20": 26294.76,
       "stage": "WEAKENING",
       "trend": "Pullback / Consolidation",
       "lead_stocks": [
@@ -72,9 +72,9 @@
     {
       "code": "ENERGY",
       "name": "Energy, Oil & Power",
-      "price": 39277.0,
-      "change_pct": -0.17,
-      "sma20": 39301.8,
+      "price": 38652.65,
+      "change_pct": -1.59,
+      "sma20": 38964.82,
       "stage": "LAGGING",
       "trend": "Downtrend",
       "lead_stocks": [
@@ -86,11 +86,11 @@
     {
       "code": "METAL",
       "name": "Metals & Mining",
-      "price": 12436.95,
-      "change_pct": -0.47,
-      "sma20": 12536.86,
-      "stage": "LAGGING",
-      "trend": "Downtrend",
+      "price": 13104.6,
+      "change_pct": 5.37,
+      "sma20": 12770.77,
+      "stage": "LEADING",
+      "trend": "Strong Uptrend",
       "lead_stocks": [
         "TATASTEEL",
         "JSWSTEEL",
@@ -100,11 +100,11 @@
     {
       "code": "FMCG",
       "name": "FMCG & Consumption",
-      "price": 48748.7,
-      "change_pct": 0.7,
-      "sma20": 48492.04,
-      "stage": "LEADING",
-      "trend": "Strong Uptrend",
+      "price": 48105.05,
+      "change_pct": -1.32,
+      "sma20": 48426.88,
+      "stage": "LAGGING",
+      "trend": "Downtrend",
       "lead_stocks": [
         "ITC",
         "HINDUNILVR",
@@ -114,11 +114,11 @@
     {
       "code": "REALTY",
       "name": "Realty & Infrastructure",
-      "price": 918.7,
-      "change_pct": 1.38,
-      "sma20": 914.66,
-      "stage": "LEADING",
-      "trend": "Strong Uptrend",
+      "price": 908.7,
+      "change_pct": -1.09,
+      "sma20": 913.7,
+      "stage": "LAGGING",
+      "trend": "Downtrend",
       "lead_stocks": [
         "DLF",
         "GODREJPROP",
@@ -647,30 +647,6 @@
     },
     {
       "date": "2026-08-16",
-      "wallet_balance": 50000.0,
-      "total_invested": 25000.0,
-      "unrealized_pnl": 0.0,
-      "total_positions": 1,
-      "cumulative_pnl": 0.0
-    },
-    {
-      "date": "2026-08-16",
-      "wallet_balance": 35600.0,
-      "total_invested": 64400.0,
-      "unrealized_pnl": 0.0,
-      "total_positions": 1,
-      "cumulative_pnl": 0.0
-    },
-    {
-      "date": "2026-08-16",
-      "wallet_balance": 40000.0,
-      "total_invested": 60000.0,
-      "unrealized_pnl": 0.0,
-      "total_positions": 1,
-      "cumulative_pnl": 0.0
-    },
-    {
-      "date": "2026-08-16",
       "wallet_balance": 40000.0,
       "total_invested": 60000.0,
       "unrealized_pnl": 0.0,
@@ -723,6 +699,30 @@
       "total_invested": 60000.0,
       "unrealized_pnl": 0.0,
       "total_positions": 1,
+      "cumulative_pnl": 0.0
+    },
+    {
+      "date": "2026-08-16",
+      "wallet_balance": 25000.0,
+      "total_invested": 0.0,
+      "unrealized_pnl": 0.0,
+      "total_positions": 0,
+      "cumulative_pnl": 0.0
+    },
+    {
+      "date": "2026-08-16",
+      "wallet_balance": 25000.0,
+      "total_invested": 0.0,
+      "unrealized_pnl": 0.0,
+      "total_positions": 0,
+      "cumulative_pnl": 0.0
+    },
+    {
+      "date": "2026-08-17",
+      "wallet_balance": 25000.0,
+      "total_invested": 0.0,
+      "unrealized_pnl": 0.0,
+      "total_positions": 0,
       "cumulative_pnl": 0.0
     }
   ],
@@ -747,7 +747,7 @@
     "avg_loss_pnl": -211.28,
     "profit_factor": 4.49,
     "max_drawdown": 0.0,
-    "sharpe_estimate": 2.16,
+    "sharpe_estimate": 1.07,
     "gross_profit": 8536.19,
     "gross_loss": 1901.5,
     "net_pnl_total": 6634.69,
@@ -768,7 +768,7 @@
     "liquidity_filtered": 0,
     "messages_sent": 1,
     "messages_failed": 0,
-    "last_sent_at": "16 Aug 2026, 02:29 AM IST"
+    "last_sent_at": "17 Aug 2026, 10:01 PM IST"
   },
   "ai_accuracy": {
     "total_predictions": 22,
@@ -784,7 +784,7 @@
   "message_stats": {
     "session_sent": 1,
     "session_failed": 0,
-    "last_sent_at": "16 Aug 2026, 02:29 AM IST",
+    "last_sent_at": "17 Aug 2026, 10:01 PM IST",
     "total_sent_7d": 0,
     "total_failed_7d": 0,
     "dry_run": false
