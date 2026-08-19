@@ -1,10 +1,19 @@
 {
   "net_worth": "Rs. 25,000.00",
-  "wallet_cash": "Rs. 25,000.00",
-  "invested": "Rs. 0.00",
+  "wallet_cash": "Rs. 2,748.05",
+  "invested": "Rs. 22,251.95",
   "pnl": "Rs. +0.00",
-  "active_positions": 0,
+  "active_positions": 5,
   "status": "LIVE AGENT ACTIVE",
-  "updated_at": "18 Aug 2026, 10:01 PM IST",
-  "top_call": {}
+  "updated_at": "19 Aug 2026, 08:47 AM IST",
+  "top_call": {
+    "symbol": "TIINDIA",
+    "action": "Buy",
+    "horizon": "SWING",
+    "entry": "Rs. 2,755.80",
+    "target": "Rs. 3,249.37",
+    "stop_loss": "Rs. 2,610.62",
+    "confidence": "8/10",
+    "catalyst": "Institutional Catalyst & Technical Setup"
+  }
 }
