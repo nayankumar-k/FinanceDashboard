@@ -1412,9 +1412,13 @@
         )];
 
         let linksHtml = '';
+        const gfUrl = `https://www.google.com/finance/quote/${n.symbol}:NSE`;
         if (uniqueLinks.length > 0) {
           linksHtml = `
             <div class="news-links-footer">
+              <a href="${gfUrl}" target="_blank" rel="noopener noreferrer" class="news-link-btn" style="background: rgba(56, 189, 248, 0.15); border-color: rgba(56, 189, 248, 0.35); color: var(--neon-cyan); font-weight: 700;">
+                <i class="fa-solid fa-chart-line"></i> Google Finance 📈
+              </a>
               ${uniqueLinks.map((link, idx) => {
                 let domain = 'Source';
                 try {
@@ -1428,6 +1432,14 @@
                   </a>
                 `;
               }).join('')}
+            </div>
+          `;
+        } else {
+          linksHtml = `
+            <div class="news-links-footer">
+              <a href="${gfUrl}" target="_blank" rel="noopener noreferrer" class="news-link-btn" style="background: rgba(56, 189, 248, 0.15); border-color: rgba(56, 189, 248, 0.35); color: var(--neon-cyan); font-weight: 700;">
+                <i class="fa-solid fa-chart-line"></i> Google Finance 📈
+              </a>
             </div>
           `;
         }
@@ -1530,6 +1542,13 @@
 
             <div class="news-rationale-box">
               <strong>Catalyst:</strong> ${pos.catalyst_reason || pos.source_headline}
+            </div>
+
+            <div style="margin-top: 0.75rem; display: flex; justify-content: space-between; align-items: center;">
+              <span style="font-size: 0.75rem; color: var(--text-dim);">Horizon: <strong style="color: var(--text-main); text-transform: uppercase;">${pos.horizon || 'intraday'}</strong> (${pos.days_held || 0}/${pos.hold_days || 1}d)</span>
+              <a href="https://www.google.com/finance/quote/${pos.symbol}:NSE" target="_blank" rel="noopener noreferrer" class="news-link-btn" style="background: rgba(56, 189, 248, 0.15); border-color: rgba(56, 189, 248, 0.35); color: var(--neon-cyan); padding: 0.25rem 0.65rem; font-size: 0.72rem; font-weight: 700;">
+                <i class="fa-solid fa-chart-line"></i> Google Finance 📈
+              </a>
             </div>
           </div>
         `;
