@@ -1,25 +1,25 @@
 {
-  "updated_at": "20 Aug 2026, 03:15 PM IST",
+  "updated_at": "20 Aug 2026, 10:01 PM IST",
   "status": "LIVE AGENT ACTIVE",
   "is_alive": true,
   "market_regime": {
     "status": "NEUTRAL",
-    "nifty_price": 24211.6,
-    "nifty_change_pct": "+0.55%",
+    "nifty_price": 24231.85,
+    "nifty_change_pct": "+0.64%",
     "nifty_trend": "Consolidation",
     "banknifty_price": "N/A",
     "banknifty_change_pct": "N/A",
-    "regime_summary": "Consolidating/Neutral Market (Nifty at 24,211.6)."
+    "regime_summary": "Consolidating/Neutral Market (Nifty at 24,231.8)."
   },
   "sector_heatmap": [
     {
       "code": "BANK",
       "name": "Banking & Financials",
-      "price": 57444.05,
-      "change_pct": 0.36,
-      "sma20": 57472.46,
-      "stage": "IMPROVING",
-      "trend": "Rebound / Recovery",
+      "price": 57495.9,
+      "change_pct": 0.45,
+      "sma20": 57441.41,
+      "stage": "LEADING",
+      "trend": "Strong Uptrend",
       "lead_stocks": [
         "HDFCBANK",
         "ICICIBANK",
@@ -29,9 +29,9 @@
     {
       "code": "IT",
       "name": "Information Technology",
-      "price": 30664.1,
-      "change_pct": 0.76,
-      "sma20": 30929.97,
+      "price": 30673.05,
+      "change_pct": 0.79,
+      "sma20": 30930.42,
       "stage": "IMPROVING",
       "trend": "Rebound / Recovery",
       "lead_stocks": [
@@ -44,9 +44,9 @@
     {
       "code": "AUTO",
       "name": "Automotive & EV",
-      "price": 304.0,
-      "change_pct": 0.08,
-      "sma20": 297.95,
+      "price": 303.77,
+      "change_pct": 0.0,
+      "sma20": 297.94,
       "stage": "LEADING",
       "trend": "Strong Uptrend",
       "lead_stocks": [
@@ -58,9 +58,9 @@
     {
       "code": "PHARMA",
       "name": "Pharma & Healthcare",
-      "price": 26421.15,
-      "change_pct": 0.41,
-      "sma20": 26357.19,
+      "price": 26416.0,
+      "change_pct": 0.39,
+      "sma20": 26367.71,
       "stage": "LEADING",
       "trend": "Strong Uptrend",
       "lead_stocks": [
@@ -86,9 +86,9 @@
     {
       "code": "METAL",
       "name": "Metals & Mining",
-      "price": 183.14,
-      "change_pct": -0.47,
-      "sma20": 186.85,
+      "price": 183.5,
+      "change_pct": -0.27,
+      "sma20": 186.9,
       "stage": "LAGGING",
       "trend": "Downtrend",
       "lead_stocks": [
@@ -100,9 +100,9 @@
     {
       "code": "FMCG",
       "name": "FMCG & Consumption",
-      "price": 2040.2,
-      "change_pct": 0.97,
-      "sma20": 2084.98,
+      "price": 2028.0,
+      "change_pct": 0.36,
+      "sma20": 2084.37,
       "stage": "IMPROVING",
       "trend": "Rebound / Recovery",
       "lead_stocks": [
@@ -114,9 +114,9 @@
     {
       "code": "REALTY",
       "name": "Realty & Infrastructure",
-      "price": 679.7,
-      "change_pct": 1.46,
-      "sma20": 658.39,
+      "price": 676.15,
+      "change_pct": 0.93,
+      "sma20": 658.21,
       "stage": "LEADING",
       "trend": "Strong Uptrend",
       "lead_stocks": [
@@ -130,8 +130,8 @@
   "summary": {
     "wallet_balance": 41479.83,
     "allocated_cash": 58404.2,
-    "unrealized_pnl": -161.20177001953147,
-    "net_worth": 99722.82822998047,
+    "unrealized_pnl": -65.00001831054709,
+    "net_worth": 99819.02998168945,
     "cumulative_pnl": 0.0,
     "active_positions_count": 3,
     "cash_pct": 41.6,
@@ -147,13 +147,13 @@
       "trade_recommendation": "Buy",
       "horizon": "swing",
       "entry_price": 254.9,
-      "current_price": 252.89999389648438,
+      "current_price": 253.3000030517578,
       "target_price": 276.62,
       "stop_loss": 247.41,
       "quantity": 78,
       "allocated_cash": 19882.2,
-      "unrealized_pnl": -156.0004760742192,
-      "pnl_pct": -0.78,
+      "unrealized_pnl": -124.79976196289107,
+      "pnl_pct": -0.63,
       "catalyst_tier": "Tier-1",
       "confidence_score": "8",
       "tech_score": "7",
@@ -180,13 +180,13 @@
       "trade_recommendation": "Buy",
       "horizon": "swing",
       "entry_price": 475.4,
-      "current_price": 480.79998779296875,
+      "current_price": 480.8999938964844,
       "target_price": 508.01,
       "stop_loss": 448.97,
       "quantity": 42,
       "allocated_cash": 19966.8,
-      "unrealized_pnl": 226.79948730468845,
-      "pnl_pct": 1.14,
+      "unrealized_pnl": 230.9997436523447,
+      "pnl_pct": 1.16,
       "catalyst_tier": "Tier-1",
       "confidence_score": "8",
       "tech_score": "7",
@@ -213,13 +213,13 @@
       "trade_recommendation": "Buy",
       "horizon": "swing",
       "entry_price": 2319.4,
-      "current_price": 2290.39990234375,
+      "current_price": 2298.0,
       "target_price": 2481.78,
       "stop_loss": 2208.81,
       "quantity": 8,
       "allocated_cash": 18555.2,
-      "unrealized_pnl": -232.00078125000073,
-      "pnl_pct": -1.25,
+      "unrealized_pnl": -171.20000000000073,
+      "pnl_pct": -0.92,
       "catalyst_tier": "Tier-1",
       "confidence_score": "8",
       "tech_score": "7",
@@ -631,14 +631,6 @@
   "daily_pnl": [
     {
       "date": "2026-08-16",
-      "wallet_balance": 50000.0,
-      "total_invested": 25000.0,
-      "unrealized_pnl": 0.0,
-      "total_positions": 1,
-      "cumulative_pnl": 0.0
-    },
-    {
-      "date": "2026-08-16",
       "wallet_balance": 35600.0,
       "total_invested": 64400.0,
       "unrealized_pnl": 0.0,
@@ -868,6 +860,14 @@
       "unrealized_pnl": 0.0,
       "total_positions": 5,
       "cumulative_pnl": 0.0
+    },
+    {
+      "date": "2026-08-20",
+      "wallet_balance": 41479.83,
+      "total_invested": 58404.2,
+      "unrealized_pnl": 0.0,
+      "total_positions": 3,
+      "cumulative_pnl": 0.0
     }
   ],
   "monthly_summary": {
@@ -891,7 +891,7 @@
     "avg_loss_pnl": -183.41,
     "profit_factor": 4.69,
     "max_drawdown": 785.99,
-    "sharpe_estimate": 0.18,
+    "sharpe_estimate": 2.99,
     "gross_profit": 9460.89,
     "gross_loss": 2017.47,
     "net_pnl_total": 7443.42,
@@ -910,9 +910,9 @@
     "active_keys": 2,
     "rss_scanned": 0,
     "liquidity_filtered": 0,
-    "messages_sent": 0,
+    "messages_sent": 1,
     "messages_failed": 0,
-    "last_sent_at": ""
+    "last_sent_at": "20 Aug 2026, 10:01 PM IST"
   },
   "ai_accuracy": {
     "total_predictions": 25,
@@ -926,9 +926,9 @@
     }
   },
   "message_stats": {
-    "session_sent": 0,
+    "session_sent": 1,
     "session_failed": 0,
-    "last_sent_at": "",
+    "last_sent_at": "20 Aug 2026, 10:01 PM IST",
     "total_sent_7d": 0,
     "total_failed_7d": 0,
     "dry_run": false
