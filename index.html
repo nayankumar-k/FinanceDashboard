@@ -1361,17 +1361,27 @@
         return;
       }
 
+      const symbols = calls.map(c => c.symbol).filter(Boolean);
+      const multiUrl = `https://www.google.com/finance/quote/` + symbols.map(s => `${s}:NSE`).join(',');
+
       let html = '';
-      calls.forEach(pos => {
-        const sym = pos.symbol;
-        if (!sym) return;
+      symbols.forEach(sym => {
         const gfUrl = `https://www.google.com/finance/quote/${sym}:NSE`;
         html += `
-          <a href="${gfUrl}" target="_blank" rel="noopener noreferrer" class="news-link-btn" style="background: rgba(56, 189, 248, 0.15); border-color: rgba(56, 189, 248, 0.35); color: var(--neon-cyan); padding: 0.3rem 0.75rem; font-size: 0.78rem; font-weight: 700; border-radius: 6px;">
+          <a href="${gfUrl}" target="_blank" rel="noopener noreferrer" class="news-link-btn" style="background: rgba(56, 189, 248, 0.15); border-color: rgba(56, 189, 248, 0.35); color: var(--neon-cyan); padding: 0.3rem 0.65rem; font-size: 0.76rem; font-weight: 700; border-radius: 6px;">
             <i class="fa-solid fa-chart-line"></i> ${sym} 📈
           </a>
         `;
       });
+
+      html += `
+        <a href="${multiUrl}" target="_blank" rel="noopener noreferrer" class="news-link-btn" style="background: var(--gradient-emerald); border: none; color: #000; padding: 0.35rem 0.85rem; font-size: 0.78rem; font-weight: 800; border-radius: 6px; box-shadow: 0 0 12px rgba(16, 185, 129, 0.3);">
+          <i class="fa-solid fa-bolt"></i> Stream All Picked Stocks 🚀
+        </a>
+        <a href="google_finance_watchlist.csv" download="google_finance_watchlist.csv" class="news-link-btn" style="background: rgba(255, 255, 255, 0.08); border-color: rgba(255, 255, 255, 0.2); color: var(--text-main); padding: 0.35rem 0.75rem; font-size: 0.78rem; font-weight: 700; border-radius: 6px;">
+          <i class="fa-solid fa-file-csv"></i> Download GF Watchlist CSV 📥
+        </a>
+      `;
 
       container.innerHTML = html;
     }
