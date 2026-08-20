@@ -1,25 +1,25 @@
 {
-  "updated_at": "20 Aug 2026, 12:46 PM IST",
+  "updated_at": "20 Aug 2026, 03:15 PM IST",
   "status": "LIVE AGENT ACTIVE",
   "is_alive": true,
   "market_regime": {
     "status": "NEUTRAL",
-    "nifty_price": 24219.75,
-    "nifty_change_pct": "+0.59%",
+    "nifty_price": 24211.6,
+    "nifty_change_pct": "+0.55%",
     "nifty_trend": "Consolidation",
     "banknifty_price": "N/A",
     "banknifty_change_pct": "N/A",
-    "regime_summary": "Consolidating/Neutral Market (Nifty at 24,219.8)."
+    "regime_summary": "Consolidating/Neutral Market (Nifty at 24,211.6)."
   },
   "sector_heatmap": [
     {
       "code": "BANK",
       "name": "Banking & Financials",
-      "price": 57580.4,
-      "change_pct": 0.6,
-      "sma20": 57479.27,
-      "stage": "LEADING",
-      "trend": "Strong Uptrend",
+      "price": 57444.05,
+      "change_pct": 0.36,
+      "sma20": 57472.46,
+      "stage": "IMPROVING",
+      "trend": "Rebound / Recovery",
       "lead_stocks": [
         "HDFCBANK",
         "ICICIBANK",
@@ -29,9 +29,9 @@
     {
       "code": "IT",
       "name": "Information Technology",
-      "price": 30660.85,
-      "change_pct": 0.75,
-      "sma20": 30929.81,
+      "price": 30664.1,
+      "change_pct": 0.76,
+      "sma20": 30929.97,
       "stage": "IMPROVING",
       "trend": "Rebound / Recovery",
       "lead_stocks": [
@@ -44,9 +44,9 @@
     {
       "code": "AUTO",
       "name": "Automotive & EV",
-      "price": 303.9,
-      "change_pct": 0.04,
-      "sma20": 297.94,
+      "price": 304.0,
+      "change_pct": 0.08,
+      "sma20": 297.95,
       "stage": "LEADING",
       "trend": "Strong Uptrend",
       "lead_stocks": [
@@ -58,9 +58,9 @@
     {
       "code": "PHARMA",
       "name": "Pharma & Healthcare",
-      "price": 26431.45,
-      "change_pct": 0.45,
-      "sma20": 26412.55,
+      "price": 26421.15,
+      "change_pct": 0.41,
+      "sma20": 26357.19,
       "stage": "LEADING",
       "trend": "Strong Uptrend",
       "lead_stocks": [
@@ -72,11 +72,11 @@
     {
       "code": "ENERGY",
       "name": "Energy, Oil & Power",
-      "price": 237.35,
-      "change_pct": -0.27,
-      "sma20": 239.87,
-      "stage": "LAGGING",
-      "trend": "Downtrend",
+      "price": 238.5,
+      "change_pct": 0.21,
+      "sma20": 239.93,
+      "stage": "IMPROVING",
+      "trend": "Rebound / Recovery",
       "lead_stocks": [
         "RELIANCE",
         "ONGC",
@@ -86,9 +86,9 @@
     {
       "code": "METAL",
       "name": "Metals & Mining",
-      "price": 183.71,
-      "change_pct": -0.16,
-      "sma20": 186.87,
+      "price": 183.14,
+      "change_pct": -0.47,
+      "sma20": 186.85,
       "stage": "LAGGING",
       "trend": "Downtrend",
       "lead_stocks": [
@@ -100,9 +100,9 @@
     {
       "code": "FMCG",
       "name": "FMCG & Consumption",
-      "price": 2031.6,
-      "change_pct": 0.54,
-      "sma20": 2084.55,
+      "price": 2040.2,
+      "change_pct": 0.97,
+      "sma20": 2084.98,
       "stage": "IMPROVING",
       "trend": "Rebound / Recovery",
       "lead_stocks": [
@@ -114,9 +114,9 @@
     {
       "code": "REALTY",
       "name": "Realty & Infrastructure",
-      "price": 679.0,
-      "change_pct": 1.36,
-      "sma20": 658.35,
+      "price": 679.7,
+      "change_pct": 1.46,
+      "sma20": 658.39,
       "stage": "LEADING",
       "trend": "Strong Uptrend",
       "lead_stocks": [
@@ -130,12 +130,12 @@
   "summary": {
     "wallet_balance": 41479.83,
     "allocated_cash": 58404.2,
-    "unrealized_pnl": -393.39940185546897,
-    "net_worth": 99490.63059814453,
+    "unrealized_pnl": -161.20177001953147,
+    "net_worth": 99722.82822998047,
     "cumulative_pnl": 0.0,
     "active_positions_count": 3,
-    "cash_pct": 41.7,
-    "holdings_pct": 58.3,
+    "cash_pct": 41.6,
+    "holdings_pct": 58.4,
     "total_articles_scanned": 0,
     "source_breakdown": {}
   },
@@ -147,13 +147,13 @@
       "trade_recommendation": "Buy",
       "horizon": "swing",
       "entry_price": 254.9,
-      "current_price": 254.10000610351562,
+      "current_price": 252.89999389648438,
       "target_price": 276.62,
       "stop_loss": 247.41,
       "quantity": 78,
       "allocated_cash": 19882.2,
-      "unrealized_pnl": -62.39952392578169,
-      "pnl_pct": -0.31,
+      "unrealized_pnl": -156.0004760742192,
+      "pnl_pct": -0.78,
       "catalyst_tier": "Tier-1",
       "confidence_score": "8",
       "tech_score": "7",
@@ -162,7 +162,7 @@
       "risk_reward": "1:2.0",
       "pattern_type": "Bullish News & Momentum",
       "hold_days": 2,
-      "days_held": 0,
+      "days_held": 1,
       "expected_exit_date": "2026-08-24",
       "source_headline": "NSE Market Intelligence Dossier",
       "news_sentiment": "Positive",
@@ -170,7 +170,8 @@
       "source_count": 1,
       "sources_list": [
         "Financial News Media"
-      ]
+      ],
+      "google_finance_url": "https://www.google.com/finance/quote/APTUS:NSE"
     },
     {
       "symbol": "OIL",
@@ -179,13 +180,13 @@
       "trade_recommendation": "Buy",
       "horizon": "swing",
       "entry_price": 475.4,
-      "current_price": 472.70001220703125,
+      "current_price": 480.79998779296875,
       "target_price": 508.01,
       "stop_loss": 448.97,
       "quantity": 42,
       "allocated_cash": 19966.8,
-      "unrealized_pnl": -113.39948730468655,
-      "pnl_pct": -0.57,
+      "unrealized_pnl": 226.79948730468845,
+      "pnl_pct": 1.14,
       "catalyst_tier": "Tier-1",
       "confidence_score": "8",
       "tech_score": "7",
@@ -194,7 +195,7 @@
       "risk_reward": "1:2.0",
       "pattern_type": "Bullish News & Momentum",
       "hold_days": 2,
-      "days_held": 0,
+      "days_held": 1,
       "expected_exit_date": "2026-08-24",
       "source_headline": "NSE Market Intelligence Dossier",
       "news_sentiment": "Positive",
@@ -202,7 +203,8 @@
       "source_count": 1,
       "sources_list": [
         "Financial News Media"
-      ]
+      ],
+      "google_finance_url": "https://www.google.com/finance/quote/OIL:NSE"
     },
     {
       "symbol": "TCS",
@@ -211,13 +213,13 @@
       "trade_recommendation": "Buy",
       "horizon": "swing",
       "entry_price": 2319.4,
-      "current_price": 2292.199951171875,
+      "current_price": 2290.39990234375,
       "target_price": 2481.78,
       "stop_loss": 2208.81,
       "quantity": 8,
       "allocated_cash": 18555.2,
-      "unrealized_pnl": -217.60039062500073,
-      "pnl_pct": -1.17,
+      "unrealized_pnl": -232.00078125000073,
+      "pnl_pct": -1.25,
       "catalyst_tier": "Tier-1",
       "confidence_score": "8",
       "tech_score": "7",
@@ -226,7 +228,7 @@
       "risk_reward": "1:2.0",
       "pattern_type": "Bullish News & Momentum",
       "hold_days": 2,
-      "days_held": 0,
+      "days_held": 1,
       "expected_exit_date": "2026-08-24",
       "source_headline": "NSE Market Intelligence Dossier",
       "news_sentiment": "Positive",
@@ -234,23 +236,18 @@
       "source_count": 1,
       "sources_list": [
         "Financial News Media"
-      ]
+      ],
+      "google_finance_url": "https://www.google.com/finance/quote/TCS:NSE"
     }
   ],
   "telemetry": {
     "rss_feeds": "0 Operational",
-    "gemini_keys": "1 Active Keys",
+    "gemini_keys": "2 Active Keys",
     "liquidity_filtered": 0,
     "total_scanned": 0,
     "sheets_status": "Clean DB Synced"
   },
-  "alerts_log": [
-    {
-      "timestamp": "20 Aug 2026, 12:46 PM IST",
-      "part": 1,
-      "message": "\u2600\ufe0f Indian Market Midday Status & Rebalance Report\nStatus: Active | Time: 20 Aug 2026, 12:45 PM IST\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\n\ud83d\udd14 Closed Positions (Target / SL Hit Midday):\n\u2022 SKF India (Industrial) Limited (SKFINDUS): Stop Loss Hit \ud83d\uded1 (Trailed to Break-Even) at 09:45 AM\n  Exit: Rs. 2815.00 | Net P&L: Rs. -57.95 (+0.00%)\n\u2022 Strides Pharma Science Limited (STAR): Stop Loss Hit \ud83d\uded1 (Trailed to Break-Even) at 11:20 AM\n  Exit: Rs. 986.50 | Net P&L: Rs. -58.02 (+0.00%)\n\n\ud83d\udcca Active Holdings Midday Status (3):\n\u2022 APTUS: CMP Rs. 254.10 (Entry: Rs. 254.90 | P&L: -0.31%)\n\u2022 OIL: CMP Rs. 472.70 (Entry: Rs. 475.40 | P&L: -0.57%)\n\u2022 TCS: CMP Rs. 2292.20 (Entry: Rs. 2319.40 | P&L: -1.17%)\n\n\ud83d\udcb0 Updated Wallet Cash: Rs. 41,479.83"
-    }
-  ],
+  "alerts_log": [],
   "trade_history": [
     {
       "date": "2026-08-20",
@@ -910,12 +907,12 @@
     }
   },
   "system_monitor": {
-    "active_keys": 1,
+    "active_keys": 2,
     "rss_scanned": 0,
     "liquidity_filtered": 0,
-    "messages_sent": 1,
+    "messages_sent": 0,
     "messages_failed": 0,
-    "last_sent_at": "20 Aug 2026, 12:46 PM IST"
+    "last_sent_at": ""
   },
   "ai_accuracy": {
     "total_predictions": 25,
@@ -929,9 +926,9 @@
     }
   },
   "message_stats": {
-    "session_sent": 1,
+    "session_sent": 0,
     "session_failed": 0,
-    "last_sent_at": "20 Aug 2026, 12:46 PM IST",
+    "last_sent_at": "",
     "total_sent_7d": 0,
     "total_failed_7d": 0,
     "dry_run": false
