@@ -1513,6 +1513,9 @@
                 <h4>${n.company || n.symbol} <span>${n.symbol}</span></h4>
               </div>
               <div class="news-badges">
+                ${n.analyst_desk && n.analyst_desk !== 'None' && n.analyst_desk !== 'N/A' && n.analyst_desk !== 'Quantitative' ? `
+                  <span class="news-tag" style="background: rgba(168, 85, 247, 0.2); color: var(--neon-purple); border: 1px solid rgba(168, 85, 247, 0.4); font-weight: 700;"><i class="fa-solid fa-user-tie"></i> ${n.analyst_desk}</span>
+                ` : ''}
                 <span class="news-tag ${tierClass}"><i class="fa-solid fa-crown"></i> ${n.catalyst_tier || 'Tier-1'}</span>
                 <span class="news-tag ${isBullish ? 'bullish' : ''}">${n.impact || 'Bullish'}</span>
               </div>
