@@ -1506,6 +1506,9 @@
           `;
         }
 
+        const hasTradeSetup = n.target_price && n.target_price !== 'N/A' && n.entry_price && n.entry_price !== 'N/A';
+        const sourcesText = (n.sources_list && n.sources_list.length > 0) ? n.sources_list.join(' • ') : 'Financial Media Feed';
+
         html += `
           <div class="news-card">
             <div class="news-card-top">
@@ -1518,26 +1521,56 @@
               </div>
             </div>
 
-            <div class="news-headline">${n.title}</div>
+            <div class="news-headline" style="font-size: 1rem; font-weight: 700; color: var(--text-main); margin-bottom: 0.5rem; line-height: 1.35;">${n.title}</div>
 
-            <div class="news-rationale-box">
-              <strong>AI Catalyst Takeaway:</strong> ${n.rating_rationale || n.summary}
+            <div style="font-size: 0.82rem; color: var(--text-muted); line-height: 1.45; margin-bottom: 0.6rem; background: rgba(0, 0, 0, 0.25); padding: 0.65rem 0.8rem; border-radius: 8px; border-left: 3px solid var(--neon-cyan);">
+              <div style="font-size: 0.72rem; color: var(--neon-cyan); font-weight: 700; text-transform: uppercase; margin-bottom: 0.2rem;"><i class="fa-solid fa-file-lines"></i> Synthesized Market Intelligence:</div>
+              ${n.summary || n.title}
             </div>
 
-            <div class="news-analysis-grid">
+            <div class="news-rationale-box">
+              <strong style="color: var(--neon-emerald);"><i class="fa-solid fa-brain"></i> AI Catalyst Takeaway:</strong> ${n.rating_rationale || n.summary}
+            </div>
+
+            <div class="news-analysis-grid" style="grid-template-columns: repeat(3, 1fr); margin-top: 0.65rem; gap: 0.45rem;">
               <div class="analysis-cell">
                 <span class="lbl">Conviction</span>
                 <span class="val" style="color: var(--neon-cyan);">${n.overall_confidence_score || '8'}/10</span>
               </div>
               <div class="analysis-cell">
-                <span class="lbl">Pattern</span>
-                <span class="val">${n.pattern_type || 'CM-VCP'}</span>
+                <span class="lbl">Tech Score</span>
+                <span class="val">${n.technical_score || '7'}/10</span>
+              </div>
+              <div class="analysis-cell">
+                <span class="lbl">Catalyst Score</span>
+                <span class="val" style="color: var(--neon-emerald);">${n.catalyst_score || '8'}/10</span>
+              </div>
+              <div class="analysis-cell">
+                <span class="lbl">Fund Score</span>
+                <span class="val">${n.fundamental_score || '7'}/10</span>
+              </div>
+              <div class="analysis-cell">
+                <span class="lbl">Risk : Reward</span>
+                <span class="val">${n.risk_reward_ratio || '1:2.0'}</span>
               </div>
               <div class="analysis-cell">
                 <span class="lbl">Horizon</span>
                 <span class="val" style="text-transform: uppercase;">${n.trade_horizon || 'Swing'}</span>
               </div>
             </div>
+
+            ${hasTradeSetup ? `
+              <div style="margin-top: 0.65rem; padding: 0.5rem 0.75rem; background: rgba(16, 185, 129, 0.08); border: 1px dashed rgba(16, 185, 129, 0.3); border-radius: 6px; font-size: 0.75rem; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 0.4rem; font-family: var(--font-mono);">
+                <span>Entry: <strong style="color: var(--text-main);">Rs. ${n.entry_price}</strong></span>
+                <span>Target: <strong style="color: var(--neon-emerald);">Rs. ${n.target_price}</strong></span>
+                <span>Stop Loss: <strong style="color: var(--neon-rose);">Rs. ${n.stop_loss}</strong></span>
+              </div>
+            ` : ''}
+
+            <div style="font-size: 0.72rem; color: var(--text-dim); margin-top: 0.55rem; display: flex; align-items: center; gap: 0.35rem;">
+              <i class="fa-solid fa-layer-group" style="color: var(--neon-cyan);"></i> <span>Sources (${n.source_count || 1}): <strong>${sourcesText}</strong></span>
+            </div>
+
             ${linksHtml}
           </div>
         `;
