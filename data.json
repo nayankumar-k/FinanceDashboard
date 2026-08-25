@@ -1,23 +1,23 @@
 {
-  "updated_at": "25 Aug 2026, 03:15 PM IST",
+  "updated_at": "25 Aug 2026, 10:01 PM IST",
   "status": "LIVE AGENT ACTIVE",
   "is_alive": true,
   "market_regime": {
     "status": "NEUTRAL",
-    "nifty_price": 24260.05,
-    "nifty_change_pct": "+0.17%",
+    "nifty_price": 24334.55,
+    "nifty_change_pct": "+0.48%",
     "nifty_trend": "Consolidation",
     "banknifty_price": "N/A",
     "banknifty_change_pct": "N/A",
-    "regime_summary": "Consolidating/Neutral Market (Nifty at 24,260.1)."
+    "regime_summary": "Consolidating/Neutral Market (Nifty at 24,334.6)."
   },
   "sector_heatmap": [
     {
       "code": "BANK",
       "name": "Banking & Financials",
-      "price": 57454.1,
-      "change_pct": -0.12,
-      "sma20": 57585.33,
+      "price": 57514.2,
+      "change_pct": -0.02,
+      "sma20": 57588.34,
       "stage": "LAGGING",
       "trend": "Downtrend",
       "lead_stocks": [
@@ -29,11 +29,11 @@
     {
       "code": "IT",
       "name": "Information Technology",
-      "price": 30578.4,
-      "change_pct": -0.06,
-      "sma20": 31084.39,
-      "stage": "LAGGING",
-      "trend": "Downtrend",
+      "price": 30771.8,
+      "change_pct": 0.57,
+      "sma20": 31094.06,
+      "stage": "IMPROVING",
+      "trend": "Rebound / Recovery",
       "lead_stocks": [
         "TCS",
         "INFY",
@@ -44,8 +44,8 @@
     {
       "code": "AUTO",
       "name": "Automotive & EV",
-      "price": 302.06,
-      "change_pct": 0.2,
+      "price": 302.0,
+      "change_pct": 0.18,
       "sma20": 300.7,
       "stage": "LEADING",
       "trend": "Strong Uptrend",
@@ -58,11 +58,11 @@
     {
       "code": "PHARMA",
       "name": "Pharma & Healthcare",
-      "price": 26480.35,
-      "change_pct": 0.54,
-      "sma20": 26496.11,
-      "stage": "IMPROVING",
-      "trend": "Rebound / Recovery",
+      "price": 26564.0,
+      "change_pct": 0.85,
+      "sma20": 26500.29,
+      "stage": "LEADING",
+      "trend": "Strong Uptrend",
       "lead_stocks": [
         "SUNPHARMA",
         "DRREDDY",
@@ -72,8 +72,8 @@
     {
       "code": "ENERGY",
       "name": "Energy, Oil & Power",
-      "price": 233.97,
-      "change_pct": -1.09,
+      "price": 234.0,
+      "change_pct": -1.08,
       "sma20": 238.97,
       "stage": "LAGGING",
       "trend": "Downtrend",
@@ -86,11 +86,11 @@
     {
       "code": "METAL",
       "name": "Metals & Mining",
-      "price": 184.45,
-      "change_pct": -0.99,
-      "sma20": 187.07,
-      "stage": "LAGGING",
-      "trend": "Downtrend",
+      "price": 186.94,
+      "change_pct": 0.34,
+      "sma20": 187.2,
+      "stage": "IMPROVING",
+      "trend": "Rebound / Recovery",
       "lead_stocks": [
         "TATASTEEL",
         "JSWSTEEL",
@@ -100,9 +100,9 @@
     {
       "code": "FMCG",
       "name": "FMCG & Consumption",
-      "price": 2022.0,
-      "change_pct": -0.39,
-      "sma20": 2070.6,
+      "price": 2024.2,
+      "change_pct": -0.29,
+      "sma20": 2070.71,
       "stage": "LAGGING",
       "trend": "Downtrend",
       "lead_stocks": [
@@ -114,9 +114,9 @@
     {
       "code": "REALTY",
       "name": "Realty & Infrastructure",
-      "price": 685.9,
-      "change_pct": -0.45,
-      "sma20": 663.3,
+      "price": 682.95,
+      "change_pct": -0.88,
+      "sma20": 663.16,
       "stage": "WEAKENING",
       "trend": "Pullback / Consolidation",
       "lead_stocks": [
@@ -643,14 +643,6 @@
   "daily_pnl": [
     {
       "date": "2026-08-16",
-      "wallet_balance": 50000.0,
-      "total_invested": 25000.0,
-      "unrealized_pnl": 0.0,
-      "total_positions": 1,
-      "cumulative_pnl": 0.0
-    },
-    {
-      "date": "2026-08-16",
       "wallet_balance": 35600.0,
       "total_invested": 64400.0,
       "unrealized_pnl": 0.0,
@@ -880,6 +872,14 @@
       "unrealized_pnl": 0.0,
       "total_positions": 2,
       "cumulative_pnl": -463.12
+    },
+    {
+      "date": "2026-08-25",
+      "wallet_balance": 99383.94,
+      "total_invested": 0.0,
+      "unrealized_pnl": 0.0,
+      "total_positions": 0,
+      "cumulative_pnl": -500.09
     }
   ],
   "monthly_summary": {
@@ -902,8 +902,8 @@
     "avg_win_pnl": 552.82,
     "avg_loss_pnl": -222.52,
     "profit_factor": 2.95,
-    "max_drawdown": 1249.11,
-    "sharpe_estimate": 3.43,
+    "max_drawdown": 1286.08,
+    "sharpe_estimate": 3.46,
     "gross_profit": 10503.66,
     "gross_loss": 3560.33,
     "net_pnl_total": 6943.33,
@@ -922,9 +922,9 @@
     "active_keys": 2,
     "rss_scanned": 0,
     "liquidity_filtered": 0,
-    "messages_sent": 0,
+    "messages_sent": 1,
     "messages_failed": 0,
-    "last_sent_at": ""
+    "last_sent_at": "25 Aug 2026, 10:01 PM IST"
   },
   "ai_accuracy": {
     "total_predictions": 33,
@@ -938,9 +938,9 @@
     }
   },
   "message_stats": {
-    "session_sent": 0,
+    "session_sent": 1,
     "session_failed": 0,
-    "last_sent_at": "",
+    "last_sent_at": "25 Aug 2026, 10:01 PM IST",
     "total_sent_7d": 0,
     "total_failed_7d": 0,
     "dry_run": false
