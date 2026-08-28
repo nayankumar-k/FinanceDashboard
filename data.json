@@ -1,23 +1,23 @@
 {
-  "updated_at": "28 Aug 2026, 03:15 PM IST",
+  "updated_at": "28 Aug 2026, 10:01 PM IST",
   "status": "LIVE AGENT ACTIVE",
   "is_alive": true,
   "market_regime": {
     "status": "BEARISH_DEFENSIVE",
-    "nifty_price": 24142.45,
-    "nifty_change_pct": "+0.21%",
+    "nifty_price": 24175.65,
+    "nifty_change_pct": "+0.35%",
     "nifty_trend": "Downtrend (Below 20 & 50 SMA)",
     "banknifty_price": "N/A",
     "banknifty_change_pct": "N/A",
-    "regime_summary": "Defensive/Bearish Regime (Nifty at 24,142.4, below 20-day SMA 24,373.7). Risk parameters tightened."
+    "regime_summary": "Defensive/Bearish Regime (Nifty at 24,175.7, below 20-day SMA 24,375.3). Risk parameters tightened."
   },
   "sector_heatmap": [
     {
       "code": "BANK",
       "name": "Banking & Financials",
-      "price": 57432.25,
-      "change_pct": -0.14,
-      "sma20": 57643.72,
+      "price": 57496.3,
+      "change_pct": -0.02,
+      "sma20": 57646.93,
       "stage": "LAGGING",
       "trend": "Downtrend",
       "lead_stocks": [
@@ -29,9 +29,9 @@
     {
       "code": "IT",
       "name": "Information Technology",
-      "price": 31264.2,
-      "change_pct": 3.45,
-      "sma20": 31032.94,
+      "price": 31281.7,
+      "change_pct": 3.51,
+      "sma20": 31033.81,
       "stage": "LEADING",
       "trend": "Strong Uptrend",
       "lead_stocks": [
@@ -44,9 +44,9 @@
     {
       "code": "AUTO",
       "name": "Automotive & EV",
-      "price": 298.28,
-      "change_pct": -0.94,
-      "sma20": 302.34,
+      "price": 298.11,
+      "change_pct": -1.0,
+      "sma20": 302.33,
       "stage": "LAGGING",
       "trend": "Downtrend",
       "lead_stocks": [
@@ -58,9 +58,9 @@
     {
       "code": "PHARMA",
       "name": "Pharma & Healthcare",
-      "price": 26971.05,
-      "change_pct": 0.46,
-      "sma20": 26559.89,
+      "price": 26991.85,
+      "change_pct": 0.53,
+      "sma20": 26560.93,
       "stage": "LEADING",
       "trend": "Strong Uptrend",
       "lead_stocks": [
@@ -72,8 +72,8 @@
     {
       "code": "ENERGY",
       "name": "Energy, Oil & Power",
-      "price": 232.3,
-      "change_pct": 0.13,
+      "price": 232.25,
+      "change_pct": 0.11,
       "sma20": 237.67,
       "stage": "IMPROVING",
       "trend": "Rebound / Recovery",
@@ -86,9 +86,9 @@
     {
       "code": "METAL",
       "name": "Metals & Mining",
-      "price": 186.1,
-      "change_pct": -0.37,
-      "sma20": 187.05,
+      "price": 186.5,
+      "change_pct": -0.16,
+      "sma20": 187.07,
       "stage": "LAGGING",
       "trend": "Downtrend",
       "lead_stocks": [
@@ -100,11 +100,11 @@
     {
       "code": "FMCG",
       "name": "FMCG & Consumption",
-      "price": 2004.0,
-      "change_pct": -0.25,
-      "sma20": 2056.06,
-      "stage": "LAGGING",
-      "trend": "Downtrend",
+      "price": 2010.4,
+      "change_pct": 0.07,
+      "sma20": 2056.38,
+      "stage": "IMPROVING",
+      "trend": "Rebound / Recovery",
       "lead_stocks": [
         "ITC",
         "HINDUNILVR",
@@ -114,11 +114,11 @@
     {
       "code": "REALTY",
       "name": "Realty & Infrastructure",
-      "price": 676.0,
-      "change_pct": -0.02,
-      "sma20": 665.17,
-      "stage": "WEAKENING",
-      "trend": "Pullback / Consolidation",
+      "price": 679.8,
+      "change_pct": 0.54,
+      "sma20": 665.36,
+      "stage": "LEADING",
+      "trend": "Strong Uptrend",
       "lead_stocks": [
         "DLF",
         "GODREJPROP",
@@ -130,8 +130,8 @@
   "summary": {
     "wallet_balance": 92385.09,
     "allocated_cash": 5869.5,
-    "unrealized_pnl": -199.94973754882812,
-    "net_worth": 98054.64026245117,
+    "unrealized_pnl": -212.42010498046875,
+    "net_worth": 98042.16989501953,
     "cumulative_pnl": -1745.41,
     "active_positions_count": 1,
     "cash_pct": 94.2,
@@ -147,13 +147,13 @@
       "trade_recommendation": "Buy",
       "horizon": "swing",
       "entry_price": 136.5,
-      "current_price": 131.85000610351562,
+      "current_price": 131.55999755859375,
       "target_price": 150.97,
       "stop_loss": 122.76,
       "quantity": 43,
       "allocated_cash": 5869.5,
-      "unrealized_pnl": -199.94973754882812,
-      "pnl_pct": -3.41,
+      "unrealized_pnl": -212.42010498046875,
+      "pnl_pct": -3.62,
       "catalyst_tier": "Tier-1",
       "confidence_score": "8",
       "tech_score": "7",
@@ -761,14 +761,6 @@
   "daily_pnl": [
     {
       "date": "2026-08-16",
-      "wallet_balance": 40000.0,
-      "total_invested": 60000.0,
-      "unrealized_pnl": 0.0,
-      "total_positions": 1,
-      "cumulative_pnl": 0.0
-    },
-    {
-      "date": "2026-08-16",
       "wallet_balance": 25000.0,
       "total_invested": 0.0,
       "unrealized_pnl": 0.0,
@@ -998,6 +990,14 @@
       "unrealized_pnl": 0.0,
       "total_positions": 5,
       "cumulative_pnl": -237.62
+    },
+    {
+      "date": "2026-08-28",
+      "wallet_balance": 92385.09,
+      "total_invested": 5869.5,
+      "unrealized_pnl": 0.0,
+      "total_positions": 1,
+      "cumulative_pnl": -1745.41
     }
   ],
   "monthly_summary": {
@@ -1020,8 +1020,8 @@
     "avg_win_pnl": 534.55,
     "avg_loss_pnl": -262.26,
     "profit_factor": 1.94,
-    "max_drawdown": 1286.08,
-    "sharpe_estimate": 3.47,
+    "max_drawdown": 2531.4,
+    "sharpe_estimate": 3.55,
     "gross_profit": 10690.94,
     "gross_loss": 5507.49,
     "net_pnl_total": 5183.45,
@@ -1040,9 +1040,9 @@
     "active_keys": 2,
     "rss_scanned": 0,
     "liquidity_filtered": 0,
-    "messages_sent": 0,
+    "messages_sent": 1,
     "messages_failed": 0,
-    "last_sent_at": ""
+    "last_sent_at": "28 Aug 2026, 10:01 PM IST"
   },
   "ai_accuracy": {
     "total_predictions": 39,
@@ -1056,9 +1056,9 @@
     }
   },
   "message_stats": {
-    "session_sent": 0,
+    "session_sent": 1,
     "session_failed": 0,
-    "last_sent_at": "",
+    "last_sent_at": "28 Aug 2026, 10:01 PM IST",
     "total_sent_7d": 0,
     "total_failed_7d": 0,
     "dry_run": false
