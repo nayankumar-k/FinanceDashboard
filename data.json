@@ -1,5 +1,5 @@
 {
-  "updated_at": "01 Oct 2026, 10:00 PM IST",
+  "updated_at": "02 Oct 2026, 10:00 PM IST",
   "status": "LIVE AGENT ACTIVE",
   "is_alive": true,
   "market_regime": {
@@ -56,9 +56,9 @@
     {
       "code": "AUTO",
       "name": "Automotive & EV",
-      "price": 263.65,
-      "change_pct": -3.33,
-      "sma20": 280.81,
+      "price": 272.25,
+      "change_pct": -0.17,
+      "sma20": 281.24,
       "stage": "LAGGING",
       "trend": "Downtrend",
       "lead_stocks": [
@@ -1618,14 +1618,6 @@
   ],
   "daily_pnl": [
     {
-      "date": "2026-09-23",
-      "wallet_balance": 9018.02,
-      "total_invested": 77751.42,
-      "unrealized_pnl": 0.0,
-      "total_positions": 5,
-      "cumulative_pnl": -789.7
-    },
-    {
       "date": "2026-09-24",
       "wallet_balance": 64984.31,
       "total_invested": 21051.5,
@@ -1856,6 +1848,14 @@
       "unrealized_pnl": 0.0,
       "total_positions": 5,
       "cumulative_pnl": -2800.34
+    },
+    {
+      "date": "2026-10-01",
+      "wallet_balance": 26.12,
+      "total_invested": 83770.4,
+      "unrealized_pnl": 0.0,
+      "total_positions": 5,
+      "cumulative_pnl": -2800.34
     }
   ],
   "monthly_summary": {
@@ -1872,7 +1872,7 @@
     "avg_win_pnl": 572.33,
     "avg_loss_pnl": -279.02,
     "profit_factor": 1.88,
-    "max_drawdown": 2311.79,
+    "max_drawdown": 1578.16,
     "sharpe_estimate": 3.83,
     "gross_profit": 25182.72,
     "gross_loss": 13393.06,
@@ -1892,9 +1892,9 @@
     "active_keys": 2,
     "rss_scanned": 0,
     "liquidity_filtered": 0,
-    "messages_sent": 2,
+    "messages_sent": 1,
     "messages_failed": 0,
-    "last_sent_at": "01 Oct 2026, 10:00 PM IST"
+    "last_sent_at": "02 Oct 2026, 10:00 PM IST"
   },
   "ai_accuracy": {
     "total_predictions": 142,
@@ -1910,9 +1910,9 @@
     }
   },
   "message_stats": {
-    "session_sent": 2,
+    "session_sent": 1,
     "session_failed": 0,
-    "last_sent_at": "01 Oct 2026, 10:00 PM IST",
+    "last_sent_at": "02 Oct 2026, 10:00 PM IST",
     "total_sent_7d": 0,
     "total_failed_7d": 0,
     "dry_run": false
