@@ -1,35 +1,35 @@
 {
-  "updated_at": "05 Oct 2026, 12:45 PM IST",
+  "updated_at": "05 Oct 2026, 10:00 PM IST",
   "status": "LIVE AGENT ACTIVE",
   "is_alive": true,
   "market_regime": {
     "status": "BEARISH_DEFENSIVE",
-    "nifty_price": 22457.35,
-    "nifty_change_pct": "+0.16%",
+    "nifty_price": 22555.75,
+    "nifty_change_pct": "+0.60%",
     "nifty_trend": "Downtrend (Below 20 & 50 SMA)",
     "banknifty_price": "N/A",
     "banknifty_change_pct": "N/A",
-    "regime_summary": "Defensive/Bearish Regime (Nifty at 22,457.3, below 20-day SMA 23,198.1). Risk parameters tightened. \ud83c\udfdb\ufe0f Net Institutional Inflow (+Rs. 557.62 Cr) with DII at +10,041.84 Cr and FII at -9,484.22 Cr.",
+    "regime_summary": "Defensive/Bearish Regime (Nifty at 22,555.8, below 20-day SMA 23,203.0). Risk parameters tightened.",
     "fii_dii": {
-      "date": "01-Oct-2026",
-      "fii_buy": 12260.26,
-      "fii_sell": 21744.48,
-      "fii_net": -9484.22,
-      "dii_buy": 25420.04,
-      "dii_sell": 15378.2,
-      "dii_net": 10041.84,
-      "total_net": 557.62,
-      "sentiment": "BULLISH",
-      "summary": "Net Institutional Inflow (+Rs. 557.62 Cr) with DII at +10,041.84 Cr and FII at -9,484.22 Cr."
+      "date": "05-Oct-2026",
+      "fii_buy": 15674.61,
+      "fii_sell": 20373.75,
+      "fii_net": -4699.14,
+      "dii_buy": 20492.93,
+      "dii_sell": 15311.31,
+      "dii_net": 5181.62,
+      "total_net": 482.48,
+      "sentiment": "NEUTRAL",
+      "summary": "Balanced Institutional Flow (Net: +482.48 Cr). FII: -4,699.14 Cr | DII: +5,181.62 Cr."
     }
   },
   "sector_heatmap": [
     {
       "code": "BANK",
       "name": "Banking & Financials",
-      "price": 54636.85,
-      "change_pct": 0.34,
-      "sma20": 55813.04,
+      "price": 54714.1,
+      "change_pct": 0.48,
+      "sma20": 55817.11,
       "stage": "IMPROVING",
       "trend": "Rebound / Recovery",
       "lead_stocks": [
@@ -41,9 +41,9 @@
     {
       "code": "IT",
       "name": "Information Technology",
-      "price": 28139.15,
-      "change_pct": -0.58,
-      "sma20": 28698.96,
+      "price": 28301.65,
+      "change_pct": -0.01,
+      "sma20": 28707.51,
       "stage": "LAGGING",
       "trend": "Downtrend",
       "lead_stocks": [
@@ -56,9 +56,9 @@
     {
       "code": "AUTO",
       "name": "Automotive & EV",
-      "price": 262.25,
-      "change_pct": -0.53,
-      "sma20": 277.59,
+      "price": 262.82,
+      "change_pct": -0.31,
+      "sma20": 277.62,
       "stage": "LAGGING",
       "trend": "Downtrend",
       "lead_stocks": [
@@ -70,9 +70,9 @@
     {
       "code": "PHARMA",
       "name": "Pharma & Healthcare",
-      "price": 26087.25,
-      "change_pct": -0.85,
-      "sma20": 26663.52,
+      "price": 26117.1,
+      "change_pct": -0.74,
+      "sma20": 26665.09,
       "stage": "LAGGING",
       "trend": "Downtrend",
       "lead_stocks": [
@@ -84,9 +84,9 @@
     {
       "code": "ENERGY",
       "name": "Energy, Oil & Power",
-      "price": 224.18,
-      "change_pct": 0.81,
-      "sma20": 232.99,
+      "price": 224.9,
+      "change_pct": 1.14,
+      "sma20": 233.03,
       "stage": "IMPROVING",
       "trend": "Rebound / Recovery",
       "lead_stocks": [
@@ -98,7 +98,7 @@
     {
       "code": "METAL",
       "name": "Metals & Mining",
-      "price": 178.15,
+      "price": 178.14,
       "change_pct": 0.08,
       "sma20": 185.03,
       "stage": "IMPROVING",
@@ -112,11 +112,11 @@
     {
       "code": "FMCG",
       "name": "FMCG & Consumption",
-      "price": 1830.6,
-      "change_pct": -0.29,
-      "sma20": 1923.42,
-      "stage": "LAGGING",
-      "trend": "Downtrend",
+      "price": 1838.4,
+      "change_pct": 0.13,
+      "sma20": 1923.81,
+      "stage": "IMPROVING",
+      "trend": "Rebound / Recovery",
       "lead_stocks": [
         "ITC",
         "HINDUNILVR",
@@ -126,9 +126,9 @@
     {
       "code": "REALTY",
       "name": "Realty & Infrastructure",
-      "price": 671.7,
-      "change_pct": 2.02,
-      "sma20": 657.73,
+      "price": 673.0,
+      "change_pct": 2.22,
+      "sma20": 657.79,
       "stage": "LEADING",
       "trend": "Strong Uptrend",
       "lead_stocks": [
@@ -140,118 +140,18 @@
   ],
   "news_intelligence": [],
   "summary": {
-    "wallet_balance": 114.35,
-    "allocated_cash": 83209.0,
-    "unrealized_pnl": -1835.3581466674764,
-    "net_worth": 81487.99185333253,
-    "cumulative_pnl": -3273.51,
-    "active_positions_count": 3,
-    "cash_pct": 0.1,
-    "holdings_pct": 99.9,
+    "wallet_balance": 81308.03,
+    "allocated_cash": 0.0,
+    "unrealized_pnl": 0.0,
+    "net_worth": 81308.03,
+    "cumulative_pnl": -5288.83,
+    "active_positions_count": 0,
+    "cash_pct": 100.0,
+    "holdings_pct": 0.0,
     "total_articles_scanned": 0,
     "source_breakdown": {}
   },
-  "today_calls": [
-    {
-      "symbol": "HDFCBANK",
-      "company_name": "HDFC Bank Limited",
-      "action": "Buy Setup",
-      "trade_recommendation": "Buy",
-      "horizon": "swing",
-      "entry_price": 717.25,
-      "current_price": 706.7000122070312,
-      "target_price": 757.9,
-      "stop_loss": 696.92,
-      "quantity": 22,
-      "allocated_cash": 15779.5,
-      "unrealized_pnl": -232.0997314453125,
-      "pnl_pct": -1.47,
-      "catalyst_tier": "Tier-1",
-      "confidence_score": "8",
-      "tech_score": "7",
-      "fund_score": "6",
-      "catalyst_score": "8",
-      "risk_reward": "1:2.0",
-      "pattern_type": "Bollinger Squeeze",
-      "hold_days": 3,
-      "days_held": 2,
-      "expected_exit_date": "2026-10-06",
-      "source_headline": "NSE Market Intelligence Dossier",
-      "news_sentiment": "Positive",
-      "catalyst_reason": "Institutional Catalyst & Technical Setup",
-      "source_count": 1,
-      "sources_list": [
-        "Financial News Media"
-      ],
-      "google_finance_url": "https://www.google.com/finance/quote/HDFCBANK:NSE"
-    },
-    {
-      "symbol": "HILINFRA",
-      "company_name": "Highway Infrastructure Limited",
-      "action": "Buy Setup",
-      "trade_recommendation": "Buy",
-      "horizon": "swing",
-      "entry_price": 45.19,
-      "current_price": 43.34000015258789,
-      "target_price": 48.81,
-      "stop_loss": 45.42,
-      "quantity": 210,
-      "allocated_cash": 9489.9,
-      "unrealized_pnl": -388.4999679565425,
-      "pnl_pct": -4.09,
-      "catalyst_tier": "Tier-1",
-      "confidence_score": "8",
-      "tech_score": "7",
-      "fund_score": "6",
-      "catalyst_score": "8",
-      "risk_reward": "1:2.0",
-      "pattern_type": "Momentum Surge / Bollinger Band Squeeze Breakout",
-      "hold_days": 1,
-      "days_held": 1,
-      "expected_exit_date": "2026-10-02",
-      "source_headline": "NSE Market Intelligence Dossier",
-      "news_sentiment": "Positive",
-      "catalyst_reason": "Institutional Catalyst & Technical Setup",
-      "source_count": 1,
-      "sources_list": [
-        "Financial News Media"
-      ],
-      "google_finance_url": "https://www.google.com/finance/quote/HILINFRA:NSE"
-    },
-    {
-      "symbol": "LXCHEM",
-      "company_name": "Laxmi Organic Industries Limited",
-      "action": "Buy Setup",
-      "trade_recommendation": "Buy",
-      "horizon": "swing",
-      "entry_price": 182.2,
-      "current_price": 178.3800048828125,
-      "target_price": 203.46,
-      "stop_loss": 170.93,
-      "quantity": 318,
-      "allocated_cash": 57939.6,
-      "unrealized_pnl": -1214.7584472656213,
-      "pnl_pct": -2.1,
-      "catalyst_tier": "Tier-1",
-      "confidence_score": "8",
-      "tech_score": "7",
-      "fund_score": "6",
-      "catalyst_score": "8",
-      "risk_reward": "1:2.0",
-      "pattern_type": "Short-term Reversal Setup",
-      "hold_days": 1,
-      "days_held": 0,
-      "expected_exit_date": "2026-10-06",
-      "source_headline": "NSE Market Intelligence Dossier",
-      "news_sentiment": "Positive",
-      "catalyst_reason": "Institutional Catalyst & Technical Setup",
-      "source_count": 1,
-      "sources_list": [
-        "Financial News Media"
-      ],
-      "google_finance_url": "https://www.google.com/finance/quote/LXCHEM:NSE"
-    }
-  ],
+  "today_calls": [],
   "telemetry": {
     "rss_feeds": "0 Operational",
     "gemini_keys": "2 Active Keys",
@@ -259,13 +159,7 @@
     "total_scanned": 0,
     "sheets_status": "Clean DB Synced"
   },
-  "alerts_log": [
-    {
-      "timestamp": "05 Oct 2026, 12:45 PM IST",
-      "part": 1,
-      "message": "\u2600\ufe0f Indian Market Midday Pulse & Rebalance Report\nStatus: Active | Time: 05 Oct 2026, 12:45 PM IST\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\n\ud83d\udcc8 Market Regime: Defensive/Bearish Regime (Nifty at 22,457.3, below 20-day SMA 23,198.1). Risk parameters tightened. \ud83c\udfdb\ufe0f Net Institutional Inflow (+Rs. 557.62 Cr) with DII at +10,041.84 Cr and FII at -9,484.22 Cr.\n\ud83c\udfdb\ufe0f Institutional Flow: BULLISH \ud83d\udfe2\n\n\ud83d\udcca Active Holdings Midday Status (3):\n\nHolding  Qty Entry   CMP  P&L%    SL\n------------------------------------\nHDFCBANK  22 717.2 706.7 -1.5% 696.9\nHILINFRA 210  45.2  43.3 -4.1% 45.4*\nLXCHEM   318 182.2 178.4 -2.1% 170.9\n\n\u2022 HDFCBANK: CMP Rs. 706.70 (Entry: Rs. 717.25 | P&L: -1.47% | SL: Rs. 696.92)\n\u2022 HILINFRA: CMP Rs. 43.34 (Entry: Rs. 45.19 | P&L: -4.09% | SL: Rs. 45.42)\n\u2022 LXCHEM: CMP Rs. 178.38 (Entry: Rs. 182.20 | P&L: -2.10% | SL: Rs. 170.93)\n\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\ud83d\udcb0 Liquid Wallet Cash: Rs. 114.35"
-    }
-  ],
+  "alerts_log": [],
   "trade_history": [
     {
       "date": "2026-08-31",
@@ -1566,14 +1460,6 @@
       "cumulative_pnl": -1552.38
     },
     {
-      "date": "2026-09-24",
-      "wallet_balance": 6753.32,
-      "total_invested": 79253.44,
-      "unrealized_pnl": 0.0,
-      "total_positions": 5,
-      "cumulative_pnl": -1552.38
-    },
-    {
       "date": "2026-09-25",
       "wallet_balance": 22827.73,
       "total_invested": 62661.94,
@@ -1796,6 +1682,14 @@
       "unrealized_pnl": 0.0,
       "total_positions": 3,
       "cumulative_pnl": -3273.51
+    },
+    {
+      "date": "2026-10-05",
+      "wallet_balance": 81308.03,
+      "total_invested": 0.0,
+      "unrealized_pnl": 0.0,
+      "total_positions": 0,
+      "cumulative_pnl": -5288.83
     }
   ],
   "monthly_summary": {
@@ -1812,8 +1706,8 @@
     "avg_win_pnl": 572.33,
     "avg_loss_pnl": -279.02,
     "profit_factor": 1.88,
-    "max_drawdown": 1721.13,
-    "sharpe_estimate": 4.91,
+    "max_drawdown": 3736.45,
+    "sharpe_estimate": 5.4,
     "gross_profit": 25182.72,
     "gross_loss": 13393.06,
     "net_pnl_total": 11789.66,
@@ -1834,17 +1728,17 @@
     "liquidity_filtered": 0,
     "messages_sent": 1,
     "messages_failed": 0,
-    "last_sent_at": "05 Oct 2026, 12:45 PM IST"
+    "last_sent_at": "05 Oct 2026, 10:00 PM IST"
   },
   "ai_accuracy": {
-    "total_predictions": 146,
+    "total_predictions": 149,
     "correct": 62,
     "neutral": 0,
-    "incorrect": 84,
-    "accuracy_pct": 42.5,
+    "incorrect": 87,
+    "accuracy_pct": 41.6,
     "by_horizon": {
       "intraday": 75.0,
-      "swing": 42.0,
+      "swing": 41.0,
       "weekly": 25.0,
       "btst": 66.7
     }
@@ -1852,7 +1746,7 @@
   "message_stats": {
     "session_sent": 1,
     "session_failed": 0,
-    "last_sent_at": "05 Oct 2026, 12:45 PM IST",
+    "last_sent_at": "05 Oct 2026, 10:00 PM IST",
     "total_sent_7d": 0,
     "total_failed_7d": 0,
     "dry_run": false
